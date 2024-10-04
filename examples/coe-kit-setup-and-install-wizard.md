@@ -26,9 +26,19 @@ We leveraged the Power Platform Terraform provider to automate the setup process
 
 The custom page of the application introduced testing complexities such as the consent dialog that appears the first time the application runs. To handle this, we created a Power Fx function that conditionally checked for the consent dialog and approved it if it appeared. This approach simplified the process and ensured that our tests could run smoothly without manual intervention.
 
-## Using the Power Fx to extend testing
+We does this look like? I our test steps we take advantage of the Power Fx test extensions of test engine to add a command similar to the following.
+
+```powerfx
+TestEngine.ConsentDialog(Table({Text: "Center of Excellence Setup Wizard"}));
+```
+
+Thsi function waits to see if the Consent Dialog Appears and if it does it accepts the connections. If the text "Center of Excellence Setup Wizard" appears then it continues with the remaining test steps.
+
+## Using the PowerFX to extend testing
 
 Power Fx and the extensibility model made it easy to hide complex operations like the conditional consent dialog behind simple Power Fx functions. This abstraction allowed us to focus on writing tests without worrying about the underlying complexities, making our testing process more efficient and maintainable.
+
+The [ConsentDialogFunction](https://github.com/microsoft/PowerApps-TestEngine/blob/integration/src/testengine.module.mda/ConsentDialogFunction.cs) provides an example of the C# extenion to Test Engine that allows the complexity of the conditional consent dialog to be handled. This is a good example of combining the extensiblity model of code first C# extensions with low code PowerFX to simplify the test case.
 
 ## Custom Pages Dealing with Global Variables
 
