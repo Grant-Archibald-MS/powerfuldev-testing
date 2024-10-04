@@ -10,7 +10,7 @@ To help tailor the submission we are Crowd soucing submission for Powerful Dev C
 
 ## How to contribute:
 
-Comment on [Linked In](https://aka.ms/powerfuldev/testing).
+Comment on [Linked In](https://www.linkedin.com/pulse/powerful-devs-conference-low-code-testing-grant-archibald-xwjac/) with your thoughts.
 
 ## Session Title
 
