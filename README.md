@@ -44,3 +44,5 @@ Topics that could be discussed include:
 [Power Apps Test Engine - GitHub Repo](https://github.com/microsoft/PowerApps-TestEngine)
 
 [Documentation](https://github.com/microsoft/PowerApps-TestEngine/blob/grant-archibald-ms/docs/docs/README.md)
+
+[Example - CoE Starter Kit Setup and Upgrade Wizard](./examples/coe-kit-setup-and-install-wizard.md)
