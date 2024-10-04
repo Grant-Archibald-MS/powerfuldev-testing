@@ -26,13 +26,13 @@ We leveraged the Power Platform Terraform provider to automate the setup process
 
 The custom page of the application introduced testing complexities such as the consent dialog that appears the first time the application runs. To handle this, we created a Power Fx function that conditionally checked for the consent dialog and approved it if it appeared. This approach simplified the process and ensured that our tests could run smoothly without manual intervention.
 
-We does this look like? I our test steps we take advantage of the Power Fx test extensions of test engine to add a command similar to the following.
+We does this look like? In one of our test steps we take advantage of the Power Fx extensions for test engine to add a command similar to the following.
 
 ```powerfx
 TestEngine.ConsentDialog(Table({Text: "Center of Excellence Setup Wizard"}));
 ```
 
-Thsi function waits to see if the Consent Dialog Appears and if it does it accepts the connections. If the text "Center of Excellence Setup Wizard" appears then it continues with the remaining test steps.
+This function waits to see if the Consent Dialog Appears, if it does it accepts the connections. If the text "Center of Excellence Setup Wizard" appears then it continues with the remaining test steps.
 
 ## Using the PowerFX to extend testing
 
