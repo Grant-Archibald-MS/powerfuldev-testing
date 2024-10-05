@@ -46,6 +46,6 @@ Handling global variables was crucial for managing the steps of the install wiza
 
 ## Scaling Guidance
 
-In addition to focusing on the technical code elements of core functionality and tests, we have also developed wider low-code [testing guidance](https://github.com/microsoft/PowerApps-TestEngine/blob/grant-archibald-ms/docs/docs/README.md) based on our experiences so far. 
+In addition to focusing on the technical code elements of core functionality and tests, we are contributing to the wider low-code [testing guidance](https://github.com/microsoft/PowerApps-TestEngine/blob/grant-archibald-ms/docs/docs/README.md) based on our experiences so far. 
 
 By sharing our learnings, we aim to help the broader community implement effective automated testing strategies, ensuring that others can benefit from our insights and improve their own testing processes.
