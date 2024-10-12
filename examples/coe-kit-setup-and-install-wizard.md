@@ -34,7 +34,7 @@ TestEngine.ConsentDialog(Table({Text: "Center of Excellence Setup Wizard"}));
 
 This function waits to see if the Consent Dialog Appears, if it does it accepts the connections. If the text "Center of Excellence Setup Wizard" appears then it continues with the remaining test steps.
 
-## Using the PowerFX to extend testing
+## PowerFX functions to extend testing
 
 Power Fx and the extensibility model made it easy to hide complex operations like the conditional consent dialog behind simple Power Fx functions. This abstraction allowed us to focus on writing tests without worrying about the underlying complexities, making our testing process more efficient and maintainable.
 
@@ -43,6 +43,32 @@ The [ConsentDialogFunction](https://github.com/microsoft/PowerApps-TestEngine/bl
 ## Custom Pages Dealing with Global Variables
 
 Handling global variables was crucial for managing the steps of the install wizard. By effectively controlling the state of the application, we were able to test different parts of the process more easily. This approach ensured that our tests were robust and could handle various scenarios, ultimately improving the reliability of our automated testing framework.
+
+### Setup and Upgrade Wizard Example
+
+The Setup and Upgrade Wizard of the CoE Starter Kit provides a good example of working with global variables. The state of the page which the current state of the Subway Navigation control and the wizard steps is controlled by a common variable.
+
+![Center of Excellence Setup and Upgrade Wizard screenshot](https://learn.microsoft.com/en-us/power-platform/guidance/coe/media/coesetupwizard.png#lightbox)
+
+### Power FX Test Scenario
+
+Let look at how test engine helps with testing this scenario.
+
+![Center of Excellence integration test example diagram that shows the Power FX and interaction with the Power App and Playwright](./media/coe-kit-global-variable-example.png)
+
+This example illustrates the following
+
+1. The test waits until the optional Consent Dialog is completed.
+
+2. The Power FX provider for Model Driven Application custom pagee has updated the Power Fx state with the initial state
+
+3. The ```Set(conStep, 1)``` function call updates the step of the upagrde process to the Confirm pre-requisetes step. By updating this variable the Power Apps Provider updates the Model Driven Application custom page state.
+
+4. Using ```Assert()``` and ```CountRows()``` functions to check that the FluentDetailsList with requirements shown in the right panel has items. This could be extended to filter functions to ensure specific status of teh required components.
+
+5. Selection of the Next button using ```Select(Next)``` to move to the second step
+
+6. Validating that the global variable has now been updated to teh second step of the Setup and Uprade wizard 
 
 ## Scaling Guidance
 
