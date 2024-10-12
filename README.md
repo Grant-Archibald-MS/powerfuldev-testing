@@ -46,3 +46,5 @@ Topics that could be discussed include:
 [Documentation](https://github.com/microsoft/PowerApps-TestEngine/blob/grant-archibald-ms/docs/docs/README.md)
 
 [Example - CoE Starter Kit Setup and Upgrade Wizard](./examples/coe-kit-setup-and-install-wizard.md)
+
+[Example - Extending Power FX test with C# test scripts](./examples/extending-testengine-powerfx-with-with-csharp-test-scripts.md)
