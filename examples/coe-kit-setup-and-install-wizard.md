@@ -22,6 +22,41 @@ We collaborated closely with the Test Engine team by contributing code to the re
 
 We leveraged the Power Platform Terraform provider to automate the setup process. This included creating environments, importing the Creator Kit, establishing connections, and installing the CoE Kit release files. By automating these steps, we ensured a consistent and repeatable setup process, which is crucial for automated verification. This approach not only saved time but also reduced the potential for human error, making our testing process more reliable and gives us the ability to deploy and test globally in multiple regions.
 
+
+## Custom Pages Dealing with Global Variables
+
+Handling global variables was crucial for managing the steps of the install wizard. By effectively controlling the state of the application, we were able to test different parts of the process more easily. This approach ensured that our tests were robust and could handle various scenarios, ultimately improving the reliability of our automated testing framework.
+
+### Setup and Upgrade Wizard Example
+
+The Setup and Upgrade Wizard of the CoE Starter Kit provides a good example of working with global variables. 
+
+The state of the page which the current state of the Subway Navigation control and the wizard steps is controlled by a common variable. This application is made up of multiple screens that allows the user to verify that the different elements of the CoE Starter Kit have been setup and is in a working state.
+
+![Center of Excellence Setup and Upgrade Wizard screenshot](https://learn.microsoft.com/en-us/power-platform/guidance/coe/media/coesetupwizard.png#lightbox)
+
+### Power FX Test Scenario
+
+Lets look at how test engine helps with testing this scenario. This example demonstrates that by being able to interact with the Power FX variables it greatly simplifies the testing of this application as a key global variable controls the state of the application. 
+
+By being able to get and set the variable rather than having to infer where in the process the app is the variable can easily be asserted to verify the state of the app.
+
+![Center of Excellence integration test example diagram that shows the Power FX and interaction with the Power App and Playwright](./media/coe-kit-global-variable-example.png)
+
+Key parts of this example are:
+
+1. The ability for the test to conditionally waits until the optional Consent Dialog is completed.
+
+2. The Power FX provider for Model Driven Application custom pagee has updated the Power Fx state with the initial state.
+
+3. The ```Set(conStep, 1)``` function call updates the step of the upagrde process to the Confirm pre-requisetes step. By updating this variable the Power Apps Provider updates the Model Driven Application custom page state.
+
+4. Using ```Assert()``` and ```CountRows()``` functions to check that the FluentDetailsList with requirements shown in the right panel has items. This could be extended to filter functions to ensure specific status of teh required components.
+
+5. Selection of the Next button using ```Select(Next)``` to move to the second step.
+
+6. Validating that the global variable has now been updated to teh second step of the Setup and Uprade wizard.
+
 ## Handling Conditional Dialogs
 
 The custom page of the application introduced testing complexities such as the consent dialog that appears the first time the application runs. To handle this, we created a Power Fx function that conditionally checked for the consent dialog and approved it if it appeared. This approach simplified the process and ensured that our tests could run smoothly without manual intervention.
@@ -40,35 +75,6 @@ Power Fx and the extensibility model made it easy to hide complex operations lik
 
 The [ConsentDialogFunction](https://github.com/microsoft/PowerApps-TestEngine/blob/integration/src/testengine.module.mda/ConsentDialogFunction.cs) provides an example of the C# extenion to Test Engine that allows the complexity of the conditional consent dialog to be handled. This is a good example of combining the extensiblity model of code first C# extensions with low code PowerFX to simplify the test case.
 
-## Custom Pages Dealing with Global Variables
-
-Handling global variables was crucial for managing the steps of the install wizard. By effectively controlling the state of the application, we were able to test different parts of the process more easily. This approach ensured that our tests were robust and could handle various scenarios, ultimately improving the reliability of our automated testing framework.
-
-### Setup and Upgrade Wizard Example
-
-The Setup and Upgrade Wizard of the CoE Starter Kit provides a good example of working with global variables. The state of the page which the current state of the Subway Navigation control and the wizard steps is controlled by a common variable.
-
-![Center of Excellence Setup and Upgrade Wizard screenshot](https://learn.microsoft.com/en-us/power-platform/guidance/coe/media/coesetupwizard.png#lightbox)
-
-### Power FX Test Scenario
-
-Let look at how test engine helps with testing this scenario.
-
-![Center of Excellence integration test example diagram that shows the Power FX and interaction with the Power App and Playwright](./media/coe-kit-global-variable-example.png)
-
-This example illustrates the following
-
-1. The test waits until the optional Consent Dialog is completed.
-
-2. The Power FX provider for Model Driven Application custom pagee has updated the Power Fx state with the initial state
-
-3. The ```Set(conStep, 1)``` function call updates the step of the upagrde process to the Confirm pre-requisetes step. By updating this variable the Power Apps Provider updates the Model Driven Application custom page state.
-
-4. Using ```Assert()``` and ```CountRows()``` functions to check that the FluentDetailsList with requirements shown in the right panel has items. This could be extended to filter functions to ensure specific status of teh required components.
-
-5. Selection of the Next button using ```Select(Next)``` to move to the second step
-
-6. Validating that the global variable has now been updated to teh second step of the Setup and Uprade wizard 
 
 ## Scaling Guidance
 
