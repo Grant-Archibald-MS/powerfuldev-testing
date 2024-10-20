@@ -3,6 +3,8 @@
 ## Introduction
 In Power Apps, the Test Engine provides a robust capability to test variables and collections on custom pages. This article explores the essentials of Power FX variables and collections, their common uses, and the role of testing in simplifying application state management.
 
+![Power Apps Low Code testing - Variables and Collections example](./media/custom-page-variables-collections.png)
+
 ## What are Power FX Variables and Collections?
 Power FX variables and collections are fundamental components in Power Apps that help manage the state and data within an application. 
 
