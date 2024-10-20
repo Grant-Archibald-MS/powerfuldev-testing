@@ -49,7 +49,7 @@ Key parts of this example are:
 
 2. The Power FX provider for Model Driven Application custom pagee has updated the Power Fx state with the initial state.
 
-3. The ```Set(conStep, 1)``` function call updates the step of the upagrde process to the Confirm pre-requisetes step. By updating this variable the Power Apps Provider updates the Model Driven Application custom page state.
+3. The ```Set(configStep, 1)``` function call updates the step of the upgarde process to the Confirm pre-requisetes step. By updating this variable the Power Apps Provider updates the Model Driven Application custom page state.
 
 4. Using ```Assert()``` and ```CountRows()``` functions to check that the FluentDetailsList with requirements shown in the right panel has items. This could be extended to filter functions to ensure specific status of teh required components.
 

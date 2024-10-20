@@ -20,9 +20,9 @@ TestEngine offers an extensibility model for Authentication, Providers, and Powe
 By using TestEngine, developers can handle common code efficiently and focus on specific code-first extensions for their tests if required. This separation of concerns enhances productivity and maintainability.
 
 
-## Escape Hatch into C#
+## "No Cliffs" extensibility with C#
 
-TestEngine provides the ability to "escape hatch" into C# to interact with Playwright. This feature allows developers to write custom C# code for scenarios where Power FX alone is insufficient. 
+TestEngine provides the ability to "no cliffs" extension with C# to interact with Playwright. This feature allows developers to write custom C# code for scenarios where Power FX alone is insufficient. 
 
 One powerful combination is using the C# script with the `TestEngine.Pause()` command. This function pauses the test execution and displays the Playwright Test Explorer. From the Playwright Test Explorer, developers can inspect the state of the web page, which is invaluable for debugging and understanding the current state of the application under test.
 
@@ -32,7 +32,6 @@ By leveraging `TestEngine.Pause()`, developers can:
 - **Inspect Web Page State**: Pause the test to examine the current state of the web page, helping to identify issues and verify that the application is behaving as expected.
 - **Record C# Scripts**: Use the Playwright Test Explorer to record interactions with the web page. These interactions can be automatically converted into C# code, reducing the manual effort required to write test scripts.
 - **Enhance Debugging**: The ability to pause and inspect the test execution provides a powerful debugging tool, allowing developers to quickly identify and resolve issues.
-
 
 ## Power FX as an Extensible DSL
 
