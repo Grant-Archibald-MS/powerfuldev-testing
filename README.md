@@ -39,12 +39,11 @@ Topics that could be discussed include:
 
 ## Tell Me More
 
-[PPCC Community Session Test](https://www.linkedin.com/feed/update/urn:li:activity:7242572722080284673/)
-
-[Power Apps Test Engine - GitHub Repo](https://github.com/microsoft/PowerApps-TestEngine)
-
-[Documentation](https://github.com/microsoft/PowerApps-TestEngine/blob/grant-archibald-ms/docs/docs/README.md)
-
-[Example - CoE Starter Kit Setup and Upgrade Wizard](./examples/coe-kit-setup-and-install-wizard.md)
-
-[Example - Extending Power FX test with C# test scripts](./examples/extending-testengine-powerfx-with-with-csharp-test-scripts.md)
+| Preview | Link |
+|---------|------|
+| <img src="./media/PowerfulDevConference.png" alt="PPCC" width="200"/> | [PPCC Community Session Test](https://www.linkedin.com/feed/update/urn:li:activity:7242572722080284673/) with proposed session
+| <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" width="50" height="50"> | [Power Apps Test Engine - GitHub Repo](https://github.com/microsoft/PowerApps-TestEngine)
+| <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" width="50" height="50"> | [Guidance Documentation](https://github.com/microsoft/PowerApps-TestEngine/blob/grant-archibald-ms/docs/docs/README.md)
+| <img src="https://learn.microsoft.com/en-us/power-platform/guidance/coe/media/coesetupwizard.png" width="200px" /> | [Example - CoE Starter Kit Setup and Upgrade Wizard](./examples/coe-kit-setup-and-install-wizard.md)
+| <img src="./examples/media/powerfx+csharp.png" width="200"/> | [Example - Extending Power FX test with C# test scripts](./examples/extending-testengine-powerfx-with-with-csharp-test-scripts.md) 
+| <img src="./examples/media/custom-page-variables-collections.png" width="200"/> | [Example - Testing Variables and Collections in Power Apps with the Test Engine](./examples/custom-page-variables-and-collections.md)
