@@ -44,3 +44,7 @@ To illustrate the integration, we explain how the process works with `TestEngine
 
 - **Compile the Code Using Roslyn**: The script is compiled using the [Roslyn compiler](https://learn.microsoft.com/dotnet/csharp/roslyn-sdk/), ensuring that the C# code is executed efficiently.
 - **Implement Defined C# Class**: The compiled code implements a defined C# class that will be called from the Power FX script, enabling seamless interaction between the PowerFX code and the C# and .Net components.
+
+## Example Script
+
+A examplof of using `TestEngine.PlaywrightScript()` is in [testPlan.fx.yaml](https://github.com/microsoft/PowerApps-TestEngine/blob/grant-archibald-md/integration-merge/samples/playwrightscript/testPlan.fx.yaml)
