@@ -49,12 +49,21 @@ The [Setup and Upgrade Wizard](./coe-kit-setup-and-install-wizard.md) of the CoE
 
 Let's look at how the test engine helps with testing this scenario. This example demonstrates that by being able to interact with the Power FX variables, it greatly simplifies the testing of this application as a key global variable controls the state of the application. By being able to get and set the variable rather than having to infer where in the process the app is, the variable can easily be asserted to verify the state of the app.
 
-Key parts of this example are:
+Key parts of this [example test](https://github.com/microsoft/PowerApps-TestEngine/blob/grant-archibald-md/integration-merge/samples/coe-kit-setup-wizard/testPlan.fx.yaml) that start the test and set the initial state
+
+
+```powerfx
+TestEngine.ConsentDialog(Table({Text: "Center of Excellence Setup Wizard"}));
+Set(configStep, 1); 
+Assert(configStep=1);
+```
+
+Some key points
 
 1. The ability for the test to conditionally wait until the optional Consent Dialog is completed.
 2. The Power FX provider for Model Driven Application custom pages has updated the Power Fx state with the initial state.
 3. The `Set(configStep, 1)` function call updates the step of the upgrade process to the Confirm pre-requisites step. By updating this variable, the Power Apps Provider updates the Model Driven Application custom page state.
-4. Using `Assert()` and `CountRows()` functions to check that the state of the app and the selected data. This could be extended to filter functions to ensure the specific status of the required components.
+4. Using `Assert()` and `CountRows()` could be functions to check that the state of the app and the selected data. This could be extended to filter functions to ensure the specific status of the required components.
 5. Selection of the Next button using `Select(Next)` to move to the second step given the state of variables is known.
 
 ## Conclusion
