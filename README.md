@@ -8,9 +8,11 @@ To help tailor the submission we are Crowd soucing submission for Powerful Dev C
 
 **Session Status:** Submitted
 
-## How to contribute:
+## How to contribute and keep up to date:
 
-Comment on [Linked In](https://www.linkedin.com/pulse/powerful-devs-conference-low-code-testing-grant-archibald-xwjac/) with your thoughts.
+Comment on [Linked In](https://www.linkedin.com/pulse/powerful-devs-conference-low-code-testing-grant-archibald-xwjac/) with your thoughts. 
+
+You can also you your GitHub account to login then use the notification and star buttons to watch the repository and give feedback if these topics are important to you and your organization.
 
 ## Session Title
 
