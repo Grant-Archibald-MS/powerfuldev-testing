@@ -44,6 +44,12 @@ To ensure we are using the latest version of the Power Apps Test Engine, we buil
 
 Authentication is a critical component of the test automation process. The sample script employs browser-based authentication, which offers a range of options to authenticate with Microsoft Entra. This method generates a persistent browser cookie, allowing for non-interactive execution of subsequent tests. The management of these browser cookies is governed by the guidelines provided in the Microsoft Entra documentation on session lifetime and conditional access policies.
 
+![Authentication options](./media/authentication-options.png)
+
+As the Power CAT Engineering team looked at the different authentication options for the CoE Starter Kit we have started with browser based authentication for local testing. This approach works with conditional access policies of our environments and allows a quick and less intrusive process to authenticate as different test persona.
+
+As we look at our continuous integration and deployment process we will evaluate certificate based authentication to determine the correct mix of authentication and management trade-offs to select authentication options and what secret store is used to securely host the login credentials.
+
 #### Supporting Multi-Factor Authentication
 The use of browser-based authentication in the test automation process is particularly advantageous for supporting multi-factor authentication (MFA). MFA is a security measure that requires users to provide multiple forms of verification before gaining access to a system. By leveraging browser-based authentication, the test automation script can seamlessly integrate with the organization's MFA settings and policies.
 
