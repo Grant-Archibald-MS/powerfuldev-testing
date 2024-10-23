@@ -16,12 +16,11 @@ Once example we have been working on recently is Automated testing of the [Setup
 
 ## Early Adopter and Build from Source
 
-We collaborated closely with the Test Engine team by contributing code to the repository. This included adding new code for authentication, providers for the Model Driven app, and expanding Power Fx functions to make testing easier. By building the open source from code, we applied a build process to integrate tests as part of our deployment process. This ensured that our tests were consistently run and validated during each deployment.
+We collaborated closely with the Test Engine team by contributing code to the repository to use a [build from source](./coe-kit-build-from-source-run-tests.md) strategy. This included adding new code for authentication, providers for the Model Driven app, and expanding Power Fx functions to make testing easier. By building the open source from code, we applied a build process to integrate tests as part of our deployment process. This ensured that our tests were consistently run and validated during each deployment.
 
 ## Automating Setup
 
 We leveraged the Power Platform Terraform provider to automate the setup process. This included creating environments, importing the Creator Kit, establishing connections, and installing the CoE Kit release files. By automating these steps, we ensured a consistent and repeatable setup process, which is crucial for automated verification. This approach not only saved time but also reduced the potential for human error, making our testing process more reliable and gives us the ability to deploy and test globally in multiple regions.
-
 
 ## Custom Pages Dealing with Global Variables
 
@@ -53,9 +52,11 @@ Key parts of this example are:
 
 4. Using ```Assert()``` and ```CountRows()``` functions to check that the FluentDetailsList with requirements shown in the right panel has items. This could be extended to filter functions to ensure specific status of teh required components.
 
-5. Selection of the Next button using ```Select(Next)``` to move to the second step.
+5. Selection of the Next button using ```Select(btnNext)``` to move to the second step.
 
-6. Validating that the global variable has now been updated to teh second step of the Setup and Uprade wizard.
+6. Validating that the global variable has now been updated to the second step of the Setup and Upgrade wizard.
+
+Our [CoE Kit - Extending Test Engine](./coe-kit-extending-test-engine.md) discusses specific Power Fx steps and configuration that was applied to test the Model Driven App custom page of the Setup and Upgrade Wizard.
 
 ## Handling Conditional Dialogs
 
