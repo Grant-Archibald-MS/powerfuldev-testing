@@ -58,6 +58,7 @@ The implications of this approach extend beyond interactive users to the executi
 The management of browser-based cookies is crucial for maintaining the security and integrity of the test automation process. Persistent browser cookies allow for non-interactive execution of subsequent tests, reducing the need for repeated authentication. However, it is essential to manage these cookies in accordance with the organization's conditional access policies. The following resources provide valuable insights into managing browser-based cookies:
 
 [Persistence of browsing sessions](https://learn.microsoft.com//entra/identity/conditional-access/concept-session-lifetime#persistence-of-browsing-sessions): This document discusses how persistent browser sessions allow users to remain signed in after closing and reopening their browser window.
+
 [Conditional access policies for browser persistence](https://learn.microsoft.com/entra/identity/conditional-access/policy-all-users-persistent-browser) : This example demonstrates how to optionally protect user access on devices by preventing browser sessions from remaining signed in after the browser is closed and setting a sign-in policy.
 By understanding and implementing these concepts, organizations can ensure that their test automation processes are secure, compliant, and capable of supporting multi-factor authentication in alignment with their Entra settings and policies.
 
