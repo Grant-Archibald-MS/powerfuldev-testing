@@ -12,7 +12,7 @@ The sample [RunTests.ps1](https://github.com/microsoft/PowerApps-TestEngine/blob
 
 The "build from source" approach refers to an open-source version of the Test Engine, licensed under the MIT license. This version is ideal for early adopters who want to try out the latest features and provide feedback. It allows users to access and test new functionalities before they are officially released, fostering a collaborative development environment where user feedback can directly influence the final product.
 
-In contrast, the Power Platform CLI [pac test run]() is a reviewed and compiled version distributed through the Microsoft signed components using the Power Platform Command Line Interface. This version includes features that have completed the review and build process, ensuring they are stable for a wider audience.
+In contrast, the Power Platform CLI [pac test run](https://learn.microsoft.com/power-platform/developer/cli/reference/test) is a reviewed and compiled version distributed through the Microsoft signed components using the Power Platform Command Line Interface. This version includes features that have completed the review and build process, ensuring they are stable for a wider audience.
 
 ### Prerequisites for Source Code Version
 
