@@ -35,7 +35,7 @@ By leveraging `TestEngine.Pause()`, developers can:
 
 ## Power FX as an Extensible DSL
 
-This examples how Power FX provdes a powerful capability to act as an extensible domain-specific language (DSL) to encapsulate testing content. This flexibility makes it a powerful tool for writing and maintaining test scripts using both low code PowerFX and code first C# scripts together.
+This examples how Power FX provides a powerful capability to act as an extensible domain-specific language (DSL) to encapsulate testing content. This flexibility makes it a powerful tool for writing and maintaining test scripts using both low code PowerFX and code first C# scripts together.
 
 
 ## Overview with TestEngine.PlaywrightScript()

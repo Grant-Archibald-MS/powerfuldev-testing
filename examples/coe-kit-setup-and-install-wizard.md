@@ -6,11 +6,11 @@ Once example we have been working on recently is Automated testing of the [Setup
 
 1. How do we collaborate with the Test Engine team to improve the Test Engine?
 2. How do we setup and install the solution?
-3. Could we automate the creation of the environment, install of dependancies, setup of connections?
+3. Could we automate the creation of the environment, install of dependencies, setup of connections?
 4. How we extend testing a Model Driven Application with custom pages?
 5. How do we handle the user consent diaglog?
 6. How build tests to interact with a complicated multi stage setup process?
-7. How can we craete integration tests calling Power Automate Cloud Flows?
+7. How can we create integration tests calling Power Automate Cloud Flows?
 8. How can we validating the successful setup and state with dataverse?
 9. How can we scale what we are learning to improve guidance?
 
@@ -46,9 +46,9 @@ Key parts of this example are:
 
 1. The ability for the test to conditionally waits until the optional Consent Dialog is completed.
 
-2. The Power FX provider for Model Driven Application custom pagee has updated the Power Fx state with the initial state.
+2. The Power FX provider for Model Driven Application custom page has been updated the Power Fx state with the initial state.
 
-3. The ```Set(configStep, 1)``` function call updates the step of the upgarde process to the Confirm pre-requisetes step. By updating this variable the Power Apps Provider updates the Model Driven Application custom page state.
+3. The ```Set(configStep, 1)``` function call updates the step of the upgrade process to the Confirm prerequisites step. By updating this variable the Power Apps Provider updates the Model Driven Application custom page state.
 
 4. Using ```Assert()``` and ```CountRows()``` functions to check that the FluentDetailsList with requirements shown in the right panel has items. This could be extended to filter functions to ensure specific status of teh required components.
 
@@ -74,7 +74,7 @@ This function waits to see if the Consent Dialog Appears, if it does it accepts 
 
 Power Fx and the extensibility model made it easy to hide complex operations like the conditional consent dialog behind simple Power Fx functions. This abstraction allowed us to focus on writing tests without worrying about the underlying complexities, making our testing process more efficient and maintainable.
 
-The [ConsentDialogFunction](https://github.com/microsoft/PowerApps-TestEngine/blob/integration/src/testengine.module.mda/ConsentDialogFunction.cs) provides an example of the C# extenion to Test Engine that allows the complexity of the conditional consent dialog to be handled. This is a good example of combining the extensiblity model of code first C# extensions with low code PowerFX to simplify the test case.
+The [ConsentDialogFunction](https://github.com/microsoft/PowerApps-TestEngine/blob/integration/src/testengine.module.mda/ConsentDialogFunction.cs) provides an example of the C# extension to Test Engine that allows the complexity of the conditional consent dialog to be handled. This is a good example of combining the extensibility model of code first C# extensions with low code PowerFX to simplify the test case.
 
 
 ## Scaling Guidance

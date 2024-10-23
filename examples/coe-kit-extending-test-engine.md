@@ -2,7 +2,7 @@
 
 In this article, we will discuss how the CoE Starter Kit has made use of extensions to the test engine to support testing of Setup and Upgrade Wizard. This journey involves breaking down tests into smaller, more manageable steps, demonstrating the use of variables and collections, utilizing the Experimental namespace to overcome current limitations.
 
-By following these guidelines and examples, you can effectively make use of the test engine to learn how to to apply similar approches. This ensures thorough and reliable testing, ultimately leading to a more robust and user-friendly application.
+By following these guidelines and examples, you can effectively make use of the test engine to learn how to to apply similar approaches. This ensures thorough and reliable testing, ultimately leading to a more robust and user-friendly application.
 
 ## Example Test Cases
 
@@ -31,7 +31,7 @@ To start of the discussion lets look at a snippet of yaml and Power Fx testSteps
 
 ## Test Case Design
 
-Breaking tests into smaller steps is a crucial strategy for achieving better test isolation. By isolating test cases, it becomes easier to identify and fix issues, leading to more maintainable test scripts. This approach not only simplifies the testing process but also enhances the reliability of the tests. Let look at three concepts of isolation and look at sequental and parrallel execution.
+Breaking tests into smaller steps is a crucial strategy for achieving better test isolation. By isolating test cases, it becomes easier to identify and fix issues, leading to more maintainable test scripts. This approach not only simplifies the testing process but also enhances the reliability of the tests. Let look at three concepts of isolation and look at sequential and parallel execution.
 
 ### Test Case Isolation
 
@@ -48,9 +48,9 @@ Parallel test execution, on the other hand, involves running test cases simultan
 
 ## Variables
 
-In the Setup and Uprade wizard variables are an essential component of the application. The Power Fx in the application will lookup the current state of the install wizard process to restart the wizard at the last location. While this can help with a godo user experience allowing the user to restart at the last step it can make automated testings more difficult as test cases 
+In the Setup and Upgrade wizard variables are an essential component of the application. The Power Fx in the application will lookup the current state of the install wizard process to restart the wizard at the last location. While this can help with a good user experience allowing the user to restart at the last step it can make automated testings more difficult as test cases 
 
-Overall by being able to set variable valuies it allows allows testers to handle complex scenarios with ease, ensuring that the tests are both comprehensive and easy to understand.
+Overall by being able to set variable values it allows allows testers to handle complex scenarios with ease, ensuring that the tests are both comprehensive and easy to understand.
 
 ## Collections
 

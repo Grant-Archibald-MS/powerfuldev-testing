@@ -36,7 +36,7 @@ The Table argument allows the consent dialog wait process to exit is a label wit
 
 ## Extending Power FX Test functions using C#
 
-The following code provides a high level example of of a Power Fx [ReflectionFunction](https://learn.microsoft.com/dotnet/api/microsoft.powerfx.reflectionfunction) is defined that allows the `TestEngine.ConsentDialog()` to be defined and make use of C# to define the confitional logic to react to searching for the conditional dialog within a timeout interval. 
+The following code provides a high level example of of a Power Fx [ReflectionFunction](https://learn.microsoft.com/dotnet/api/microsoft.powerfx.reflectionfunction) is defined that allows the `TestEngine.ConsentDialog()` to be defined and make use of C# to define the conditional logic to react to searching for the conditional dialog within a timeout interval. 
 
 ```csharp
 ﻿// Copyright (c) Microsoft Corporation.
