@@ -74,7 +74,7 @@ In summary, the Power Apps Test Engine abstracts the complexity of tasks like th
 
 #### Test Steps Walkthrough
 
-The test cases take advantage of a set of Power FX steps to abstract interacting with the Power App. The [CoE Setup and Install Wizard](./coe-kit-setup-and-install-wizard.md) steps through these steps to describe how the test cases and steps interact to validate the behavior of the application.
+The test cases take advantage of a set of Power FX steps to abstract interacting with the Power App. The [CoE Setup and Install Wizard](./coe-kit-setup-and-install-wizard.md) steps through these low code functions to describe how the test cases and steps interact to validate the behavior of the application.
 
 #### Code First vs Low Code
 
