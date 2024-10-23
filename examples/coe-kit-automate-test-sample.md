@@ -65,6 +65,28 @@ By understanding and implementing these concepts, organizations can ensure that 
 
 The automation process also makes use of the new Model Driven Application provider. This provider is instrumental in automating the custom page of the Setup and Upgrade Wizard, ensuring that all configurations and settings are correctly applied and tested.
 
+### Power FX based Test steps
+
+The Power Apps Test Engine is designed to simplify the testing process by abstracting away much of the complexity involved in interacting with Power Apps. One of the key areas where this abstraction is evident is in the login process. Instead of requiring teams to write extensive code to handle authentication, the Test Engine manages this process seamlessly. This allows teams to focus on the actual test actions within the Power App, rather than the surrounding processes.
+
+In summary, the Power Apps Test Engine abstracts the complexity of tasks like the login process, enabling teams to focus on testing the core functionality of their Power Apps. This approach not only simplifies the testing process but also enhances productivity and reduces the learning curve for teams new to automated testing. By leveraging the built-in capabilities of the Test Engine and its extensibility options, teams can create robust and maintainable tests that align with their organizational requirements.
+
+#### Test Steps Walkthrough
+
+The test cases take advantage of a set of Power FX steps to abstract interacting with the Power App. The [CoE Setup and Install Wizard](./coe-kit-setup-and-install-wizard.md) steps through these steps to describe how the test cases and steps interact to validate the behavior of the application.
+
+#### Code First vs Low Code
+
+Many teams often start with code-first tools like [Playwright](https://playwright.dev/), which require detailed scripting for every interaction, including login and authentication. While these tools are powerful, they can be time-consuming and complex to set up, especially for teams that are new to automated testing. By using the Power Apps Test Engine, teams can leverage pre-built steps that handle common tasks, such as logging in, without needing to write custom code for each scenario.
+
+The Power FX steps used in the test cases provide a high-level abstraction for interacting with the Power App. This means that testers can write tests using a declarative approach, specifying what actions need to be performed rather than how to perform them. This not only speeds up the test creation process but also makes the tests easier to read and maintain.
+
+#### "No cliffs" Extensibility
+
+Moreover, the Power Apps Test Engine offers "no cliffs" extensibility, allowing teams to extend its capabilities when needed. For example, if a specific test scenario requires custom functionality, teams can use [C# scripts](./extending-testengine-powerfx-with-with-csharp-test-scripts.md) or wrap common functionality as new [Power Fx functions](./understanding-no-cliffs-extensibility-model.md). This flexibility ensures that the Test Engine can accommodate a wide range of testing needs, from simple interactions to complex workflows.
+
 ### Test Output - Traces, Logs, and Videos
 
-Finally, the test output is meticulously documented. The `TestOutput` folder contains detailed logs and video recordings of the test sessions, providing valuable insights for later analysis. Additionally, the Test Engine generates a `.trx` file, which can be parsed or uploaded to a CI/CD process to summarize the outcomes of the tests. This comprehensive documentation ensures that any issues can be quickly identified and addressed, maintaining the integrity and performance of the CoE Starter Kit Core.
+Finally, the test output managed by the configurable log level provides a summary of the test. This is contained in the `TestOutput` folder which contains detailed logs and video recordings of the test sessions, providing valuable insights for later analysis. 
+
+Additionally, the Test Engine generates a `.trx` file, which can be parsed or uploaded to a CI/CD process to summarize the outcomes of the tests. This comprehensive documentation ensures that any issues can be quickly identified and addressed, maintaining the integrity and performance of the CoE Starter Kit Core.
