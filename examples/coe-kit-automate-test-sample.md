@@ -34,7 +34,7 @@ The journey begins with the configuration file, `config.json`. This file is pivo
 
 Next, we leverage the Power Platform Command Line Interface (CLI) to authenticate the script with our environment. Before running the script, we can execute the [pac auth clear](https://learn.microsoft.com/power-platform/developer/cli/reference/auth#pac-auth-clear) and [pac auth create --environment](https://learn.microsoft.com/power-platform/developer/cli/reference/auth#pac-auth-clear) commands. 
 
-These commands set up and authenticate our connection with the Power Platform, ensuring that the script has the necessary permissions to perform its tasks. Additionally, the sample script utilizes the `pac fx run` command to query Dataverse and retrieve the Model Driven Application application ID in our environment.
+These commands set up and authenticate our connection with the Power Platform, ensuring that the script has the necessary permissions to perform its tasks. Additionally, the sample script utilizes the [pac fx run](https://learn.microsoft.com/power-platform/developer/cli/reference/power-fx#pac-power-fx-run) command to query Dataverse and retrieve the Model Driven Application application ID in our environment.
 
 ### Build from Source
 
