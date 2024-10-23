@@ -47,7 +47,6 @@ Topics that could be discussed include:
 
 | Preview | Link |
 |---------|------|
-| <img src="./media/PowerfulDevConference.png" alt="PPCC" width="200"/> | [PPCC Community Session Test](https://www.linkedin.com/feed/update/urn:li:activity:7242572722080284673/) with proposed session
 | <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" width="50" height="50"> | [Power Apps Test Engine - GitHub Repo](https://github.com/microsoft/PowerApps-TestEngine) with open source implementation of Power Apps Test Engine
 | <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" width="50" height="50"> | [Guidance Documentation](https://github.com/microsoft/PowerApps-TestEngine/blob/grant-archibald-ms/docs/docs/README.md) available as markdown files in the GitHub repository.
 | <img src="https://learn.microsoft.com/en-us/power-platform/guidance/coe/media/coesetupwizard.png" width="200px" /> | [Example - CoE Starter Kit Setup and Upgrade Wizard](./examples/coe-kit-setup-and-install-wizard.md) discusses using Power Apps Test Engine to test custom page of Model Driven Application
