@@ -4,7 +4,7 @@ To help tailor the submission we are Crowd sourcing submission for Powerful Dev 
 
 ## Important Note on Early Development Features
 
-Please be aware that this session relates to a build-from-source strategy with features that are no yest released as part of the Power Apps Test Engine. Specific features or concepts discussed in this session and reposotory still need to be reviewed and approved before they will be included as features available as part of the `pac test run` Power Platform Command Line Interface. This means that some features are experimental and subject to change. 
+Please be aware that this session relates to a build-from-source strategy with features that are no yest released as part of the Power Apps Test Engine. Specific features or concepts discussed in this session and repository still need to be reviewed and approved before they will be included as features available as part of the `pac test run` Power Platform Command Line Interface. This means that some features are experimental and subject to change. 
 
 We encourage you to provide feedback and suggestions to help shape these features as they progress towards stable releases. Your input is invaluable in ensuring that the final implementations meet the needs of the community and adhere to best practices.
 
