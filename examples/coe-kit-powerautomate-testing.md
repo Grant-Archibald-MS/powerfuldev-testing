@@ -2,7 +2,7 @@
 
 ## Important Note
 
-The CoE Starter Kit Power Automate Testing feature is currently in the planning and early collaboration and code contributions to Test Engine for the approach outlined below. 
+The Test Engine Power Automate features are currently in the planning and early collaboration and code contributions to Test Engine for the approach outlined below. 
 
 This article aims to serve as a starting point for discussion on how this feature could meet the needs of users who are building and deploying Power Automate Cloud flows. It is important to note that this feature is still in the early stages of planning and experimentation. We invite the community to be part of the discussion and to stay aware as the scope and features develop.
 
@@ -10,9 +10,71 @@ This article aims to serve as a starting point for discussion on how this featur
 
 Testing Power Automate is crucial for the CoE Starter Kit, which has over 100 cloud flows defined to collect inventory and usage data for the tenant. Ensuring these flows work correctly is essential for maintaining accurate data collection and reporting. Proper testing helps identify and fix issues early, improving the reliability and performance of the flows. This, in turn, supports better decision-making and governance within the organization.
 
-## Integration Testing from Power App
+## Exploring the Testing Layers
 
-One of the key concepts is integration testing from Power App. This starts with testing the Setup and Upgrade Wizard and using the `Experimental.SimulateWorkflow()` function to allow integration testing of a deployed application.
+Before we begin, it is important to understand that there are multiple layers of testing that could be applied to Power Automate Cloud flows in the CoE Kit. The first layer involves testing when the flow is called from a Power App. The second layer focuses on testing the logic flow of a cloud flow using simulated values for connections. The third layer involves conducting integrated tests for the cloud flow with different inputs and outputs.
+
+![Diagram that shows the different layers from Power Apps to Power Automate, Power Automate to simulated connectors and third integration tests of the cloud flow](./media/coe-kit-powerautomate-layers.png)
+
+### Layer 1: Testing from Power App
+
+Testing from a Power App involves simulating that when cloud flow triggered and that it interacts properly with the Power App. This layer ensures that the the Power App reacts to normal data flows and edge cases from the flow work as expected.
+
+Pros:
+
+- Ensures isolated functionality where you can control the response of the simulated workflow.
+- Validates user interactions with the Power App.
+
+Cons:
+
+- Does not test the end to end functionality.
+- Will need to be updated to reflect changes in the response from the cloud flow for new scenarios.
+
+### Layer 2: Testing Logic Flow with Simulated Values
+
+This layer focuses on testing the internal logic of the cloud flow using simulated values for connections. By simulating connector responses and Dataverse calls, we can validate the flow's logic without relying on external systems.
+
+Pros:
+
+- Isolates the flow's logic for focused testing.
+- Allows testing of various scenarios and edge cases.
+
+Cons:
+
+- May not fully replicate real-world conditions.
+- Requires accurate simulation of external systems.
+
+Considerations:
+
+- Ensure that simulated values accurately represent real-world data.
+- Validate that the flow's logic handles all possible scenarios.
+
+### Layer 3: Integrated Testing with Different Inputs and Outputs
+
+Integrated testing involves running the cloud flow with different inputs and outputs to validate its overall functionality. This layer ensures that the flow works correctly in various scenarios and handles different data inputs and outputs.
+
+Pros:
+
+- Provides comprehensive testing of the flow.
+- Validates the flow's behavior in real-world conditions.
+
+Cons:
+
+- Can be time-consuming.
+- Requires a variety of test data.
+
+Considerations:
+
+- Ensure that test data covers all possible scenarios.
+- Validate that the flow handles different inputs and outputs correctly.
+
+### The role of Simulation
+
+By being able to interact with variable values and simulate connectors and Dataverse calls, the process of testing the control logic and error handling of a cloud flow becomes easier.
+
+## Layer 1 Example - Integration Testing from Power App
+
+Lets look at the first layer of the scenario above integration testing from Power App where we simulate the result of a call to a workflow. This starts with testing the Setup and Upgrade Wizard and using the `Experimental.SimulateWorkflow()` function to allow integration testing of a deployed application.
 
 ## Example of Setup Wizard > Get User Details
 
@@ -29,9 +91,9 @@ Experimental.SimulateWorkflow({
 
 This action would allow requests to the workflow to be replaced with a value provided as part of the test case definition. 
 
-### Testing the Power Automate Cloud Flow Actions
+### Layer 2 Example - Testing the Power Automate Cloud Flow Actions
 
-While the step above is useful for testing the Power App how would we test the actions withing this workflow? Let have a look at the definition of the cloud flow and how it could fit into the Test Engine
+Lets now look at the second layer of testing where we simulate the trigger values, connectors and Dataverse state. While the the first layer is useful for testing the Power App it does not address how we can test the actions within this workflow. Let have a look at the definition of a sample cloud flow from the CoE Kit and how it could fit into the Test Engine.
 
 ![Overview diagram that shows Power Fx, Power Automate Provider and screenshot of steps of the SetupWizard>GetUserDetails cloud flow](./media/coe-kit-setup-wizard-getuserdetails-overview.png)
 
@@ -49,9 +111,9 @@ Having found the correct graph endpoint, it then calls the graph API to query th
 
 The need to test scenarios like these leads us to consider extending Test Engine to introduce a new Provider for Power Automate that allows unit testing of Power Automate Cloud flows. This would validate the logic by enabling the validation of variable values and the simulation of connectors and Dataverse calls.
 
-## Extended Power Fx Test Steps for Power Automate Testing
+#### Extended Power Fx Test Steps for Power Automate Testing
 
-Let's have a look at how this cloud flow could be tested using Test Engine:
+Let's have a look at how this cloud flow could be tested using Test Engine using a test that simulates triggers, connections and dataverse calls
 
 ```powerfx
 // Start the workflow with empty parameters
@@ -94,4 +156,4 @@ By being able to interact with variable values and simulate connectors and Datav
 
 ## Summary
 
-This proposed feature demonstrates the ability to use Power Fx as a common language to not only test Power Apps but other Power Platform components. This builds on the extensibility of Power Fx to add new actions like Experimental.TriggerWorkflow(), Experimental.BeforeAction(), and Experimental.AfterAction() that apply when testing a Power Automate Cloud flow.
+This proposed feature demonstrates the ability to use Power Fx as a common language to not only test Power Apps but other Power Platform components. This builds on the extensibility of Power Fx to test from a Power App using `Experimental.SimulateWorkflow()` and add new actions like `Experimental.TriggerWorkflow()`, `Experimental.BeforeAction()`, and `Experimental.AfterAction()` that apply when testing a Power Automate Cloud flow using simulated state isolated from the end to end system.
