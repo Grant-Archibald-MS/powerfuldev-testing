@@ -1,6 +1,14 @@
 # Powerful Dev Conference 2025 - Proposed Testing Session
 
-To help tailor the submission we are Crowd soucing submission for Powerful Dev Conference 2025. We’d love to hear your thoughts and suggestions! What specific challenges have you faced with automated testing in the Power Platform? Are there particular topics or examples you’d like us to cover? Your feedback will help shape a session that truly meets the needs of our community. Let’s collaborate to make this session as impactful and relevant as possible! 🚀
+To help tailor the submission we are Crowd sourcing submission for Powerful Dev Conference 2025. We’d love to hear your thoughts and suggestions! What specific challenges have you faced with automated testing in the Power Platform? Are there particular topics or examples you’d like us to cover? Your feedback will help shape a session that truly meets the needs of our community. Let’s collaborate to make this session as impactful and relevant as possible! 🚀
+
+## Important Note on Early Development Features
+
+Please be aware that this session relates to a build-from-source strategy with features that are no yest released as part of the Power Apps Test Engine. Specific features or concepts discussed in this session and reposotory still need to be reviewed and approved before they will be included as features available as part of the `pac test run` Power Platform Command Line Interface. This means that some features are experimental and subject to change. 
+
+We encourage you to provide feedback and suggestions to help shape these features as they progress towards stable releases. Your input is invaluable in ensuring that the final implementations meet the needs of the community and adhere to best practices.
+
+## Proposed Session
 
 ![Powerful Dev Conference](./media/PowerfulDevConference.png)
 
@@ -42,6 +50,8 @@ Topics that could be discussed include:
 4. Engineering Excellence for Code-First and Low-Code Makers: Apply engineering excellence principles to enhance the quality and maintainability of your solutions.
 
 5. Real-World Examples from the CoE Kit: Gain insights from real-world examples of automating the installation and testing of various Power Apps, Power Automate, Dataverse, and AI components within the CoE Kit.
+
+ 
 
 ## Tell Me More
 
