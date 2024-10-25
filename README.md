@@ -4,7 +4,7 @@ To help tailor the submission we are Crowd sourcing submission for Powerful Dev 
 
 ## Important Note on Early Development Features
 
-Please be aware that this session relates to a [build-from-source](./examples/coe-kit-build-from-source-run-tests.md) strategy with features that are no yet released as part of the Power Apps Test Engine. We are specifically using examples from the [CoE Starter Kit Setup and Upgrade](./examples/coe-kit-setup-and-install-wizard.md) to work with the Test Engine team to collaborate and shape the features of the Power Apps Test Engine.
+Please be aware that this session relates to a [build-from-source](./examples/coe-kit-build-from-source-run-tests.md) strategy with features that are not yet released as part of the Power Apps Test Engine. We are specifically using examples from the [CoE Starter Kit Setup and Upgrade](./examples/coe-kit-setup-and-install-wizard.md) to work with the Test Engine team to collaborate and shape the features of the Power Apps Test Engine.
 
 Specific features or concepts discussed in this session and repository still need to be reviewed and approved before they will be included as features available as part of the `pac test run` Power Platform Command Line Interface. This means that some features are experimental and subject to change. 
 
@@ -20,7 +20,7 @@ We encourage you to provide feedback and suggestions to help shape these feature
 
 ## How to contribute and keep up to date:
 
-Comment on [Linked In](https://www.linkedin.com/pulse/powerful-devs-conference-low-code-testing-grant-archibald-xwjac/) with your thoughts. 
+Comment on [Linked In](https://www.linkedin.com/pulse/powerful-devs-conference-low-code-testing-grant-archibald-xwjac/) with your thoughts to join one of the [discussion](./discussion/) threads in the Issues section of the repository. 
 
 You can also you your GitHub account to login then use the notification and star buttons to watch the repository and give feedback if these topics are important to you and your organization.
 
@@ -71,5 +71,5 @@ Topics that could be discussed include:
 | <img src="./examples/media/coe-kit-power-platform-alm-support-lifecycle-example.png" width="200"/> | [Example - CoE Starter Kit Test Automation ALM](./examples/coe-kit-test-automation-alm.md) used the ALM process for the CoE Starter Kit to look at options to author and execute tests as part of a continuous integration and deployment process.
 | <img src="./examples/media/coe-kit-infrastructure-as-code.png" width="200"/> | [Example - CoE Starter Kit Infrastructure as Code](./examples/coe-kit-infrastructure-as-code.md) uses and infrastructure as code approach to provision, deploy and test an instance of CoE Starter Kit.
 | <center><img src="https://learn.microsoft.com/office/media/icons/chat.svg" alt="Chat icon" width="50" height="50"></center> | [Using Power Fx Namespaces in Testing](./examples/using-powerfx-namespaces-in-testing.md) discussion on using namespaces in test steps to help organize Power Fx functions available.
-| <center><img src="https://learn.microsoft.com/office/media/icons/chat.svg" alt="Chat icon" width="50" height="50"></center> | [Low Code Power Platform Testing for the Code First Developer](./discussion/using-powerfx-namespaces-in-testing.md) discussion on low code testing for the code first developer considering Automation Testing.
-| <center><img src="https://learn.microsoft.com/office/media/icons/chat.svg" alt="Chat icon" width="50" height="50"></center> | [Low Code Power Platform Testing for the Code First Developer](./discussion/playwright-vs-test-engine.md) discussion on Playwright vs Power Apps Test Engine.
+| <center><img src="https://learn.microsoft.com/office/media/icons/chat.svg" alt="Chat icon" width="50" height="50"></center> | Read the [Low Code Power Platform Testing for the Code First Developer](./discussion/using-powerfx-namespaces-in-testing.md) discussion on low code testing for the code first developer considering Automation Testing and join the related [discusion thread](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/2).
+| <center><img src="https://learn.microsoft.com/office/media/icons/chat.svg" alt="Chat icon" width="50" height="50"></center> | Read the [Low Code Power Platform Testing for the Code First Developer](./discussion/playwright-vs-test-engine.md) discussion on Playwright vs Power Apps Test Engine and join the [discusion thread](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/1).
