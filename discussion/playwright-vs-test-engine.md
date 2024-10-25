@@ -22,7 +22,7 @@ Another important aspect to consider is the need to mock connectors, calls to wo
 
 ### Abstraction Layer with Power Fx
 
-The use of Power Fx in the Power Apps Test Engine allows for an abstraction layer for common operations. This abstraction can create more resilient tests by leveraging knowledge of the JavaScript Object Model and Document Object Model used by different Power App implementations. This ensures a consistent experience across Canvas Apps, Model-Driven Apps, including Entity List, Entity Details, and custom pages. Additionally, Power Fx can abstract the details of simulating connection information, which simplifies test isolation and reduces the complexity of setting up and maintaining tests.
+The use of [Power Fx](https://learn.microsoft.com/power-platform/power-fx/overview) in the Power Apps Test Engine allows for an abstraction layer for common operations. This abstraction can create more resilient tests by leveraging knowledge of the JavaScript Object Model and Document Object Model used by different Power App implementations. This ensures a consistent experience across Canvas Apps, Model-Driven Apps, including Entity List, Entity Details, and custom pages. Additionally, Power Fx can abstract the details of simulating connection information, which simplifies test isolation and reduces the complexity of setting up and maintaining tests.
 
 ### Leveraging Existing Skills
 
@@ -44,13 +44,13 @@ The Power Fx Test Engine is built on top of Playwright, allowing the best combin
 
 ### No Cliffs Extensibility Model
 
-The Power Fx model of the Test Engine provides a "[no cliffs extensibility](../examples/understanding-no-cliffs-extensibility-model.md)" model where C# scripts or Power Fx functions can be optionally created with access to the Playwright programming model. This ensures that advanced customization and extension are possible without losing the benefits of the abstraction layer.
+The Power Fx model of the Test Engine provides a "[no cliffs extensibility](../examples/understanding-no-cliffs-extensibility-model.md)" model where C# scripts or Power Fx functions can be optionally created with access to the Playwright programming model. Additionally, the Managed Extensibility Framework (MEF) model allows code-first Playwright skills to be encapsulated and exposed as reusable Power Fx functions. This ensures that advanced customization and extension are possible without losing the benefits of the abstraction layer.
 
 ## Beyond Web-Based Testing
 
 ### Testing Power Automate
 
-While Power Fx is useful for web-based Power Platform resources, there are components like Power Automate that do not need a web browser experience to run tests. The provider model of the Test Engine allows a common Power Fx and YAML-based configuration that can also be consistently extended to testing those scenarios.
+While Power Fx is useful for web-based Power Platform resources, there are components like Power Automate that do not need a web browser experience to run tests. The [Power Automate Testing](../examples/coe-kit-powerautomate-testing.md) model of the Test Engine allows a common Power Fx and YAML-based configuration that can also be consistently extended to testing those scenarios.
 
 ## Conclusion
 
