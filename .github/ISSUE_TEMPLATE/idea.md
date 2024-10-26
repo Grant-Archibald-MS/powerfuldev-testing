@@ -1,3 +1,4 @@
+---
 name: New Idea
 about: Share your innovative ideas for improving automated testing in Power Platform
 title: "[Idea] "
