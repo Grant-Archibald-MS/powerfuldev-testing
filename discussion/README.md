@@ -10,7 +10,17 @@ In the realm of low code development, testing is often an overlooked yet crucial
 
 ## Discussion Topics
 
-Topics could be on a variety of topics, including but not limited to:
+### Current Topics
+
+| Article | Notes | Feedback |
+|---------|-------|----------|
+[Introduction to Testing Approaches](discussion/introduction-to-testing-approaches.md) | Read discussion and give your feedback on the concepts of automated testing looking at concepts like black box and white box testing for Power Apps, including Canvas Apps, Custom Pages, and Model Driven Applications. We'll explore the importance of state management, connectors, workflows, and Dataverse state, and how to effectively test these components. | [Link](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/4)
+[Low Code Power Platform Testing for the Code First Developer](discussion/low-code-testing-for-code-first-developer.md) | This article is intended as a starter for discussion and contains content that is under development. It is based on experiences from teams like the Power CAT Engineering team as they apply low code testing principles to the low code Power Platform solutions they build and maintain. Ideally, this discussion serves as a great starting point to foster collaboration and gain input to help shape low code automation and engineering excellence in the wider low code Power Platform community. | [Link](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/2)
+[Playwright vs Power Apps Test Engine](discussion/playwright-vs-test-engine.md) | When it comes to testing low-code Power Platform applications, a common question arises: why not just use Playwright to directly test a Power App rather than using the Power Apps Test Engine? This discussion aims to explore the strengths and limitations of both tools and provide insights into their best use cases. | [Link](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/1)
+
+### Future Topics
+
+Possible future topics could be on a variety of topics, including but not limited to:
 
 - **Tool Selection**: What tools to pick and why considerations might you need to make?
 - **Unit Testing**: How can we apply unit testing principles to Power Apps and Power Automate flows?
@@ -23,10 +33,11 @@ Topics could be on a variety of topics, including but not limited to:
 
 Your insights and experiences are invaluable to this community. Here’s how you can contribute:
 
-1. **Submit Markdown Files**: Have a topic you’re passionate about? Create a markdown file and submit a pull request to the repository.
-2. **Engage via GitHub Issues**: Start or join discussions on GitHub Issues to share your thoughts, ask questions, and provide feedback on existing topics.
-3. **Share Resources**: Found a useful tool, article, or tutorial? Share it with the community to help others.
-4. **Provide Feedback**: Constructive feedback helps us all grow. Don’t hesitate to provide your input on ongoing discussions.
+1. **Suggest a discussion topic**: Suggest areas that are important to you in [Suggest new discussion topics](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/3)
+2. **Submit Markdown Files**: Have a topic you’re passionate about? Create a markdown file and submit a pull request to the repository.
+3. **Engage via GitHub Issues**: Start or join discussions on GitHub Issues to share your thoughts, ask questions, and provide feedback on existing topics.
+4. **Share Resources**: Found a useful tool, article, or tutorial? Share it with the community to help others.
+5. **Provide Feedback**: Constructive feedback helps us all grow. Don’t hesitate to provide your input on ongoing discussions.
 
 ## Community Guidelines
 
