@@ -1,6 +1,6 @@
 # Welcome to the Mastering Automated Testing in Power Platform: From Unit Tests to CI/CD Integration Discussion Section!
 
-Hello, Code First Developers!
+Hello, Code First Developers and Low Code Makers!
 
 Welcome to our community-driven discussions repository, where we dive deep into topics around the proposed Powerful Devs session "Mastering Automated Testing in Power Platform: From Unit Tests to CI/CD Integration",  where we look at testing to low code Power Platform resources. This folder is designed to foster a starting point for engaging discussions, were articles can be used to share insights, and collaboratively explore how testing concepts can be effectively applied to the solutions you build and maintain.
 
