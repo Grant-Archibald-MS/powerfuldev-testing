@@ -28,14 +28,6 @@ assignees: ''
 **Advantages:**  
 *List the key advantages of implementing your idea.*
 
-## Implementation
-
-**Steps:**  
-*Outline the steps required to implement your idea.*
-
-**Resources Needed:**  
-*Identify any resources or tools needed to bring your idea to life.*
-
 ## Call to Action
 
 **Get Involved:**  
