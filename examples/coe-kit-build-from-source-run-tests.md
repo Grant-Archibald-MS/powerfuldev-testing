@@ -1,4 +1,4 @@
-# Overview
+# CoE Kit - Build from Source Example
 
 The Power Platform Center of Excellence (CoE) starter kit is composed of various low-code solution elements within the Power Platform. Among these elements is a model-driven application designed to facilitate the setup and upgrade of the CoE Starter Kit. This sample includes Power Apps Test Engine tests, which can be utilized to automate and verify key aspects of the expected behavior of the Setup and Upgrade Wizard.
 

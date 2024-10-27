@@ -1,4 +1,4 @@
-# CoE of Excellence Infrastructure As Code
+# CoE Starter Kit -  Infrastructure As Code
 
 The combination of Terraform and the CoE Starter Kit provides a powerful and flexible solution for managing and governing your Power Platform environments. By leveraging the power of infrastructure as code and the comprehensive tools provided by the CoE Starter Kit, you can ensure that your environments are always in a consistent and reliable state, enabling you to focus on delivering value to your users.
 
