@@ -81,3 +81,11 @@ The [ConsentDialogFunction](https://github.com/microsoft/PowerApps-TestEngine/bl
 In addition to focusing on the technical code elements of core functionality and tests, we are contributing to the wider low-code [testing guidance](https://github.com/microsoft/PowerApps-TestEngine/blob/grant-archibald-ms/docs/docs/README.md) based on our experiences so far. 
 
 By sharing our learnings, we aim to help the broader community implement effective automated testing strategies, ensuring that others can benefit from our insights and improve their own testing processes.
+
+## Further Reading
+
+- [CoE Starter Kit - Infrastructure As Code](./coe-kit-infrastructure-as-code.md) discussing how we are using Terraform to setup and install the kit using automated install.
+- [Extending the Test Engine to Support Testing of the CoE Starter Kit Setup and Upgrade Wizard](./coe-kit-extending-test-engine.md) discussing the Power Fx based test steps we are using to automate and verify an install.
+- [CoE Starter Kit Power Automate Testing](./coe-kit-powerautomate-testing.md) discussing how we are applying different levels of tests to automate the Power Automate Cloud flows that are part of the CoE Kit.
+- [CoE Kit - Power Platform Low Code ALM Release and Continuous Deployment Process](./coe-kit-test-automation-alm.md) discussing investments we are making in the Application Lifecycle Management process we are using to build, deploy and support the CoE Starter Kit.
+- [Executing CoE Starter Kit Test Automation](./coe-kit-automate-test-sample.md) discussing how to execute the CoE Kit automated tests using a build from source strategy.
