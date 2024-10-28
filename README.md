@@ -43,22 +43,20 @@ Join us at the Powerful Devs Conference 2025 for an in-depth session on automate
 ## Possible Topics
 
 Topics that could be discussed include:
-1. Building Apps, Flows, and Copilot with Unit/Integration Tests: Learn how to create and implement unit and integration tests for your Power Apps, Power Automate flows, and Copilot solutions.
+1. Building Apps, Flows, and [AI](./discussion/generative-ai.md) with Unit/Integration Tests: Learn how to create and implement unit and integration tests for your Power Apps, Power Automate flows, and AI solutions.
 
-2. Integrating Quality and Review Gates in CI/CD: Understand how to build in quality and review gates that fit seamlessly with your CI/CD process.
+2. [Integrating Quality and Review Gates in CI/CD](./examples/coe-kit-test-automation-alm.md): Understand how to build in quality and review gates that fit seamlessly with your CI/CD process.
 
-3. Operational Checks and System Validation: Explore methods for performing operational checks and validating system dependencies to ensure reliability.
+3. [Operational Checks and System Validation](./examples/coe-kit-test-automation-alm.md): Explore methods for performing operational checks and validating system dependencies to ensure reliability.
 
-4. Engineering Excellence for Code-First and Low-Code Makers: Apply engineering excellence principles to enhance the quality and maintainability of your solutions.
+4. Engineering Excellence for Code-First and Low-Code Makers: Apply engineering excellence principles to enhance the [sustainability](./discussion/building-a-sustainability-model.md), quality and [maintainability](./examples/coe-kit-infrastructure-as-code.md) of your solutions.
 
-5. Real-World Examples from the CoE Kit: Gain insights from real-world examples of automating the installation and testing of various Power Apps, Power Automate, Dataverse, and AI components within the CoE Kit.
-
- 
+5. Real-World Examples from the CoE Kit: Gain insights from real-world examples of automating the installation and testing of various [Power Apps](./examples/coe-kit-extending-test-engine.md), [Power Automate](./examples/coe-kit-powerautomate-testing.md), Dataverse, and [AI components](./discussion/generative-ai.md) within the CoE Kit.
 
 ## Tell Me More
 
 [Power Apps Test Engine - GitHub Repo](https://github.com/microsoft/PowerApps-TestEngine) with open source implementation of Power Apps Test Engine
 
-Review [Discussion topics](./discussion/) to give us feedback and get involed with topics of interest to you
+Review [Discussion topics](./discussion/) to give us feedback and get involved with topics of interest to you
 
 Have a look at [Examples](./examples/) on concepts and how we have applied Automated Testing with low code solutions like the CoE Starter Kit.
