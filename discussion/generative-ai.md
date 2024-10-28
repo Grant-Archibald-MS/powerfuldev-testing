@@ -1,12 +1,14 @@
 # Exploring Generative AI with Power Apps Test Engine
 
-In our upcoming session, we will dive into the transformative capabilities of Generative AI within the Power Apps Test Engine. This discussion will highlight two key scenarios: using Generative AI to convert natural language into defined test steps and leveraging AI Builder prompts to create and measure the potential business value of low-code solutions against Objectives and Key Results (OKRs).
+In our upcoming session, we will dive into the transformative capabilities of Generative AI within the Power Apps Test Engine.
+
+This discussion will highlight two key scenarios: using Generative AI to convert natural language into defined test steps and leveraging AI Builder prompts to create and measure the potential business value of low-code solutions against Objectives and Key Results (OKRs).
+
+Looking at the wider Generative AI landscape we also have the Co Pilot Studio Testing capabilities can further enhance test automation by integrating with the Power Apps Test Engine. This integration allows for more comprehensive and efficient testing processes, ensuring that all aspects of the application are thoroughly tested.
 
 ## The Power of Natural Language
 
-First, we'll explore the ability to convert natural language into test cases and test steps. Imagine describing a test scenario in plain English and having the AI translate it into actionable test steps. This makes the testing process more accessible to those without a deep technical background.
-
-Second, we'll discuss the ability to use natural language to help define and refine the value of the solution to be developed. By leveraging AI Builder prompts, users can input their business objectives and key results, and AI Builder can generate insights and recommendations on how to achieve these goals.
+First, we'll explore the ability to convert natural language into test cases and test steps. Imagine describing a test scenario in plain English and having the AI translate it into actionable test steps. This makes the testing process more accessible to those without a deep technical background. Second, we'll discuss the ability to use natural language to help define and refine the value of the solution to be developed. By leveraging AI Builder prompts, users can input their business objectives and key results, and AI Builder can generate insights and recommendations on how to achieve these goals.
 
 ## Converting Natural Language to Test Steps
 
@@ -57,7 +59,7 @@ By combining the creative capabilities of Generative AI with the precision of pa
 
 ## Business Value Assessment with AI Builder
 
-Let's now explore the [Business value toolkit](https://learn.microsoft.com/power-platform/guidance/coe/business-value-toolkit) which can be used to create and measure the potential business value of low-code solutions against Objectives and Key Results (OKRs). This toolkit make use of AI Builder to assist with building the value story and expeceted value of low code solutions.
+Let's now explore the *An external link was removed to protect your privacy.* which can be used to create and measure the potential business value of low-code solutions against Objectives and Key Results (OKRs). This toolkit make use of AI Builder to assist with building the value story and expeceted value of low code solutions.
 
 ### Using AI Builder Prompts
 
@@ -66,3 +68,29 @@ The Business Value toolkit used AI Builder prompts internally that help users cr
 ### Updating Examples
 
 As we proceed with automated testing of the Business value toolkit we will update the examples of how we structure the testing of the application to apply testing to the Power App and the Generative AI Builder prompts that make up the kit to allow each component to be tested in isolation.
+
+## Co Pilot Studio Testing Capabilities
+
+### Enhancing Test Automation
+
+In addition to the scenarios mentioned above, the [Power CAT Copilot Studio Kit](https://github.com/microsoft/Power-CAT-Copilot-Studio-Kit) we are evaluating further enhance test automation by integrating with the kit as an option for the Power Apps Test Engine. This integration would allow allows for more comprehensive and efficient testing processes, ensuring that all aspects of the application are thoroughly tested.
+
+### Co Pilot + Power Apps Test Engine better together
+
+The Power Apps Test Engine, when integrated with Power FX, can significantly enhance the capabilities of the Power CAT Copilot Studio Kit in several ways:
+
+- **Simplifying Test Creation**: The Power Apps Test Engine can convert natural language inputs into test steps, making it easier for makers to create and configure tests without needing deep technical knowledge. This aligns with the user-friendly nature of the Power CAT Copilot Studio Kit, which already supports bulk creation and updates through Excel export/import.
+
+- **Ensuring Accuracy**: Power FX, with its comprehensive list of functions, controls, properties, and variables, can be used to validate the generated test steps. This ensures that the test steps are accurate and adhere to the expected syntax and functionality, which is crucial when evaluating copilot responses against expected results.
+
+- **Enriching Test Results**: By integrating with the PAC CLI and test results it provides a path to include tests in your Continuous Integration and Continuous Deployment (CI/CD) process.
+
+- **Handling Non-Deterministic AI Responses**: For AI-generated answers that are non-deterministic, AI Builder prompts can be used to compare the generated answer with a sample answer or validation instructions. Power FX can assist in defining these validation instructions and ensuring that the comparisons are accurate and reliable.
+
+- **Real-Time Feedback and Adjustments**: The integration allows for real-time feedback and adjustments during the testing process. This means that any issues can be quickly identified and addressed, improving the overall quality and reliability of the copilot responses.
+
+- **Collaborative Testing Environment**: The Power Apps Test Engine fosters a collaborative testing environment where team members can work together seamlessly. By leveraging Power FX, teams can share insights, track progress, and ensure that all testing objectives are met.
+
+## Conclusion
+
+By integrating Generative AI with the Power Apps Test Engine and leveraging Co Pilot Studio Testing capabilities, we can create a powerful and efficient testing framework. This approach not only simplifies the testing process but also ensures the accuracy and reliability of the generated test steps. As we continue to explore and refine these technologies, we can unlock new possibilities for innovation and improvement in software testing.
