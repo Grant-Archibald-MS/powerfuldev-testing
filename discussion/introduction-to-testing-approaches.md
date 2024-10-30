@@ -239,9 +239,11 @@ SimulateWorkflow(
 )
 ```
 
+You can also look at our [Data Simulation](./data-simulation.md) for further discussion on these examples.
+
 ## Leveraging AI in the Testing Process
 
-Artificial Intelligence (AI) can be a powerful enabler in the testing process, especially when tests are being written by someone who wasn't involved in the initial creation of the application.
+[Artificial Intelligence (AI) and Generative AI ](./generative-ai.md) can be a powerful enabler in the testing process, especially when tests are being written by someone who wasn't involved in the initial creation of the application.
 
 ### AI-Powered Test Generation
 
