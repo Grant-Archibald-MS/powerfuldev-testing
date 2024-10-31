@@ -90,6 +90,8 @@ The Power Platform Provider Model of Test Engine build a common language provide
 
 - **SimulateConnector()**: This function allows for easy abstraction of expected responses when a connector returns expected results, edge cases, or exceptions. It ensures that all possible scenarios are tested, enhancing the reliability of the application.
 
+All of this builds on the [no cliffs](../examples/understanding-no-cliffs-extensibility-model.md) extensibility model where you can leverage your skills to extend the tests. This could be done using [C# Scripts](../examples/extending-testengine-powerfx-with-with-csharp-test-scripts.md) or by creating new Power Fx functions to extend your test cases.
+
 ### Power Fx as an Intermediate Language in Generative AI
 
 As discussed in [generative ai](./generative-ai.md) Power Fx can play a crucial role as an intermediate language in generative AI. It bridges the gap between natural language and specific instructions that can be validated. By combining the best of generative content and deterministic code actions, Power Fx enables the creation of precise and reliable workflows. This capability is particularly valuable in scenarios where natural language inputs need to be converted into actionable steps.
