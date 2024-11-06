@@ -107,13 +107,55 @@ The ability to easily discover visual elements is essential for building tests. 
 
 ## Test Studio
 
-When comparing this experience we found this experience extended beyond Test Studio which is limited to canvas applications, but the Test Recorder functionality of Test Engine we where able to take advantage of new features to improve the range features to make more maintainable tests. In addition Test Engine has been expanded to other providers supported by Test Engine, making it a versatile tool for various testing needs across many different aspects of the Power Platform.
+When comparing this experience we found this experience extended beyond Test Studio currently offers which is limited to canvas applications. Using the Test Recorder functionality of Test Engine we where able to take advantage of new features to improve the range features to make more maintainable tests. In addition Test Engine has been expanded to other providers supported by Test Engine, making it a versatile tool for various testing needs across many different aspects of the Power Platform.
 
 ## Settings and Configuration of Test Engine
 
 The settings and configuration of Test Engine allow for control over the recording process. For example, you can set up allow/deny lists of actions, connectors, and controls that you want to allow recording for. Additionally, we could define Power Fx code to format tests created, such as applying formatting or masking of recorded data.
 
 The ability to use Power Fx to assign actions to keys is another powerful feature. For example, we could define a control-click action on a label and associate Power Fx code that helps generate the correct Power Fx command that will wait for the Text Property of a Label to have a certain value.
+
+### Test Engine Recording Configuration
+
+The Test Engine recording configuration  allows you to specify Power Fx templates to assign in response to recording actions. For example you can assign values based on keyboard modifiers like the Alt or Control key and use Power Fx expressions to modify the recorded values. Below are YAML samples that demonstrate these concepts:
+
+#### Dataverse Simulution 
+
+This sample demonstrates how to set the Then variable to the first item in the Then collection using the Set and First functions.
+
+```yaml
+testCases:
+  - testCaseName: SimulateDataverse
+    testCaseDescription: Actions to apply to SimulateDataverse generation
+    testSteps: |
+      = Set(Then, First(Then));
+
+```
+
+#### Power Platform Connector Simulation
+
+In this example, the If function checks if the action is "office365users" and then sets the Then variable to the redacted data using the `Experimental.RedactData() function that will take the sample data and apply defined steps to remove sentive data from the response
+
+```yaml
+testCases:
+  - testCaseName: SimulateConnector
+    testCaseDescription: Actions to apply to SimulateConnector generation
+    testSteps: |
+      = If(Action="office365users", Set(Then,Experimental.RedactData(Then)));
+```
+
+#### Action Templates
+
+
+This sample shows how to use the If function to check if the Alt key is pressed. If it is, it waits until the text of a control matches the selected text and then selects the control using the `Experimental.WaitUntil()` otherwise it uses the `Select()` function.
+
+```yaml
+testCases:
+  - testCaseName: SelectAction
+    testCaseDescription: The default template to apply to select action
+    testSteps: |
+      = If(AltKey, "Experimental.WaitUntil(\"{ControlName}\.Text = {SelectedText}\" "Select(\"{ControlName}\");");
+```
 
 ## No Cliffs Extensibility
 
