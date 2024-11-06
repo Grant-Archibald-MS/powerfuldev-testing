@@ -167,31 +167,9 @@ Using the generated Power Fx command [Generative AI](./generative-ai.md) can be 
 
 ## How Can I Try This?
 
-This feature is currently available in a development branch of the Power Apps Test Engine. 
+This feature is currently available in a development branch of the Power Apps Test Engine. You can read the sample [README](https://github.com/microsoft/PowerApps-TestEngine/blob/grant-archibald-ms/data-record-386/samples/coe-kit-setup-wizard/README.md) and follow the steps in the Record and Replay section
 
-Specifically to run this test
-
-1. Clone the repository using git
-
-```pwsh
-git clone https://github.com/microsoft/PowerApps-TestEngine.git
-```
-
-2. Checkout the development branch for this [feature](https://github.com/microsoft/PowerApps-TestEngine/issues/386)
-
-```pwsh
-git checkout grant-archibald-ms/data-record-386
-```
-
-3. Change to the CoE Kit Sample folder
-
-```pwsh
-cd PowerApps-TestEngine/samples/coe-kit-setup-wizard
-```
-
-4. Read the sample [README](https://github.com/microsoft/PowerApps-TestEngine/blob/grant-archibald-ms/data-record-386/samples/coe-kit-setup-wizard/README.md)
-
-5. Follow the steps in the Record and Replay section
+If you wanted to try this against another Power Platform Model Driven APplication custom page you could alter the [GetAppId.powerfx](https://github.com/microsoft/PowerApps-TestEngine/blob/grant-archibald-ms/data-record-386/samples/coe-kit-setup-wizard/GetAppId.powerfx) with the unique name of your model driven application.
 
 ### Notes
 
