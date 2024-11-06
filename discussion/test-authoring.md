@@ -67,7 +67,7 @@ testSettings:
 
 #### Visual Studio Code Syntax Highlighting
 
-The first line when combined with the [YAML Embedded Languages](https://marketplace.visualstudio.com/items?itemName=harrydowning.yaml-embedded-languages) Visual Studio Code make it easy to add syntac hightlighting for the generated yaml and Power Fx functions. 
+The first line when combined with the [YAML Embedded Languages](https://marketplace.visualstudio.com/items?itemName=harrydowning.yaml-embedded-languages) Visual Studio Code make it easy to add syntax hightlighting for the generated yaml and Power Fx functions. 
 
 #### Test Suite
 The testSuite section defines the overall test suite. It includes the name and description of the test suite, the persona used for the tests, and the logical name of the app being tested.
@@ -75,7 +75,7 @@ The testSuite section defines the overall test suite. It includes the name and d
 - **testSuiteName**: This is the name of the test suite. It helps in identifying the suite among others.
 - **testSuiteDescription**: A brief summary of what the test suite covers.
 persona: This specifies the login persona, allowing you to show the experience using different user permissions. This is crucial for testing scenarios where user roles and permissions vary.
-- **appLogicalName**: The logical name of the app being tested. In this case, it is set to "NotNeeded", but can be configired with the name of Power App Canvas app being tested.
+- **appLogicalName**: The logical name of the app being tested. In this case, it is set to "NotNeeded", but can be configured with the name of Power App Canvas app being tested.
 
 #### Test Cases
 
@@ -119,7 +119,7 @@ The ability to use Power Fx to assign actions to keys is another powerful featur
 
 The Test Engine recording configuration  allows you to specify Power Fx templates to assign in response to recording actions. For example you can assign values based on keyboard modifiers like the Alt or Control key and use Power Fx expressions to modify the recorded values. Below are YAML samples that demonstrate these concepts:
 
-#### Dataverse Simulution 
+#### Dataverse Simulation 
 
 This sample demonstrates how to set the Then variable to the first item in the Then collection using the Set and First functions.
 
