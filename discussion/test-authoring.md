@@ -165,6 +165,42 @@ We also found the [no cliffs extensibility](../examples/understanding-no-cliffs-
 
 Using the generated Power Fx command [Generative AI](./generative-ai.md) can be combined with the recorded Power Fx commands as example components to generate test cases using natural language. This capability can significantly enhance the test authoring process, making it more intuitive and efficient.
 
+## How Can I Try This?
+
+This feature is currently available in a development branch of the Power Apps Test Engine. 
+
+Specifically to run this test
+
+1. Clone the repository using git
+
+```pwsh
+git clone https://github.com/microsoft/PowerApps-TestEngine.git
+```
+
+2. Checkout the development branch for this [feature](https://github.com/microsoft/PowerApps-TestEngine/issues/386)
+
+```pwsh
+git checkout grant-archibald-ms/data-record-386
+```
+
+3. Change to the CoE Kit Sample folder
+
+```pwsh
+cd PowerApps-TestEngine/samples/coe-kit-setup-wizard
+```
+
+4. Read the sample [README](https://github.com/microsoft/PowerApps-TestEngine/blob/grant-archibald-ms/data-record-386/samples/coe-kit-setup-wizard/README.md)
+
+5. Follow the steps in the Record and Replay section
+
+### Notes
+
+Some notes for the CoE Kit record and replay demo.
+
+1. To use these features you need to use [Build from Source](../examples/coe-kit-build-from-source-run-tests.md) which requires you to have .Net SDK installed.
+2. This demo uses the new Model Driven Application provider to test the canvas Application
+3. You will need an installation of the [CoE Starter Kit Core](https://learn.microsoft.com/power-platform/guidance/coe/setup-core-components)
+
 ## Summary
 
 In this discussion post, we have delved into various aspects of authoring test cases using the Test Engine. We explored test cases generated for the CoE Starter Kit visual tests. We discussed how to features like the test recorder enabled easier discovery visual elements. We briefly covered recording settings and configurations of the Test Engine to fine tune how tests are created. Additionally, we touched on the role of Generative AI in enhancing the test authoring process.
