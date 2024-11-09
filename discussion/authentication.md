@@ -14,6 +14,14 @@ As we look at our continuous integration and deployment process, we will evaluat
 
 By understanding and implementing these concepts, you can ensure that their test automation processes are secure, compliant, and capable of supporting multi-factor authentication in alignment with their Entra settings and policies. The choice between browser-based and certificate-based authentication will depend on the specific requirements and constraints of your organization, including the need for interactive sessions, the security of certificate storage, and compliance with conditional access policies.
 
+## Learn from examples
+
+The [Testing Security](../examples/testing-security.md) example provides valuable insights into how browser-based authentication using Multi-Factor Authentication (MFA) can be effectively tested in Power Apps. It highlights the use of persistent cookie state, which allows the browser state to be stored between tests. This method ensures that subsequent test runs can execute without the need for repeated interactive logins, enhancing the efficiency and reliability of the testing process.
+
+Key scenarios tested in the example include handling expired Entra credentials using an example of Temporary Access Pass (TAP), verifying login permissions when the application is not shared with the user, and ensuring that users without the necessary Power Platform security roles cannot perform actions within the application. These scenarios demonstrate the importance of testing both positive and negative cases to ensure a robust and secure authentication process.
+
+The example also emphasizes the significance of edge cases and exceptions in testing. By considering scenarios such as no permissions applied or expired credentials, the testing process can identify potential vulnerabilities and ensure that the system handles unexpected conditions gracefully. This approach helps improve the robustness and reliability of the system, providing a better user experience even in the face of errors or unusual situations.
+
 ## Supporting Multi-Factor Authentication
 
 The use of browser-based authentication in the test automation process is particularly advantageous for supporting multi-factor authentication (MFA). MFA is a security measure that requires users to provide multiple forms of verification before gaining access to a system. By leveraging browser-based authentication, the test automation script can seamlessly integrate with the organization's MFA settings and policies.
@@ -32,11 +40,11 @@ Certificate-based authentication is another method that can be used in the Power
 
 ### Comparison of Authentication Methods
 
-To aid in teh authentication discussion providing a brief summary of the different authentication methods 
+To aid in the authentication discussion providing a brief summary of the different authentication methods 
 
 #### Browser-Based Authentication
 
-- **Advantages**: Supports any MFA methods, generates persistent browser cookies, allows non-interactive execution of subsequent tests.
+- **Advantages**: Supports many MFA methods, generates persistent browser cookies, allows non-interactive execution of subsequent tests.
 - **Disadvantages**: Requires an initial interactive session to create the browser context.
 
 #### Certificate-Based Authentication
