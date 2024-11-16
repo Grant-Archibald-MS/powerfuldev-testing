@@ -26,6 +26,7 @@ baseurl: "/powerfuldev-testing" # the subpath of your site, e.g. /blog
 url: "https://grant-archibald-ms.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  grant-archibald-ms
 enable_copy_code_button: true
+minimal_mistakes_skin: air
 
 permalink: /:categories/:title/
 

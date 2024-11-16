@@ -65,7 +65,7 @@ The custom page of the application introduced testing complexities such as the c
 We does this look like? In one of our test steps we take advantage of the Power Fx extensions for test engine to add a command similar to the following.
 
 ```powerfx
-TestEngine.ConsentDialog(Table({Text: "Center of Excellence Setup Wizard"}));
+Experimental.ConsentDialog(Table({Text: "Center of Excellence Setup Wizard"}));
 ```
 
 This function waits to see if the Consent Dialog Appears, if it does it accepts the connections. If the text "Center of Excellence Setup Wizard" appears then it continues with the remaining test steps.
@@ -78,7 +78,7 @@ The [ConsentDialogFunction](https://github.com/microsoft/PowerApps-TestEngine/bl
 
 ## Scaling Guidance
 
-In addition to focusing on the technical code elements of core functionality and tests, we are contributing to the wider low-code [testing guidance](https://github.com/microsoft/PowerApps-TestEngine/blob/grant-archibald-ms/docs/docs/README.md) based on our experiences so far. 
+In addition to focusing on the technical code elements of core functionality and tests, we are contributing to the wider low-code [testing guidance documentation](https://github.com/microsoft/PowerApps-TestEngine/tree/grant-archibald-md/integration-merge/docs) based on our experiences so far. 
 
 By sharing our learnings, we aim to help the broader community implement effective automated testing strategies, ensuring that others can benefit from our insights and improve their own testing processes.
 

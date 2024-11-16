@@ -141,7 +141,7 @@ Once the application is created, a user with the required permissions will need 
 
 ## Setting up a new Test Tenant
 
-As an optional step if you have created an empty test tenant and have completed the bootstrap process, you can follow the template provided in [Demo Tenant Sample](https://github.com/Grant-Archibald-MS/power-platform-terraform-quickstarts/blob/grant-archibald-ms/coe-kit-connections/quickstarts/103-demo-tenant/README.md). 
+As an optional step if you have created an empty test tenant and have completed the bootstrap process, you can follow the template provided in [Demo Tenant Sample](https://github.com/Grant-Archibald-MS/power-platform-terraform-quickstarts/blob/grant-archibald-ms/coe-kit-connections/quickstarts/103-demo-tenant). 
 
 This template provide optional steps to do the following:
 1. Create a set of sample test users with random passwords.
@@ -158,7 +158,7 @@ This template provide optional steps to do the following:
 
 Follow the following post bootstrap steps to create 
 
-1. Review the [README](https://github.com/Grant-Archibald-MS/power-platform-terraform-quickstarts/blob/grant-archibald-ms/coe-kit-connections/quickstarts/103-demo-tenant/README.md)
+1. Review the [103-demo-tenant](https://github.com/Grant-Archibald-MS/power-platform-terraform-quickstarts/blob/grant-archibald-ms/coe-kit-connections/quickstarts/103-demo-tenant)
 
 2. Remember to clear your pac cli authentication and login to your tenant
 

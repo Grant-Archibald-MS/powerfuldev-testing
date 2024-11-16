@@ -16,7 +16,7 @@ In contrast, the Power Platform CLI [pac test run](https://learn.microsoft.com/p
 
 ### Prerequisites for Source Code Version
 
-To get started with the source code version, you will need to install several tools and have specific permissions. First, you need to install the .Net SDK 6.0, which is essential for building and running the tests. Additionally, PowerShell must be installed on your system, as it is a crucial task automation tool from Microsoft. The Power Platform Command Line Interface (CLI) is another necessary tool, allowing you to interact with Power Platform from your command line. You will also need to create a Power Platform environment, which can be done using the Power Platform Admin Center or the Power Platform Command Line. Furthermore, you must have System Administrator or System Customizer roles to make changes in your Power Platform environment. Lastly, a Git Client should be installed, and the CoE Starter Kit core module must be installed into the environment.
+To get started with the source code version, you will need to install several tools and have specific permissions. First, you need to install the .Net SDK 8.0, which is essential for building and running the tests. Additionally, PowerShell must be installed on your system, as it is a crucial task automation tool from Microsoft. The Power Platform Command Line Interface (CLI) is another necessary tool, allowing you to interact with Power Platform from your command line. You will also need to create a Power Platform environment, which can be done using the Power Platform Admin Center or the Power Platform Command Line. Furthermore, you must have System Administrator or System Customizer roles to make changes in your Power Platform environment. Lastly, a Git Client should be installed, and the CoE Starter Kit core module must be installed into the environment.
 
 ### Source Code Version Benefits
 
@@ -32,7 +32,7 @@ The build from source approach enables the creation of new pull requests to enha
 
 ### Getting Started
 
-As documented in the [README.md](https://github.com/microsoft/PowerApps-TestEngine/blob/grant-archibald-md/integration-merge/samples/coe-kit-setup-wizard/README.md) to begin, clone the repository using the git application and PowerShell command line. Ensure you are logged out of the pac CLI to clear any previous sessions. Then, log in to the Power Platform CLI and add the config.json file in the same folder as RunLibraryTests.ps1, replacing the values with your tenant and environment ID. Finally, run the sample tests from PowerShell.
+As documented in the [CoE Setup Wizard Sample](https://github.com/microsoft/PowerApps-TestEngine/blob/grant-archibald-md/integration-merge/samples/coe-kit-setup-wizard/) to begin, clone the repository using the git application and PowerShell command line. Ensure you are logged out of the pac CLI to clear any previous sessions. Then, log in to the Power Platform CLI and add the config.json file in the same folder as RunLibraryTests.ps1, replacing the values with your tenant and environment ID. Finally, run the sample tests from PowerShell.
 
 ### What to Expect
 

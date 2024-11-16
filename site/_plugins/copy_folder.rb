@@ -29,14 +29,12 @@ module Jekyll
             FileUtils.cp(source_path, dest_path)
             # Only update links and prepend front matter for .md files
             if File.extname(dest_path) == '.md'
-              update_links(dest_path)
+              update_links(dest_path, site_source)
               prepend_front_matter(dest_path, site_source)
             end
             if File.basename(dest_path).downcase == 'readme.md'
               new_dest_path = File.join(File.dirname(dest_path), 'index.md')
               FileUtils.mv(dest_path, new_dest_path)
-              update_links(new_dest_path)
-              prepend_front_matter(new_dest_path, site_source)
             end
           end
         end
@@ -44,13 +42,26 @@ module Jekyll
     end
 
     # This method updates links in the file content.
-    def update_links(file_path)
+    def update_links(file_path, site_source)
       content = File.read(file_path)
       updated_content = content.gsub(/https:\/\/github\.com\/Grant-Archibald-MS\/powerfuldev-testing\/blob\/main\/(.*)\.md/) do |match|
         "/powerfuldev-testing/#{$1}"
       end
-      updated_content.gsub!(/\/([^\s]+)\.md/) do |match|
-        "/#{$1}"
+      if file_path.include?("examples")
+        updated_content = updated_content.gsub(/\(\.\/(.*)\.md\)/) do |match|
+          "(/powerfuldev-testing/examples/#{$1}.md)"
+        end
+      end
+      if file_path.include?("discussion")
+        updated_content = updated_content.gsub(/\(\.\/(.*)\.md\)/) do |match|
+          "(/powerfuldev-testing/discussion/#{$1}.md)"
+        end
+      end
+      updated_content = updated_content.gsub(/\(\.\.\/examples\/(.*)\.md\)/) do |match|
+        "(/powerfuldev-testing/examples/#{$1}.md)"
+      end
+      updated_content = updated_content.gsub(/\.md\)/) do |match|
+        ")"
       end
       File.open(file_path, 'w') { |file| file.puts updated_content }
     end
@@ -80,6 +91,7 @@ module Jekyll
           toc: true
           sidebar:
             nav: "docs"
+          read_time: true
           ---
         FRONT_MATTER
         File.open(file_path, 'w') do |file|

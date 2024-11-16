@@ -14,8 +14,8 @@ To start of the discussion lets look at a snippet of yaml and Power Fx testSteps
       testCaseDescription: Verify pre-requistes in place
       testSteps: |
         = 
-        TestEngine.ConsentDialog(Table({Text: "Center of Excellence Setup Wizard"}));
-        TestEngine.Pause();
+        Experimental.ConsentDialog(Table({Text: "Center of Excellence Setup Wizard"}));
+        Experimental.Pause();
         Set(configStep, 1); 
         Assert(configStep=1);
         Select(btnNext);
@@ -26,7 +26,7 @@ To start of the discussion lets look at a snippet of yaml and Power Fx testSteps
         Assert(configStep=2);
         Assert(CountRows(colCommunicate)=3);
         Experimental.SelectControl(Button3,1);
-        TestEngine.Pause(); 
+        Experimental.Pause(); 
 ```
 
 ## Test Case Design
@@ -40,7 +40,11 @@ Test case isolation is a critical aspect of software testing that ensures each t
 ### Sequential Test Execution
 Sequential test execution involves running test cases one after the other in a specific order. This approach is beneficial when tests need to share a common state or when the outcome of one test case affects the next. 
 
-For example, in the CoE Starter Kit Setup and Upgrade Wizard, the first test case, "Step 1 - Confirm Pre-requisites," verifies that the pre-requisites are in place. It involves steps such as displaying the consent dialog, pausing the test engine, setting the configStep variable to 1, and selecting the next button. The second test case, "Step 2 - Configure communication methods," builds on the state set by the first test case, verifying the setup of communication methods by asserting that the configStep variable is set to 2 and checking the colCommunicate collection. This sequential approach ensures that each step is executed in the correct order, maintaining the necessary state throughout the process.
+For example, in the CoE Starter Kit Setup and Upgrade Wizard, the first test case, **"Step 1 - Confirm Pre-requisites"** verifies that the pre-requisites are in place. It involves steps such as displaying the consent dialog, pausing the test engine, setting the configStep variable to 1, and selecting the next button. 
+
+The second test case, **"Step 2 - Configure communication methods"** builds on the state set by the first test case, verifying the setup of communication methods by asserting that the configStep variable is set to 2 and checking the colCommunicate collection. 
+
+This sequential approach ensures that each step is executed in the correct order, maintaining the necessary state throughout the process.
 
 ### Parallel Test Execution
 
@@ -66,14 +70,14 @@ The Experimental Power Fx namespace is another vital aspect of this extension. I
 
 One example of this is the use of the `Experimental.SelectControl()` function. This function is particularly useful for selecting controls, such as Button3, that exist in galleries. This capability addresses a limitation in the current released version that did not allow `Select()` to be applied to repeating controls inside a gallery. The result enables more comprehensive testing scenarios and ensuring that all aspects of the application are thoroughly tested.
 
-## TestEngine.Pause()
+## Experimental.Pause()
 
-The `TestEngine.Pause()` function is a powerful tool in the testing process, allowing you to pause test execution and present the Playwright inspector. This feature is particularly useful for building and verifying tests, as it provides an opportunity to interact with the application in real-time.
+The `Experimental.Pause()` function is a powerful tool in the testing process, allowing you to pause test execution and present the Playwright inspector. This feature is particularly useful for building and verifying tests, as it provides an opportunity to interact with the application in real-time.
 
-When you invoke `TestEngine.Pause()`, the test execution halts, and the Playwright inspector is displayed. This interactive environment enables you to examine the current state of the application, inspect elements, and perform actions manually. By doing so, you can verify that the test steps are executing as expected and make any necessary adjustments on the fly.
+When you invoke `Experimental.Pause()`, the test execution halts, and the Playwright inspector is displayed. This interactive environment enables you to examine the current state of the application, inspect elements, and perform actions manually. By doing so, you can verify that the test steps are executing as expected and make any necessary adjustments on the fly.
 
-Using `TestEngine.Pause()` is especially beneficial during the development of test cases. It allows you to step through the test script, observe the behavior of the application, and ensure that each step produces the desired outcome. This iterative process helps in identifying and resolving issues early, leading to more robust and reliable test scripts.
+Using `Experimental.Pause()` is especially beneficial during the development of test cases. It allows you to step through the test script, observe the behavior of the application, and ensure that each step produces the desired outcome. This iterative process helps in identifying and resolving issues early, leading to more robust and reliable test scripts.
 
 Moreover, the Playwright inspector provides a visual representation of the application, making it easier to understand the context of each test step. You can interact with the application elements, check their properties, and validate that the test assertions are correct. This hands-on approach enhances the accuracy of your tests and ensures that they cover all necessary scenarios.
 
-In summary, TestEngine.Pause() is an invaluable feature for building and verifying tests. By pausing test execution and presenting the Playwright inspector, it allows you to interact with the application, inspect elements, and ensure that your test scripts are accurate and reliable. This interactive process not only simplifies test development but also enhances the overall quality of your testing efforts.
+In summary, Experimental.Pause() is an invaluable feature for building and verifying tests. By pausing test execution and presenting the Playwright inspector, it allows you to interact with the application, inspect elements, and ensure that your test scripts are accurate and reliable. This interactive process not only simplifies test development but also enhances the overall quality of your testing efforts.

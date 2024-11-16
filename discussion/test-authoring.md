@@ -167,7 +167,7 @@ Using the generated Power Fx command [Generative AI](./generative-ai.md) can be 
 
 ## How Can I Try This?
 
-This feature is currently available in a development branch of the Power Apps Test Engine. You can read the sample [README](https://github.com/microsoft/PowerApps-TestEngine/blob/grant-archibald-ms/data-record-386/samples/coe-kit-setup-wizard/README.md) and follow the steps in the Record and Replay section
+This feature is currently available in a development branch of the Power Apps Test Engine. You can read the sample [README](https://github.com/microsoft/PowerApps-TestEngine/blob/grant-archibald-ms/data-record-386/samples/coe-kit-setup-wizard) and follow the steps in the Record and Replay section
 
 If you wanted to try this against another Power Platform Model Driven APplication custom page you could alter the [GetAppId.powerfx](https://github.com/microsoft/PowerApps-TestEngine/blob/grant-archibald-ms/data-record-386/samples/coe-kit-setup-wizard/GetAppId.powerfx) with the unique name of your model driven application.
 

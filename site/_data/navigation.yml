@@ -24,7 +24,7 @@ docs:
       - title: "Data simulation"
         url: /discussion/data-simulation
       - title: "Test Authoring"
-        url: /discussion/discussion/test-authoring
+        url: /discussion/test-authoring
 
   - title: Examples
     children:
@@ -50,3 +50,5 @@ docs:
         url: /examples/understanding-no-cliffs-extensibility-model 
       - title: Power Fx Namespaces
         url: /examples/using-powerfx-namespaces-in-testing
+      - title: Testing Security
+        url: /examples/testing-security

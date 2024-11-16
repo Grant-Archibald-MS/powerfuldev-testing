@@ -53,7 +53,7 @@ Key parts of this [example test](https://github.com/microsoft/PowerApps-TestEngi
 
 
 ```powerfx
-TestEngine.ConsentDialog(Table({Text: "Center of Excellence Setup Wizard"}));
+Experimental.ConsentDialog(Table({Text: "Center of Excellence Setup Wizard"}));
 Set(configStep, 1); 
 Assert(configStep=1);
 ```
