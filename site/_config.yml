@@ -43,6 +43,10 @@ theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
 
+include:
+  - discussion
+  - examples
+
 copy_folders:
   - source: '../examples'
     destination: 'examples'
