@@ -47,7 +47,7 @@ jobs:
         run: |
           cd site
           bundle install
-          bundle exec jekyll build --verbose
+          JEKYLL_LOG_LEVEL=debug bundle exec jekyll build
         env:
           JEKYLL_ENV: production
       - name: Verify examples and discussion folders
