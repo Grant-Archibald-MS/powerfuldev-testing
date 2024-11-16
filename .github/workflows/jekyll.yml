@@ -48,6 +48,7 @@ jobs:
           cd site
           bundle install
           JEKYLL_LOG_LEVEL=debug bundle exec jekyll build --source . --destination _site
+          bundle exec jekyll build --source . --destination _site
         env:
           JEKYLL_ENV: development
       - name: Upload artifact
