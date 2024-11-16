@@ -49,8 +49,6 @@ logging:
 include:
   - discussion
   - examples
-  - /home/runner/work/powerfuldev-testing/powerfuldev-testing/site/discussion
-  - /home/runner/work/powerfuldev-testing/powerfuldev-testing/site/examples
 
 copy_folders:
   - source: '../examples'
