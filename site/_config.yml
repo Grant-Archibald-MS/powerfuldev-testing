@@ -27,6 +27,7 @@ url: "https://grant-archibald-ms.github.io" # the base hostname & protocol for y
 github_username:  grant-archibald-ms
 enable_copy_code_button: true
 minimal_mistakes_skin: air
+favicon: /assets/images/favicon.ico
 
 permalink: /:categories/:title/
 
@@ -84,3 +85,11 @@ defaults:
       type: "discussion" # This applies to all pages
     values:
       layout: single
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      related: true
