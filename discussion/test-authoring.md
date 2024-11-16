@@ -1,10 +1,50 @@
 # Test Engine Test Authoring
 
-Creating and managing YAML can be imposing with the first versions of Test Studio and Test Engine. We found not knowing the available Power Fx test commands and how it interacts controls and connectors all contributed to making it hard to get started. Given this experience we have looked at new features applying a record and replay approach and found the process of getting started has become much easier. Lets dive in and see some of the options we have explored as we are building low code tests for our solutions.
+To aid you in quickly getting started we have found a record and replay approach is an effective method to get started.
+
+Given this experience lets dive in and see some of the options we have explored as we are building low code tests for our solutions.
+
+![Example test authoring process](./media/test-authoring.png)
 
 ## Overview
 
-In this discussion post, we will explore the and overview of authoring test cases using the Test Engine using features that are currently in the development of open source version of Test Engine. We will delve into various aspects using test cases we are generating for the CoE Kit Test we we looked at authoring, how to discover visual elements, compassion against Test Studio, and the settings and configurations of the Test Engine. Additionally, we will discuss the role of Generative AI in enhancing the test authoring process.
+In this discussion post, we will explore the and overview of authoring test cases using the Test Engine using features that are currently in the development of open source version of Test Engine. 
+
+We will delve into various aspects using test cases we are generating for the CoE Kit Test we we looked at authoring, how to discover visual elements, a comparison against Test Studio, and the settings and configurations of the Test Engine. Additionally, we will discuss the role of Generative AI in enhancing the test authoring process.
+
+## End to End Process
+
+By following these steps, the Power Apps Test Engine provides a robust framework for testing and validating Power Apps, ensuring that they perform as expected in real-world scenarios.
+
+### Recording and Observing
+
+#### Initial Setup
+The first stage of the process involves starting the deployed Power App with the Test Engine Recorder. This tool is essential for capturing the interactions and behaviors of the app during testing.
+
+#### User Interaction
+As a user, you interact with the page as you normally would. The recorder is designed to notice the click actions and calls that the browser makes to Dataverse or Power Platform Connectors. This means that every action you take is being tracked and recorded for later analysis.
+
+#### Optional Voice Narrations
+To provide more context on what the app is doing, you can optionally record voice narrations. These narrations can explain any edge cases or expected exceptions, offering a richer understanding of the app's functionality.
+
+### Generating Test Assets
+
+#### Automatic Video Recording
+During the session, the Test Engine automatically generates a video recording. This visual documentation is crucial for reviewing the interactions and ensuring that nothing is missed.
+
+#### YAML Test Files and Power Fx Steps
+Based on the observed actions and network calls, the Test Engine automatically generates YAML test files and Power Fx steps. These files serve as the blueprint for the test cases, detailing every interaction and response.
+
+#### Collecting Audio Files
+In addition to video and YAML files, the Test Engine also collects audio files. These recordings document the testing process, providing an additional layer of context and detail.
+
+### Generating Tests
+
+#### Comprehensive Test Cases
+Using the generated assets, the Test Engine creates comprehensive test cases that cover various scenarios and edge cases. This ensures that the app is thoroughly tested and any potential issues are identified.
+
+#### Using Generative AI
+The Test Engine leverages generative AI to combine video, YAML, and audio data. This advanced technology generates detailed test cases that accurately reflect the observed interactions and logic. The use of generative AI ensures that the test cases are both thorough and precise, capturing the nuances of the app's behavior.
 
 ## Join the Discussion
 
