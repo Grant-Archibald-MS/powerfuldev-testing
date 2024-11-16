@@ -46,7 +46,7 @@ module Jekyll
     # This method updates links in the file content.
     def update_links(file_path)
       content = File.read(file_path)
-      updated_content = content.gsub(/https:\/\/github\.com\/Grant-Archibald-MS\/powerfuldev-testing\/blob\/main\/([^\s]+)\.md/) do |match|
+      updated_content = content.gsub(/https:\/\/github\.com\/Grant-Archibald-MS\/powerfuldev-testing\/blob\/main\/(.*)\.md/) do |match|
         "/powerfuldev-testing/#{$1}"
       end
       updated_content.gsub!(/\/([^\s]+)\.md/) do |match|
