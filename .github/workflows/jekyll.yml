@@ -48,9 +48,12 @@ jobs:
           cd site
           bundle install
           bundle exec jekyll build
-          cat examples/index.md
         env:
           JEKYLL_ENV: production
+      - name: Verify examples and discussion folders
+        run: |
+          ls -la site/examples
+          ls -la site/discussion
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
