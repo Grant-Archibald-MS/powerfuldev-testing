@@ -12,55 +12,38 @@ You can use a physical machine, such as a laptop or PC, to run your automation s
 
 ![Overview diagram that shows overview of local editing and hosted options to execute tests as part of ALM process](./media/coe-kit-alm-release-continuos-deployment-process.png)
 
-#### Authoring Options
-
-For authoring your tests, you have a few choices. You can use [Test Studio Export](https://learn.microsoft.com/power-apps/maker/canvas-apps/test-studio) and Visual Studio Code, or even the [Playwright Inspector](https://playwright.dev/docs/debug#playwright-inspector) to investigate and use [no cliff extensions](./understanding-no-cliffs-extensibility-model.md). This allows you to focus on the test actions of the Power App rather than the process around it.
-
-Test can be locally run on your development machine. 
-
-The tests can optionally also execute via Power Automate desktop to ensure that the process works with cloud hosted options. 
-
-#### Licenses
-
-To run and execute Power Automate Desktop using a hosted configuration using only Power Platform resources this examples needs a Power Automate license. 
-
-For organizations with Conditional access policies for authentication, you can use a Microsoft Intune Joined Windows 11 Cloud hosted PC to execute Desktop flows. This setup requires a Power Automate Hosted Process license and an Intune license, such as Intune Plan 1 or Microsoft 365 Business Premium.
-
 #### Code First Approach
 
 For those who prefer a code-first approach, an Azure DevOps license and a Windows Custom Build Agent can be used to manage the automation process.
 
-## CoE Kit – Automated Install and Test Example
+#### Low Code Approach
 
-Let's dive into an example of automated installation and testing using Power Automate Desktop, Terraform, and the Test Engine.
+One alternative for execution of tests is combining Power Platform PIpelines and Power Automate. Using this approach to run the automated tests Power Automate Desktop could be used using a hosted configuration using only Power Platform resources this examples needs a Power Automate license. 
 
-![Overview diagram that shows overview of tooling setup, install and test execution](./media/coe-kit-automated-install-test-example.png)
+For organizations with Conditional access policies for authentication, you can use a Microsoft Intune Joined Windows 11 Cloud hosted PC to execute Desktop flows. This setup requires a Power Automate Hosted Process license and an Intune license, such as Intune Plan 1 or Microsoft 365 Business Premium.
 
-### Provisioning Tools
+## CoE Kit – Target ALM Architecture
 
-Power Automate Desktop actions are used to provision the required tools for a "build from source" strategy. This involves setting up actions to run custom scripts and commands to prepare the environment.
+Let's dive into the target Application lifecycle for the CoE Kit that has been selected for the CoE Kit
 
-### Setup Process
+![Target ALM lifecycle for CoE Kit from Environments, Azure DevOps Repository, Power Platform PIpelines, Approvals and GitHub Release](./media/coe-kit-target-alm.png)
 
-The setup process makes use of Terraform to provision the environment and install dependencies like the Creator Kit. Once the environment is ready, the Test Engine tests are executed to validate the setup.
+By following this structured approach, we ensure that our development, testing, and deployment processes are efficient, reliable, and scalable.
 
-## CoE Kit – CoE Kit Power Platform ALM Support Lifecycle Example
+### Authoring
+In the authoring phase, we deploy Power Apps, Power Automate Cloud Flows, and Dataverse components to a development environment. This is where the initial creation and testing of these components take place. We use Visual Studio Code, a powerful code editor, along with the Power Apps Test Engine to record, edit, and commit test cases. These test cases are then stored in an Azure DevOps repository, which acts as a central hub for our code and test management.
 
-This example demonstrates how to support the lifecycle of the CoE Kit using low-code Power Platform and Power Automate components. An alternative, more code-first approach could be achieved using an Azure DevOps pipeline.
+### Environment Strategy
+Our environment strategy is crucial for maintaining a structured and efficient development process. We use multiple development environments, each linked to Azure DevOps Git Repositories using the feature to [Natively connect your environments to source control](https://learn.microsoft.com/power-platform/release-plan/2024wave2/power-apps/connect-environment-source-control). This linkage allows us to manage our code versions and collaborate effectively. By connecting environments to source control, we ensure that changes are tracked, and we can easily revert to previous versions if needed.
 
+### Deployment
+Deployment is the process of moving our developed components from one environment to another, such as from development to testing or production. We utilize [pipelines in Power Platform](https://learn.microsoft.com/power-platform/alm/pipelines) to automate this process. Pipelines help streamline deployments, reduce manual errors, and ensure consistency across environments. They also allow us to define specific steps and conditions for each deployment stage, making the process more reliable and efficient.
 
-By following these stages, we aim to maintain the quality of the CoE Starter Kit and reduce the manual effort required for new releases.
+### Gated Build
+A gated build is a quality control mechanism that ensures only approved changes are deployed. We use Power Automate Cloud flows to send an approval email containing links to the changed files, test results, and a summary of the changes. The approver reviews this information and decides whether to accept or reject the deployment. This step helps catch potential issues early and maintains the integrity of our production environment.
 
-![Overview diagram that shows overview of daily build, environments, deploy, test and reporting of automated tests](./media/coe-kit-power-platform-alm-support-lifecycle-example.png)
+### Build Process
+The build process involves compiling and testing our solution to ensure it works as expected. We use an Azure DevOps Build agent to execute tests against the deployed solution in each environment. The test results are then uploaded to the Azure DevOps build results, providing a clear overview of the solution's performance and any issues that need to be addressed.
 
-### Verify Continued Operation
-
-To ensure the continued operation of the solution globally, a daily build process is implemented. This starts with a Power Automate Cloud Flow that schedules a recurring daily task at 2:00 AM.
-
-### Environment Setup
-
-Terraform is used to create environments globally, allowing the kit to be tested in multiple settings. The CoE Starter Kit and its dependencies are then deployed, along with the necessary connections.
-
-### Test Execution and Reporting
-
-The Test Engine tests are run on Power Automate Desktop, and the results are uploaded to Dataverse. This allows for reporting on the success or failure of the build, ensuring that any issues are quickly identified and addressed.
+### Release
+Once a production release is ready, we have an extension that packages and publishes both managed and unmanaged solutions. Managed solutions are locked and cannot be modified, while unmanaged solutions are open for customization. The source code for the release is then merged into our external GitHub repository, making it available for the community to use and contribute to. This practice promotes transparency, collaboration, and continuous improvement.

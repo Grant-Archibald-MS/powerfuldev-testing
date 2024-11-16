@@ -10,7 +10,7 @@ Join us at the Powerful Devs Conference 2025 for an in-depth session on automate
 
 ## Abstract
 
-This session will address the common challenges of automated testing in projects and provide valuable insights into pragmatic approaches for testing and monitoring both low-code and pro-code solutions. 
+This session will address the common challenges of automated testing in projects and provide valuable insights into pragmatic approaches for testing and monitoring both low-code and pro-code extensions to testing. 
 
 ## Learn
 
