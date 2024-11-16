@@ -37,6 +37,9 @@ author:
     - label: "LinkedIn"
       icon: "fa-brands fa-linkedin"
       url: "https://www.linkedin.com/in/grantarchibald/"
+    - label: "Power CAT"
+      icon: "fa-brands fa-microsoft"
+      url: "https://aka.ms/whoispowercat"
 
 # Build settings
 theme: minimal-mistakes-jekyll
