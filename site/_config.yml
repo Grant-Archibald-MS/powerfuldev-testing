@@ -44,8 +44,8 @@ plugins:
   - jekyll-feed
 
 include:
-  - discussion
-  - examples
+  - discussion/**
+  - examples/**
 
 copy_folders:
   - source: '../examples'
