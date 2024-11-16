@@ -57,8 +57,6 @@ navigation:
   - main
   - docs
 
-markdown_ext: "markdown,md"
-
 exclude:
   - "*.markdown"
 
