@@ -48,9 +48,7 @@ jobs:
           cd site
           bundle install
           bundle exec jekyll build
-          ls -l examples
-          ls -l discussion
-          ls -l _site
+          cat examples/index.md
         env:
           JEKYLL_ENV: production
       - name: Upload artifact
