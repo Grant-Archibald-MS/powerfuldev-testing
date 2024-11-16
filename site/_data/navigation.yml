@@ -1,0 +1,52 @@
+main:
+  - title: "Discussions"
+    url: /discussion
+  - title: "Examples"
+    url: /examples
+
+docs:
+  - title: Discussion
+    children:
+      - title: "Building a sustainability model"
+        url: /discussion/building-a-sustainability-model
+      - title: "Testing stratgies"
+        url: /discussion/implementing-effective-automated-testing-strategies-in-power-platform-solutions
+      - title: "Generative AI"
+        url: /discussion/generative-ai
+      - title: "Testing Approaches"
+        url: /discussion/introduction-to-testing-approaches
+      - title: "Low Code Power Platform Testing for the Code First Developer"
+        url: /discussion/low-code-testing-for-code-first-developer
+      - title: "Playwright vs Power Apps Test Engine"
+        url: /discussion/playwright-vs-test-engine
+      - title: "Authentication"
+        url: /discussion/authentication
+      - title: "Data simulation"
+        url: /discussion/data-simulation
+      - title: "Test Authoring"
+        url: /discussion/discussion/test-authoring
+
+  - title: Examples
+    children:
+      - title: CoE Kit - Executing CoE Starter Kit Test Automation
+        url: /examples/coe-kit-automate-test-sample
+      - title: CoE Kit - Setup and Install Wizard
+        url: /examples/coe-kit-setup-and-install-wizard
+      - title: CoE Kit - Build from Source Example
+        url: /examples/coe-kit-build-from-source-run-tests
+      - title: Extending the Test Engine
+        url: /examples/coe-kit-extending-test-engine
+      - title: Test Automation ALM
+        url: /examples/coe-kit-test-automation-alm
+      - title: Infrastructure As Code
+        url: /examples/coe-kit-infrastructure-as-code
+      - title: Variables and collections
+        url: /examples/custom-page-variables-and-collections
+      - title: Power Automate Testing
+        url: /examples/coe-kit-powerautomate-testing
+      - title: Extending Test Engine
+        url: /examples/extending-testengine-powerfx-with-with-csharp-test-scripts
+      - title: No Cliffs Extensibility Model
+        url: /examples/understanding-no-cliffs-extensibility-model 
+      - title: Power Fx Namespaces
+        url: /examples/using-powerfx-namespaces-in-testing

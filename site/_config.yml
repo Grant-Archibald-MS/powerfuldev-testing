@@ -1,0 +1,94 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: PowerfulDevs Testing
+name: "Grant Archibald"
+description: >- # this means to ignore newlines until "baseurl:"
+  Mastering Automated Testing in Power Platform. Discussion and examples as Power CAT Engineering apply automated testing and collaborate with Power Platform Engineering teams.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  grant-archibald-ms
+enable_copy_code_button: true
+
+permalink: /:categories/:title/
+
+author:
+  name     : "Grant Archibald"
+  bio: "Program Manager in Microsoft Power CAT Engineering"
+  links:
+    - label: "LinkedIn"
+      icon: "fa-brands fa-linkedin"
+      url: "https://www.linkedin.com/in/grantarchibald/"
+
+# Build settings
+theme: minimal-mistakes-jekyll
+
+plugins:
+  - jekyll-feed
+
+copy_folders:
+  - source: '..\examples'
+    destination: 'examples'
+  - source: '..\discussion'
+    destination: 'discussion'
+
+navigation:
+  - main
+  - docs
+
+markdown_ext: "markdown,md"
+
+exclude:
+  - "*.markdown"
+
+sidebar:
+  nav: "docs"
+
+defaults:
+  - scope:
+      path: "" # An empty string here means all files in the project
+      type: "examples" # This applies to all pages
+    values:
+      layout: single
+  - scope:
+      path: "" # An empty string here means all files in the project
+      type: "discussion" # This applies to all pages
+    values:
+      layout: single
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
