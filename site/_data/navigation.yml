@@ -1,10 +1,27 @@
 main:
+  - title: "Context"
+    url: /context
   - title: "Discussions"
     url: /discussion
   - title: "Examples"
     url: /examples
 
 docs:
+  - title: Context
+    children:
+      - title: "Why Automated Testing?"
+        url: /context/why-automated-testing
+      - title: "Why Not Just Manual Testing?"
+        url: /context/why-not-just-manual-testing
+      - title: "Growing to Enterprise Grade"
+        url: /context/growing-to-enterprise-grade
+      - title: "Impacts on People, Process, and Tooling"
+        url: /context/impacts-on-people-process-and-tooling
+      - title: "Transformative Power of AI"
+        url: /context/transformative-power-of-ai
+      - title: "Why Not Just Use Code First Testing Tools"
+        url: /context/why-not-just-use-code-first-testing-tools
+
   - title: Discussion
     children:
       - title: "Building a sustainability model"

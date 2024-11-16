@@ -48,10 +48,13 @@ logging:
   level: debug
 
 include:
+  - context
   - discussion
   - examples
 
 copy_folders:
+  - source: '../context'
+    destination: 'context'
   - source: '../examples'
     destination: 'examples'
   - source: '../discussion'

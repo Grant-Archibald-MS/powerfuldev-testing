@@ -47,6 +47,11 @@ module Jekyll
       updated_content = content.gsub(/https:\/\/github\.com\/Grant-Archibald-MS\/powerfuldev-testing\/blob\/main\/(.*)\.md/) do |match|
         "/powerfuldev-testing/#{$1}"
       end
+      if file_path.include?("context")
+        updated_content = updated_content.gsub(/\(\.\/(.*)\.md\)/) do |match|
+          "(/powerfuldev-testing/context/#{$1}.md)"
+        end
+      end
       if file_path.include?("examples")
         updated_content = updated_content.gsub(/\(\.\/(.*)\.md\)/) do |match|
           "(/powerfuldev-testing/examples/#{$1}.md)"

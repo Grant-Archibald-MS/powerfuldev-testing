@@ -8,7 +8,7 @@ toc: true
 
 Join us at the Powerful Devs Conference 2025 for an in-depth session on automated testing within the Power Platform. 
 
-As you look at our [Discussion topics](./discussion/) and [Examples](./examples/) give us [Feedback](https://aka.ms/powerfuldevs/testing/feedback)
+As you look at our [Context setting articles](./context/), [Discussion topics](./discussion/) and [Examples](./examples/) to give us [Feedback](https://aka.ms/powerfuldevs/testing/feedback)
 {: .notice--danger}
 
 ## Abstract
