@@ -47,14 +47,10 @@ logging:
   level: debug
 
 include:
-  - ./discussion/**
-  - ./examples/**
   - discussion
   - examples
-  - discussion/**
-  - examples/**
-  - examples/**/*.md
-  - discussion/**/*.md
+  - /home/runner/work/powerfuldev-testing/powerfuldev-testing/site/discussion
+  - /home/runner/work/powerfuldev-testing/powerfuldev-testing/site/examples
 
 copy_folders:
   - source: '../examples'
