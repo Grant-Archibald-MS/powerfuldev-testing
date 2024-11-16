@@ -44,9 +44,9 @@ plugins:
   - jekyll-feed
 
 copy_folders:
-  - source: '..\examples'
+  - source: '../examples'
     destination: 'examples'
-  - source: '..\discussion'
+  - source: '../discussion'
     destination: 'discussion'
 
 navigation:
