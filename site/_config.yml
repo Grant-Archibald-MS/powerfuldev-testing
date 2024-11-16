@@ -46,6 +46,12 @@ plugins:
 include:
   - ./discussion/**
   - ./examples/**
+  - discussion
+  - examples
+  - discussion/**
+  - examples/**
+  - examples/**/*.md
+  - discussion/**/*.md
 
 copy_folders:
   - source: '../examples'
