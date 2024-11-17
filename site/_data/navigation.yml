@@ -30,6 +30,8 @@ docs:
     children:
       - title: "Building a sustainability model"
         url: /discussion/building-a-sustainability-model
+      - title: "Embracing Testing Strategies for Low-Code Solutions: A Discussion for Enterprise Architects"
+        url: /discussion/enterprise-architecture-discussion.md
       - title: "Testing stratgies"
         url: /discussion/implementing-effective-automated-testing-strategies-in-power-platform-solutions
       - title: "Generative AI"

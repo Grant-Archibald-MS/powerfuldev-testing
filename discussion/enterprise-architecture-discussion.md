@@ -1,4 +1,4 @@
-# Embracing Comprehensive Testing Strategies for Low-Code Solutions: A Discussion for Enterprise Architects
+# Embracing Testing Strategies for Low-Code Solutions: A Discussion for Enterprise Architects
 
 In today's fast-paced digital landscape, the Power Platform has become a cornerstone for many organizations, enabling rapid development and deployment of applications. 
 
