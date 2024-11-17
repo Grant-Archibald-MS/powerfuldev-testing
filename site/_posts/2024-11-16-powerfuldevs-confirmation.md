@@ -12,7 +12,7 @@ tags:
 ---
 
 Feel free to repost or comment on [LinkedIn Annoucement](https://www.linkedin.com/feed/update/urn:li:activity:7263669490834374657/)
-{: .notice--danger}
+{: .notice--success}
 
 🚀 Exciting News! 🚀
 I'm excited to announce that our proposed session, "Mastering Automated Testing in Power Platform: From Unit Tests to CI/CD Integration," has been accepted for the Powerful Devs conference in February 2025! 🎉
