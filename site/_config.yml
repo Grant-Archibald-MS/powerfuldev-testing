@@ -27,7 +27,7 @@ url: "https://grant-archibald-ms.github.io" # the base hostname & protocol for y
 github_username:  grant-archibald-ms
 enable_copy_code_button: true
 minimal_mistakes_skin: air
-favicon: /assets/images/favicon.ico
+favicon: /powerfuldev-testing/assets/images/favicon.ico
 
 permalink: /:categories/:title/
 
@@ -55,6 +55,7 @@ include:
   - context
   - discussion
   - examples
+  - assets
 
 copy_folders:
   - source: '../context'
