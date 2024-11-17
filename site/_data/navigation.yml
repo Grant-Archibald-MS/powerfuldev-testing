@@ -21,8 +21,10 @@ docs:
         url: /context/transformative-power-of-ai
       - title: "Why Not Just Use Code First Testing Tools"
         url: /context/why-not-just-use-code-first-testing-tools
-      - title: "Roadmap alignment"
+      - title: "Roadmap Alignment"
         url: /context/roadmap-alignment
+      - title: "Low code Testing Principles"
+        url: /context/low-code-test-design-principles
 
   - title: Discussion
     children:
