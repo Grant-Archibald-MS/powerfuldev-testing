@@ -15,4 +15,4 @@ To be successful in adopting an automated testing approach it can take a team to
 
 {% include figure popup=true image_path="/roles-and-responsibilities/media/role-collaboration.png" alt="Diagram of role collaboration when looking at automated testing" %}
 
-To help with this discussion we have added a [Roles and Responsibilities](/powerfuldev-testing/roles-and-responsibilities) section to get feedback and perspective of multiple roles as we consider automated testing for low code Power Platform solutions.
+To help with this discussion we have added the <a href="/powerfuldev-testing/roles-and-responsibilities">Roles and Responsibilities</a> section to get feedback and perspective of multiple roles as we consider automated testing for low code Power Platform solutions.
