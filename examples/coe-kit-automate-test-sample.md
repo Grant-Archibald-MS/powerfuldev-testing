@@ -4,7 +4,7 @@
 
 We are starting our testing with the Setup and Upgrade Wizard however the CoE Starter Kit has a much wider set of components that need to be tested. We are continually reviewing our automated test approach to consider the wider scope of the CoE Starter Kit.
 
-![Dialog showing the different layers of CoE Starter Kit Test across - Authentication, Power Apps, Poower Automate, AI Builder, Dataverse, Power Platform and Microsoft Fabric](./media/coe-kit-testing-layers.png)
+{% include figure popup=true image_path="/examples/media/coe-kit-testing-layers.png" alt="Diagram showing the different layers of CoE Starter Kit Test across - Authentication, Power Apps, Power Automate, AI Builder, Dataverse, Power Platform and Microsoft Fabric" caption="Components to test in CoE Starter Kit" %}
 
 Overall the automated testing of the CoE Starter Kit will need to address the various layers and components of the CoE Starter Kit that require testing including:
 
@@ -44,7 +44,7 @@ To ensure we are using the latest version of the Power Apps Test Engine, we buil
 
 Authentication is a critical component of the test automation process. The sample script employs browser-based authentication, which offers a range of options to authenticate with Microsoft Entra. This method generates a persistent browser cookie, allowing for non-interactive execution of subsequent tests. The management of these browser cookies is governed by the guidelines provided in the Microsoft Entra documentation on session lifetime and conditional access policies.
 
-![Authentication options](./media/authentication-options.png)
+{% include figure popup=true image_path="/examples/media/authentication-options.png" alt="Authentication Options" caption=""Authentication Options" %}
 
 As the Power CAT Engineering team looked at the different authentication options for the CoE Starter Kit we have started with browser based authentication for local testing. This approach works with conditional access policies of our environments and allows a quick and less intrusive process to authenticate as different test persona.
 
