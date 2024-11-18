@@ -61,8 +61,8 @@ include:
   - assets
 
 copy_folders:
-  - source: '../roles-and-responsibilties'
-    destination: 'roles-and-responsibilties'
+  - source: '../roles-and-responsibilities'
+    destination: 'roles-and-responsibilities'
   - source: '../context'
     destination: 'context'
   - source: '../examples'

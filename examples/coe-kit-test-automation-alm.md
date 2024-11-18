@@ -10,7 +10,7 @@ When it comes to automating the release and continuous deployment process for th
 
 You can use a physical machine, such as a laptop or PC, to run your automation scripts. Alternatively, you can trigger these scripts from cloud flows or pipelines, providing more flexibility and scalability.
 
-![Overview diagram that shows overview of local editing and hosted options to execute tests as part of ALM process](./media/coe-kit-alm-release-continuos-deployment-process.png)
+{% include figure popup=true image_path="/examples/media/coe-kit-alm-release-continuos-deployment-process.png" alt="Overview diagram that shows overview of local editing and hosted options to execute tests as part of ALM process" %}
 
 #### Code First Approach
 
@@ -26,7 +26,7 @@ For organizations with Conditional access policies for authentication, you can u
 
 Let's dive into the target Application lifecycle for the CoE Kit that has been selected for the CoE Kit
 
-![Target ALM lifecycle for CoE Kit from Environments, Azure DevOps Repository, Power Platform PIpelines, Approvals and GitHub Release](./media/coe-kit-target-alm.png)
+{% include figure popup=true image_path="/examples/media/coe-kit-target-alm.png" alt="Target ALM lifecycle for CoE Kit from Environments, Azure DevOps Repository, Power Platform PIpelines, Approvals and GitHub Release" %}
 
 By following this structured approach, we ensure that our development, testing, and deployment processes are efficient, reliable, and scalable.
 

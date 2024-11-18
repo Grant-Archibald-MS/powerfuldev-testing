@@ -4,7 +4,7 @@ To aid you in quickly getting started we have found a record and replay approach
 
 Given this experience lets dive in and see some of the options we have explored as we are building low code tests for our solutions.
 
-![Example test authoring process](./media/test-authoring.png)
+{% include figure popup=true image_path="/discussion/media/test-authoring.png" alt="Example test authoring process" %}
 
 ## Overview
 

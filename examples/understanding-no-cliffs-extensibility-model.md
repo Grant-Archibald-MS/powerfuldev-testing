@@ -8,7 +8,7 @@ The "no cliffs" extensibility model of Power Apps Test Engine is designed to pro
 
 A [consent dialog](https://learn.microsoft.com/power-apps/maker/canvas-apps/connections-list#connection-consent-dialog) is a prompt that appears to users, asking for their permission to access certain resources or perform specific actions. This dialog is crucial for maintaining security and ensuring that users are aware of and agree to the actions being taken on their behalf.
 
-![Example of the connection consent dialog for an app connecting to a SharePoint site.](https://learn.microsoft.com/power-apps/maker/canvas-apps/media/connections-list/power_apps_consent_dialog.png)
+{% include figure popup=true image_path="https://learn.microsoft.com/power-apps/maker/canvas-apps/media/connections-list/power_apps_consent_dialog.png" alt="Example of the connection consent dialog for an app connecting to a SharePoint site." %}
 
 ## Importance of the Consent Dialog
 

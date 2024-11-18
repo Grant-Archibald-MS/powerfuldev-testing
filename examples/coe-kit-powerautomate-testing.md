@@ -14,7 +14,7 @@ Testing Power Automate is crucial for the CoE Starter Kit, which has over 100 cl
 
 Before we begin, it is important to understand that there are multiple layers of testing that could be applied to Power Automate Cloud flows in the CoE Kit. The first layer involves testing when the flow is called from a Power App. The second layer focuses on testing the logic flow of a cloud flow using simulated values for connections. The third layer involves conducting integrated tests for the cloud flow with different inputs and outputs.
 
-![Diagram that shows the different layers from Power Apps to Power Automate, Power Automate to simulated connectors and third integration tests of the cloud flow](./media/coe-kit-powerautomate-layers.png)
+{% include figure popup=true image_path="/examples/media/coe-kit-powerautomate-layers.png" alt="Diagram that shows the different layers from Power Apps to Power Automate, Power Automate to simulated connectors and third integration tests of the cloud flow" caption="Power Automate Layers" %}
 
 ### Layer 1: Testing from Power App
 
@@ -95,19 +95,20 @@ This action would allow requests to the workflow to be replaced with a value pro
 
 Lets now look at the second layer of testing where we simulate the trigger values, connectors and Dataverse state. While the the first layer is useful for testing the Power App it does not address how we can test the actions within this workflow. Let have a look at the definition of a sample cloud flow from the CoE Kit and how it could fit into the Test Engine.
 
-![Overview diagram that shows Power Fx, Power Automate Provider and screenshot of steps of the SetupWizard>GetUserDetails cloud flow](./media/coe-kit-setup-wizard-getuserdetails-overview.png)
+{% include figure popup=true image_path="/examples/media/coe-kit-setup-wizard-getuserdetails-overview.png" alt="Overview diagram that shows Power Fx, Power Automate Provider and screenshot of steps of the SetupWizard>GetUserDetails cloud flow" caption="Setup Wizard Get User Details Overview" %}
 
 The `SetupWizard>GetUserDetails` flow determines if the current user has licenses for Power Apps and Power Automate. Lats have a look at the the key steps of the Power Automate Flow. 
 
-![Screenshot of first steps of the SetupWizard>GetUserDetails cloud flow](./media/coe-kit-setup-wizard-getuserdetails-start.png)
+{% include figure popup=true image_path="/examples/media/coe-kit-setup-wizard-getuserdetails-start.png" alt="Screenshot of first steps of the SetupWizard>GetUserDetails cloud flow" caption="Starting steps" %}
+
 
 The flow is triggered from Power Automate and creates a variable to determine the graph endpoint to use. This process queries an environment variable to get an environment value if defined. If not, it defaults to the commercial cloud endpoint of `https://graph.microsoft.com`. 
 
-![Screenshot of query environment variable of the SetupWizard>GetUserDetails cloud flow](./media/coe-kit-setup-wizard-getuserdetails-environment-variable.png)
+{% include figure popup=true image_path="/examples/media/coe-kit-setup-wizard-getuserdetails-variable.png" alt="Screenshot of query environment variable of the SetupWizard>GetUserDetails cloud flow" caption="Environment Variables" %}
 
 Having found the correct graph endpoint, it then calls the graph API to query the license details assigned to the user to determine if the correct Power Apps and Power Automate License has been assigned.
 
-![Screenshot of query Microsoft Grpah in the SetupWizard>GetUserDetails cloud flow](./media/coe-kit-setup-wizard-getuserdetails-graph-query.png)
+{% include figure popup=true image_path="/examples/media/coe-kit-setup-wizard-getuserdetails-graph-query.png" alt="Screenshot of query Microsoft Grpah in the SetupWizard>GetUserDetails cloud flow" caption="Graph Query" %}
 
 The need to test scenarios like these leads us to consider extending Test Engine to introduce a new Provider for Power Automate that allows unit testing of Power Automate Cloud flows. This would validate the logic by enabling the validation of variable values and the simulation of connectors and Dataverse calls.
 

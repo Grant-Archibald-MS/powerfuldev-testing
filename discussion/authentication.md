@@ -4,7 +4,7 @@
 
 Authentication is a critical component of the test automation process. This discussion focuses ons browser-based authentication options inside Test Engine. When authenticating as part of tests Test Engine offers a range of options to authenticate with Microsoft Entra. 
 
-![Test Engine Authentication method overview diagram from browser, certificate and conditional access polcies](../examples/media/authentication-options.png)
+{% include figure popup=true image_path="/examples/media/authentication-options.png" alt="Test Engine Authentication method overview diagram from browser, certificate and conditional access policies" caption="Authentication Options" %}
 
 These method can range from using persistent browser cookie, allowing for non-interactive execution of subsequent tests. The management of these browser cookies is governed by the guidelines provided in the Microsoft Entra documentation on session lifetime and conditional access policies.
 

@@ -14,7 +14,7 @@ feature_row:
   - image_path: /assets/images/consider-roles.png
     alt: "Consider Roles"
     title: "<center>Consider Roles</center>"
-    url: /roles-and-responsibilties
+    url: /roles-and-responsibilities
 ---
 
 ![PowerfulDev Conference](./PowerfulDevConference.png)

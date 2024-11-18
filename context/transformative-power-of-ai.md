@@ -4,6 +4,8 @@ The transformative power of AI in the realm of automated testing with the Power 
 
 ## Observing by Example
 
+{% include figure popup=true image_path="/discussion/media/test-authoring.png" alt="Example test authoring process" %}
+
 [Generative AI](../discussion/generative-ai.md) when [authoring tests](../discussion/test-authoring.md) with tools like Test Engine can observe your interactions with the low-code solution, learning from the way you use and test the application. This observational capability allows AI to understand the intended functionality and user flows, enabling it to generate relevant test cases that reflect real-world usage scenarios.
 
 ## Augmenting with Knowledge and Expectations

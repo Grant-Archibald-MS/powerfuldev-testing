@@ -1,6 +1,6 @@
 main:
   - title: "Roles and Responsibilities"
-    url: /roles-and-responsibilties
+    url: /roles-and-responsibilities
   - title: "Context"
     url: /context
   - title: "Discussions"
@@ -12,35 +12,35 @@ docs:
   - title: "Roles and Responsibilities"
     children:
       - title: "Business Stakeholders"
-        url: /roles-and-responsibilties/business-stakeholders
+        url: /roles-and-responsibilities/business-stakeholders
       - title: "Business Unit Leads"
-        url: /roles-and-responsibilties/business-unit-leads
+        url: /roles-and-responsibilities/business-unit-leads
       - title: "Managers"
-        url: /roles-and-responsibilties/managers
+        url: /roles-and-responsibilities/managers
       - title: "Makers"
-        url: /roles-and-responsibilties/makers
+        url: /roles-and-responsibilities/makers
       - title: "Trainers"
-        url: /roles-and-responsibilties/trainers
+        url: /roles-and-responsibilities/trainers
       - title: "Enterprise Architects"
-        url: /roles-and-responsibilties/enterprise-architects
+        url: /roles-and-responsibilities/enterprise-architects
       - title: "Solution Architects"
-        url: /roles-and-responsibilties/solution-architects 
+        url: /roles-and-responsibilities/solution-architects 
       - title: "DevOps Engineers and Architects"
-        url: /roles-and-responsibilties/devops-engineers-architects
+        url: /roles-and-responsibilities/devops-engineers-architects
       - title: "Software Engineers"
-        url: /roles-and-responsibilties/software-engineers
+        url: /roles-and-responsibilities/software-engineers
       - title: "Support Engineers"
-        url: /roles-and-responsibilties/support-engineers
+        url: /roles-and-responsibilities/support-engineers
       - title: "Audit"
-        url: /roles-and-responsibilties/audit
+        url: /roles-and-responsibilities/audit
       - title: "Security Architects"
-        url: /roles-and-responsibilties/security-architects
+        url: /roles-and-responsibilities/security-architects
       - title: "Microsoft Engineering"
-        url: /roles-and-responsibilties/microsoft-engineering
+        url: /roles-and-responsibilities/microsoft-engineering
       - title: "Microsoft Support"
-        url: /roles-and-responsibilties/microsoft-support
+        url: /roles-and-responsibilities/microsoft-support
       - title: "Power CAT"
-        url: /roles-and-responsibilties/powercat
+        url: /roles-and-responsibilities/powercat
         
   - title: Context
     children:

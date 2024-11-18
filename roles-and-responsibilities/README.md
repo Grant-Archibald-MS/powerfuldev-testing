@@ -7,6 +7,12 @@ While the PowerfulDevs session is more focused on Software Engineering and Advan
 NOTE: The roles and responsibility section is an area under review and update. We look forward to working with you to refine and improve this section to help support the role of Automated Testing in our organization.
 {: .notice--success}
 
+## Role Collaboration
+
+To be successful in adopting an automated testing approach it can take a team to work together to collaborate and align different goals especially as solutions move [grow to enterprise grade](../context/growing-to-enterprise-grade.md).
+
+{% include figure popup=true image_path="/roles-and-responsibilities/media/role-collaboration.png" alt="Diagram of role collaboration when looking at automated testing" %}
+
 ## Business Roles
 
 | Role | Description |
@@ -22,7 +28,7 @@ NOTE: The roles and responsibility section is an area under review and update. W
 | Role | Description |
 |------|-------------|
 | [Enterprise Architects](./enterprise-architects.md) | Review the pillars of the [Power Well-Architected Framework](https://aka.ms/powa) and implement quality control and integration with other information technology investments. They ensure holistic integration across low-code and code-first investments. |
-| [Solution Architects](./solution-architects.md) | Implement enterprise standards and make recommendations on how enterprise plans could be executed. They ensure a robust ALM process that includes building, implementing, reviewing, and deploying low-code solutions. | solution-architects.md |
+| [Solution Architects](./solution-architects.md) | Implement enterprise standards and make recommendations on how enterprise plans could be executed. They ensure a robust ALM process that includes building, implementing, reviewing, and deploying low-code solutions. |
 | [DevOps Engineers / Architects](./devops-engineers-architects.md) | Responsible for the overall Continuous Integration / Deployment process and integrating Power Platform into this process. They manage source control integration, test assets, and quality processes for deployment and updates. | 
 | [Software Engineers](./software-engineers.md) | Use Power Platform to augment their existing code-first skills as a productivity tool or contribute extensions or add-ons to help makers achieve more. |
 | [Support Engineers](./support-engineers.md) | Take ownership of low-code solutions to help them scale across the organization. They focus on the quality of low-code solutions and the ability to support and fix them. | 
