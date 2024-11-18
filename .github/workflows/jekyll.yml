@@ -68,3 +68,8 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Check for broken links
+        uses: ruzickap/action-my-broken-link-checker@v2.7.0
+        with:
+          url: 'https://grant-archibald-ms.github.io/powerfuldev-testing'
+          cmd_params: '--max-connections=10 --color=always --timeout=20'
