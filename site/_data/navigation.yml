@@ -44,6 +44,8 @@ docs:
         
   - title: Context
     children:
+      - title: "Common Topics"
+        url: /context/common-topics
       - title: "Why Automated Testing?"
         url: /context/why-automated-testing
       - title: "Why Not Just Manual Testing?"
