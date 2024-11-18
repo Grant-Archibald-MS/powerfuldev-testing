@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Security Architects
-permalink: /roles-and-responsibilties/security-architects
+permalink: /roles-and-responsibilities/security-architects
 toc: true
 sidebar:
   nav: "docs"

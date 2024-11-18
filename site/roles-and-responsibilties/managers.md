@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Managers
-permalink: /roles-and-responsibilties/managers
+permalink: /roles-and-responsibilities/managers
 toc: true
 sidebar:
   nav: "docs"

@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Business Stakeholders
-permalink: /roles-and-responsibilties/business-stakeholders
+permalink: /roles-and-responsibilities/business-stakeholders
 toc: true
 sidebar:
   nav: "docs"

@@ -12,19 +12,19 @@ We are looking forward to working with you to embrace the journey and be part of
 
 ### Business Users
 
-[Business users](/powerfuldev-testing/roles-and-responsibilties#business-roles) should familiarize themselves with relevant business roles and start planning where automated testing can help with their business processes. Understanding the potential impact and benefits of automated testing will be crucial in identifying areas for improvement and efficiency.
+[Business users](/powerfuldev-testing/roles-and-responsibilities#business-roles) should familiarize themselves with relevant business roles and start planning where automated testing can help with their business processes. Understanding the potential impact and benefits of automated testing will be crucial in identifying areas for improvement and efficiency.
 
 ### Architects
 
-[Architects](/powerfuldev-testing/roles-and-responsibilties#technical-roles) should begin by looking at the available information and considering how automated testing can be integrated into their Power Platform solutions. This involves evaluating the current architecture and identifying opportunities to enhance it with automated testing practices.
+[Architects](/powerfuldev-testing/roles-and-responsibilities#technical-roles) should begin by looking at the available information and considering how automated testing can be integrated into their Power Platform solutions. This involves evaluating the current architecture and identifying opportunities to enhance it with automated testing practices.
 
 ### Security Architects
 
-[Security architects](/powerfuldev-testing/roles-and-responsibilties#risk-and-compliance) need to review the available security information and determine how automated testing can fit into the range of tools and processes they monitor. Ensuring that automated testing aligns with security protocols and standards is essential for maintaining a secure environment.
+[Security architects](/powerfuldev-testing/roles-and-responsibilities#risk-and-compliance) need to review the available security information and determine how automated testing can fit into the range of tools and processes they monitor. Ensuring that automated testing aligns with security protocols and standards is essential for maintaining a secure environment.
 
 ### Software Engineers and Advanced Makers
 
-[Software engineers and advanced makers](/powerfuldev-testing/roles-and-responsibilties#technical-roles) have the option to decide whether they want to be involved as early adopters. They can choose to use the early components and provide feedback or wait for the in-product release. Early adopters play a critical role in shaping the development and refinement of new features.
+[Software engineers and advanced makers](/powerfuldev-testing/roles-and-responsibilities#technical-roles) have the option to decide whether they want to be involved as early adopters. They can choose to use the early components and provide feedback or wait for the in-product release. Early adopters play a critical role in shaping the development and refinement of new features.
 
 #### Early Adopter
 

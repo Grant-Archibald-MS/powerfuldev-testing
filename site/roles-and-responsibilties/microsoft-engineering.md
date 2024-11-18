@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Microsoft Engineering
-permalink: /roles-and-responsibilties/microsoft-engineering
+permalink: /roles-and-responsibilities/microsoft-engineering
 toc: true
 sidebar:
   nav: "docs"

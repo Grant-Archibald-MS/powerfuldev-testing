@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Enterprise Architects
-permalink: /roles-and-responsibilties/enterprise-architects
+permalink: /roles-and-responsibilities/enterprise-architects
 toc: true
 sidebar:
   nav: "docs"

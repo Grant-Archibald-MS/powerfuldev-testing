@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Bottom-Up Adoption Strategy
-permalink: /roles-and-responsibilties/bottom-up
+permalink: /roles-and-responsibilities/bottom-up
 toc: true
 sidebar:
   nav: "docs"

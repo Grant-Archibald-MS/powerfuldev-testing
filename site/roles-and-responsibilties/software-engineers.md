@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Software Engineers
-permalink: /roles-and-responsibilties/software-engineers
+permalink: /roles-and-responsibilities/software-engineers
 toc: true
 sidebar:
   nav: "docs"

@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Microsoft Support
-permalink: /roles-and-responsibilties/microsoft-support
+permalink: /roles-and-responsibilities/microsoft-support
 toc: true
 sidebar:
   nav: "docs"

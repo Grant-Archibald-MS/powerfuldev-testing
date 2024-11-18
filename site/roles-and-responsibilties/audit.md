@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Audit
-permalink: /roles-and-responsibilties/audit
+permalink: /roles-and-responsibilities/audit
 toc: true
 sidebar:
   nav: "docs"

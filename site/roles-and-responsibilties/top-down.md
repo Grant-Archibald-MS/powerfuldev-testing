@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Top-Down Adoption Strategy
-permalink: /roles-and-responsibilties/top-down
+permalink: /roles-and-responsibilities/top-down
 toc: true
 sidebar:
   nav: "docs"

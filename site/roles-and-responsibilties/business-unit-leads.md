@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Business Unit Leads
-permalink: /roles-and-responsibilties/business-unit-leads
+permalink: /roles-and-responsibilities/business-unit-leads
 toc: true
 sidebar:
   nav: "docs"

@@ -1,7 +1,7 @@
 ---
 layout: single
 title: DevOps Engineers / Architects
-permalink: /roles-and-responsibilties/devops-engineers-architects
+permalink: /roles-and-responsibilities/devops-engineers-architects
 toc: true
 sidebar:
   nav: "docs"

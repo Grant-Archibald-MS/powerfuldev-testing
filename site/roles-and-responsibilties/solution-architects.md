@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Solution Architects
-permalink: /roles-and-responsibilties/solution-architects
+permalink: /roles-and-responsibilities/solution-architects
 toc: true
 sidebar:
   nav: "docs"

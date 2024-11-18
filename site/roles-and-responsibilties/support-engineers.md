@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Support Engineers
-permalink: /roles-and-responsibilties/support-engineers
+permalink: /roles-and-responsibilities/support-engineers
 toc: true
 sidebar:
   nav: "docs"

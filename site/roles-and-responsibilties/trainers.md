@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Trainers
-permalink: /roles-and-responsibilties/trainers
+permalink: /roles-and-responsibilities/trainers
 toc: true
 sidebar:
   nav: "docs"

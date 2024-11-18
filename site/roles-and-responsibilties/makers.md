@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Makers
-permalink: /roles-and-responsibilties/makers
+permalink: /roles-and-responsibilities/makers
 toc: true
 sidebar:
   nav: "docs"

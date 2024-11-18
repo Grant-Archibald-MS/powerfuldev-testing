@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Power Customer Advisory Team (Power CAT)
-permalink: /roles-and-responsibilties/powercat
+permalink: /roles-and-responsibilities/powercat
 toc: true
 sidebar:
   nav: "docs"
