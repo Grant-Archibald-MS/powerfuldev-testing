@@ -9,11 +9,11 @@ feature_row:
     url: "https://aka.ms/powerfuldevs/testing/feedback"
   - image_path: /assets/images/join-discussions.png
     alt: "Join Discussions Icon"
-    title: "Join Discussions"
+    title: "<center>Join Discussions</center>"
     url: /discussion
   - image_path: /assets/images/consider-roles.png
     alt: "Consider Roles"
-    title: "Consider Roles"
+    title: "<center>Consider Roles</center>"
     url: /roles-and-responsibilties
 ---
 
