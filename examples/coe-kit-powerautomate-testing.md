@@ -104,7 +104,7 @@ The `SetupWizard>GetUserDetails` flow determines if the current user has license
 
 The flow is triggered from Power Automate and creates a variable to determine the graph endpoint to use. This process queries an environment variable to get an environment value if defined. If not, it defaults to the commercial cloud endpoint of `https://graph.microsoft.com`. 
 
-{% include figure popup=true image_path="/examples/media/coe-kit-setup-wizard-getuserdetails-variable.png" alt="Screenshot of query environment variable of the SetupWizard>GetUserDetails cloud flow" caption="Environment Variables" %}
+{% include figure popup=true image_path="/examples/media/coe-kit-setup-wizard-getuserdetails-environment-variable.png" alt="Screenshot of query environment variable of the SetupWizard>GetUserDetails cloud flow" caption="Environment Variables" %}
 
 Having found the correct graph endpoint, it then calls the graph API to query the license details assigned to the user to determine if the correct Power Apps and Power Automate License has been assigned.
 

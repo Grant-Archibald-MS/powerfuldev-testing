@@ -38,7 +38,7 @@ The following <a href="/powerfuldev-testing/discussion">discussions</a> could be
 
 ## Examples
 
-The following [examples](../examples/) could be of interest
+The following <a href="/powerfuldev-testing/examples">examples</a> could be of interest
 
 | Example | Description |
 |---------|-------------|
