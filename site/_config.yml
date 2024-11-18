@@ -47,6 +47,9 @@ theme: minimal-mistakes-jekyll
 
 plugins:
   - jekyll-feed
+  - jekyll-spaceship
+
+gems: [jekyll-mermaid]
 
 logging:
   level: debug

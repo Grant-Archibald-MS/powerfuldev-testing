@@ -93,6 +93,10 @@ module Jekyll
         else
           permalink = file_path.sub(site_source, '').sub(/\.md$/, '')
         end
+        extra = ""
+        if content.include? "mermaid"
+          extra = "mermaid: true"
+        end
         front_matter = <<~FRONT_MATTER
           ---
           layout: single
@@ -102,6 +106,7 @@ module Jekyll
           sidebar:
             nav: "docs"
           read_time: true
+          #{extra}
           ---
         FRONT_MATTER
         File.open(file_path, 'w') do |file|
