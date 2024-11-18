@@ -28,7 +28,7 @@ github_username:  grant-archibald-ms
 enable_copy_code_button: true
 minimal_mistakes_skin: air
 favicon: /powerfuldev-testing/assets/images/favicon.ico
-
+copyright_url: https://grant-archibald-ms.github.io/powerfuldev-testing
 permalink: /:categories/:title/
 
 author:
