@@ -37,7 +37,7 @@ Explore further to understand how automated testing can be integrated into your 
 
 ## Discussions
 
-The following [discussions](../discussion/) could be of interest
+The following <a href="/powerfuldev-testing/discussion">discussions</a> could be of interest
 
 | Discussion | Description |
 |------------|-------------|

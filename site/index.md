@@ -23,8 +23,8 @@ Join us at the Powerful Devs Conference 2025 for an in-depth session on automate
 
 {% include feature_row %}
 
-
-Have a look at our [Context setting articles](./context/), [Discussion topics](./discussion/) and [Examples](./examples/) to give us [Feedback](https://aka.ms/powerfuldevs/testing/feedback) on this topic.
+Have a look at our <a href="/powerfuldev-testing/context">Context setting articles</a>, <a href="/powerfuldev-testing/discussion">Discussion topics</a> and 
+<a href="/powerfuldev-testing/examples">Examples</a> to give us [Feedback](https://aka.ms/powerfuldevs/testing/feedback) on this topic.
 {: .notice--success}
 
 ## Abstract

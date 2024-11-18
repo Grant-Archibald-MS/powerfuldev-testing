@@ -25,7 +25,7 @@ By embracing automated testing, you can ensure that the Power Platform solutions
 
 ## Examples
 
-The following [examples](../examples/) could be of interest
+The following <a href="/powerfuldev-testing/examples">examples</a> could be of interest
 
 | Example | Description |
 |---------|-------------|

@@ -25,7 +25,7 @@ By embracing automated testing, you can ensure that the Power Platform solutions
 
 ## Discussions
 
-The following [discussions](../discussion/) could be of interest
+The following <a href="/powerfuldev-testing/discussion">discussions</a> could be of interest
 
 | Discussion | Description |
 |------------|-------------|

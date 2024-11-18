@@ -104,7 +104,7 @@ In summary, Power Fx unifies the testing components in the Power Platform by off
 
 ### Consistent and Repeatable Tests
 
-As show by the CoE Starter Kit examples you can include known state tests for Dataverse state and connectors together with low code simulation formulas for [Power Apps](../examples/coe-kit-extending-test-engine.md.md) or [Power Automate](../examples/coe-kit-powerautomate-testing.md) provides a rich set of method to ensure consistent and repeatable tests.
+As show by the CoE Starter Kit examples you can include known state tests for Dataverse state and connectors together with low code simulation formulas for [Power Apps](../examples/coe-kit-extending-test-engine.md) or [Power Automate](../examples/coe-kit-powerautomate-testing.md) provides a rich set of method to ensure consistent and repeatable tests.
 
 By leveraging the Power Apps test engine platform providers can abstract the compexity if interacting with specific Power Platform resources simplifying the testing process when compared to code first browser automation which can generate tests which are less consistent and repeatable.
 
