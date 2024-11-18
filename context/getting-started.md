@@ -12,7 +12,7 @@ We are looking forward to working with you to embrace the journey and be part of
 
 ### Business Users
 
-[Business users](/powerfuldev-testing/roles-and-responsibilties#business-roles#business-roles) should familiarize themselves with relevant business roles and start planning where automated testing can help with their business processes. Understanding the potential impact and benefits of automated testing will be crucial in identifying areas for improvement and efficiency.
+[Business users](/powerfuldev-testing/roles-and-responsibilties#business-roles) should familiarize themselves with relevant business roles and start planning where automated testing can help with their business processes. Understanding the potential impact and benefits of automated testing will be crucial in identifying areas for improvement and efficiency.
 
 ### Architects
 
