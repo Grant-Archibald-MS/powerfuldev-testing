@@ -44,7 +44,7 @@ To ensure we are using the latest version of the Power Apps Test Engine, we buil
 
 Authentication is a critical component of the test automation process. The sample script employs browser-based authentication, which offers a range of options to authenticate with Microsoft Entra. This method generates a persistent browser cookie, allowing for non-interactive execution of subsequent tests. The management of these browser cookies is governed by the guidelines provided in the Microsoft Entra documentation on session lifetime and conditional access policies.
 
-{% include figure popup=true image_path="/examples/media/authentication-options.png" alt="Authentication Options" caption=""Authentication Options" %}
+{% include figure popup=true image_path="/examples/media/authentication-options.png" alt="Authentication Options" caption="Authentication Options" %}
 
 As the Power CAT Engineering team looked at the different authentication options for the CoE Starter Kit we have started with browser based authentication for local testing. This approach works with conditional access policies of our environments and allows a quick and less intrusive process to authenticate as different test persona.
 
