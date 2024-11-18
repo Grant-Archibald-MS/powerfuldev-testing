@@ -34,3 +34,11 @@ Automated testing is not just a technical necessity; it is a strategic imperativ
 As a business stakeholder, your role is to ensure that the investments in the Power Platform deliver the expected business value. By advocating for and overseeing the implementation of automated testing practices, you can ensure that the solutions are reliable, performant, and secure. This not only supports business continuity but also empowers business users to innovate confidently and effectively.
 
 Explore further to understand how automated testing can be integrated into your organization's low-code development process and how it can drive the success of your Power Platform investments.
+
+## Discussions
+
+The following [discussions](../discussion/) could be of interest
+
+| Discussion | Description |
+|------------|-------------|
+[Building a Sustainability Model](../discussion/building-a-sustainability-model.md) | In the fast-paced world of software development, the initial rush of quickly building and deploying a solution can be exhilarating. However, the true challenge lies in keeping your great idea alive and ensuring its sustainability over time. This discussion explores how to build a sustainability model that not only keeps your solution relevant but also engages the community and stakeholders in the process. | [Link](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/5)

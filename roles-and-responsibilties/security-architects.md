@@ -22,3 +22,11 @@ Automated testing is a vital tool for Security Architects. It helps in:
 - **Scalability**: Automated testing can easily scale to accommodate larger projects and more complex testing scenarios, making it an essential tool for Security Architects.
 
 By embracing automated testing, you can ensure that the Power Platform solutions are secure, compliant, and ready for deployment. This not only enhances the quality of the solutions but also contributes to the overall success of the organization.
+
+## Discussions
+
+The following [discussions](../discussion/) could be of interest
+
+| Discussion | Description |
+|------------|-------------|
+| [Authentication in Power Apps Test Engine](https://github.com/Grant-Archibald-MS/powerfuldev-testing/blob/main/discussion/authentication.md) | Authentication is a critical component of the test automation process. The sample script employs browser-based authentication, which offers a range of options to authenticate with Microsoft Entra. This method generates a persistent browser cookie, allowing for non-interactive execution of subsequent tests. The management of these browser cookies is governed by the guidelines provided in the Microsoft Entra documentation on session lifetime and conditional access policies. |[Link](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/8)

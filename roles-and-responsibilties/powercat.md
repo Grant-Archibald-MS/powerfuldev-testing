@@ -57,3 +57,15 @@ As we engage with various roles across the spectrum to ensure their success and 
 - **Support Engineers**: We ensure they have the tools and knowledge to support and fix low-code solutions effectively. Their feedback helps us improve the support and maintenance aspects of our testing tools.
 - **Audit**: We provide tools and guidance to maintain an end-to-end audit trail and verify compliance. Their feedback helps us ensure that our testing tools meet compliance and audit requirements.
 - **Security Architects**: We assist in managing cybersecurity and data privacy through automated testing. Their feedback helps us enhance the security features of our testing tools.
+
+## Examples
+
+The following [examples](../examples/) could be of interest
+
+| Example | Description |
+|---------|-------------|
+| [CoE Starter Kit Test Automation ALM](../examples/coe-kit-test-automation-alm.md) | The CoE Starter Kit Test Automation ALM aims to maintain quality and reduce manual effort for new releases by automating the release and continuous deployment process. This involves using tools like Power Automate Desktop, Terraform, and the Test Engine to provision environments, install dependencies, and validate setups, ensuring consistent and reliable operations.
+| [CoE Starter Kit -  Infrastructure As Code](../examples/coe-kit-infrastructure-as-code.md) | The combination of Terraform and the CoE Starter Kit offers a robust solution for managing Power Platform environments by leveraging infrastructure as code to ensure consistency and reliability. This approach simplifies the setup and maintenance of environments, allowing us to create the foundations of an automated test matrix to test setup and upgrade process. 
+| [CoE Starter Kit Power Automate Testing](../examples/coe-kit-powerautomate-testing.md) | The CoE Starter Kit Power Automate Testing feature is in the early stages of planning and aims to address the needs of users building and deploying Power Automate Cloud flows. Proper testing of these flows is crucial for maintaining accurate data collection and reporting, which supports better decision-making and governance within the organization
+
+

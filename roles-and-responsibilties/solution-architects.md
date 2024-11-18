@@ -34,3 +34,13 @@ Automated testing is essential for Solution Architects to achieve their goals an
 As a Solution Architect, your role is to ensure that low-code solutions align with enterprise standards and best practices. By advocating for and overseeing the implementation of automated testing practices, you can ensure that the solutions are reliable, performant, and integrated seamlessly into the broader IT ecosystem. This not only supports business continuity but also drives innovation and strategic growth.
 
 Explore further to understand how automated testing can be integrated into your organization's low-code development process and how it can drive the success of your Power Platform investments.
+
+## Discussions
+
+The following [discussions](../discussion/) could be of interest
+
+| Discussion | Description |
+|------------|-------------|
+[Implementing Effective Automated Testing Strategies in Power Platform Solutions](../discussion/implementing-effective-automated-testing-strategies-in-power-platform-solutions.md) | Automated testing is a crucial aspect of modern software development, ensuring the reliability and efficiency of solutions. This discussion explores how to implement effective automated testing strategies in Power Platform solutions, using the CoE Starter Kit Setup and Upgrade wizard as an example. We will discuss the layers of automated testing across Power Apps, Power Automate, and Dataverse. | [Link](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/6)
+| [Exploring Generative AI with Power Apps Test Engine](https://github.com/Grant-Archibald-MS/powerfuldev-testing/blob/main/discussion/generative-ai.md) | As part of our proposed session, we could dive into the transformative capabilities of Generative AI within the Power Apps Test Engine. This discussion could highlight key scenarios: using Generative AI to convert natural language into defined test steps and leveraging AI Builder prompts to create and measure the potential business value of low-code solutions against Objectives and Key Results (OKRs). | [Link](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/7)
+[Introduction to Testing Approaches](https://github.com/Grant-Archibald-MS/powerfuldev-testing/blob/main/discussion/introduction-to-testing-approaches.md) | Read discussion and give your feedback on the concepts of automated testing looking at concepts like black box and white box testing for Power Apps, including Canvas Apps, Custom Pages, and Model Driven Applications. We'll explore the importance of state management, connectors, workflows, and Dataverse state, and how to effectively test these components. | [Link](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/4)
