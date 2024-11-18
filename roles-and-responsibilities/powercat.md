@@ -68,7 +68,7 @@ Power CAT produces a wealth of resources to guide our customers through their di
 
 ### Power Well-Architected
 
-The [Power Platform Well-Architected](https://aka.ms/powe) framework is a set of best practices, architecture guidance, and review tools. It helps you make informed decisions about the design, planning, and implementation of modern application workloads with Microsoft Power Platform.
+The [Power Platform Well-Architected](https://aka.ms/powa) framework is a set of best practices, architecture guidance, and review tools. It helps you make informed decisions about the design, planning, and implementation of modern application workloads with Microsoft Power Platform.
 
 ### Power Platform Guidance
 
