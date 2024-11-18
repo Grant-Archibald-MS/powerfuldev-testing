@@ -2,11 +2,27 @@
 layout: home
 author_profile: true
 toc: true
+feature_row:
+  - image_path: /assets/images/give-feedback.png
+    alt: "placeholder image 1"
+    title: '<center>Give Feedback</center>'
+    url: "https://aka.ms/powerfuldevs/testing/feedback"
+  - image_path: /assets/images/join-discussions.png
+    alt: "Join Discussions Icon"
+    title: "Join Discussions"
+    url: /discussion
+  - image_path: /assets/images/consider-roles.png
+    alt: "Consider Roles"
+    title: "Consider Roles"
+    url: /roles-and-responsibilties
 ---
 
 ![PowerfulDev Conference](./PowerfulDevConference.png)
 
 Join us at the Powerful Devs Conference 2025 for an in-depth session on automated testing within the Power Platform. 
+
+{% include feature_row %}
+
 
 Have a look at our [Context setting articles](./context/), [Discussion topics](./discussion/) and [Examples](./examples/) to give us [Feedback](https://aka.ms/powerfuldevs/testing/feedback) on this topic.
 {: .notice--success}
