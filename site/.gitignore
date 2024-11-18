@@ -4,6 +4,7 @@ _site
 .jekyll-metadata
 vendor
 
+**/roles-and-responsibilties
 **/context
 **/discussion
 **/examples

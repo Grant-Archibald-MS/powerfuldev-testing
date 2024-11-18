@@ -1,4 +1,6 @@
 main:
+  - title: "Roles and Responsibilities"
+    url: /roles-and-responsibilties
   - title: "Context"
     url: /context
   - title: "Discussions"
@@ -7,6 +9,39 @@ main:
     url: /examples
 
 docs:
+  - title: "Roles and Responsibilities"
+    children:
+      - title: "Business Stakeholders"
+        url: /roles-and-responsibilties/business-stakeholders
+      - title: "Business Unit Leads"
+        url: /roles-and-responsibilties/business-unit-leads
+      - title: "Managers"
+        url: /roles-and-responsibilties/managers
+      - title: "Makers"
+        url: /roles-and-responsibilties/makers
+      - title: "Trainers"
+        url: /roles-and-responsibilties/trainers
+      - title: "Enterprise Architects"
+        url: /roles-and-responsibilties/enterprise-architects
+      - title: "Solution Architects"
+        url: /roles-and-responsibilties/solution-architects 
+      - title: "DevOps Engineers and Architects"
+        url: /roles-and-responsibilties/devops-engineers-architects
+      - title: "Software Engineers"
+        url: /roles-and-responsibilties/software-engineers
+      - title: "Support Engineers"
+        url: /roles-and-responsibilties/support-engineers
+      - title: "Audit"
+        url: /roles-and-responsibilties/audit
+      - title: "Security Architects"
+        url: /roles-and-responsibilties/security-architects
+      - title: "Microsoft Engineering"
+        url: /roles-and-responsibilties/microsoft-engineering
+      - title: "Microsoft Support"
+        url: /roles-and-responsibilties/microsoft-support
+      - title: "Power CAT"
+        url: /roles-and-responsibilties/powercat
+        
   - title: Context
     children:
       - title: "Why Automated Testing?"
