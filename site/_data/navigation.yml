@@ -1,4 +1,6 @@
 main:
+  - title: "Getting Started"
+    url: /context/getting-started
   - title: "Roles and Responsibilities"
     url: /roles-and-responsibilities
   - title: "Context"

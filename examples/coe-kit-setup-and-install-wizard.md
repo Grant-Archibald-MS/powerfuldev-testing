@@ -32,7 +32,7 @@ The Setup and Upgrade Wizard of the CoE Starter Kit provides a good example of w
 
 The state of the page which the current state of the Subway Navigation control and the wizard steps is controlled by a common variable. This application is made up of multiple screens that allows the user to verify that the different elements of the CoE Starter Kit have been setup and is in a working state.
 
-{% include figure popup=true image_path="https://learn.microsoft.com/en-us/power-platform/guidance/coe/media/coesetupwizard.png#lightbox" alt="Center of Excellence Setup and Upgrade Wizard screenshot" caption="Center of Excellence Setup and Upgrade Wizard" %}
+{% include figure popup=true image_path="https://learn.microsoft.com/en-us/power-platform/guidance/coe/media/coesetupwizard.png" alt="Center of Excellence Setup and Upgrade Wizard screenshot" caption="Center of Excellence Setup and Upgrade Wizard" %}
 
 ### Power FX Test Scenario
 
