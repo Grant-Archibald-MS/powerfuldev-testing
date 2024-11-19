@@ -30,6 +30,7 @@ minimal_mistakes_skin: air
 favicon: /powerfuldev-testing/assets/images/favicon.ico
 copyright_url: https://grant-archibald-ms.github.io/powerfuldev-testing
 permalink: /:categories/:title/
+og_image: "/PowerfulDevConference.png"
 
 author:
   name     : "Grant Archibald"
@@ -82,15 +83,21 @@ sidebar:
 
 defaults:
   - scope:
+      path: ""
+    values:
+      og_image: "/powerfuldev-testing/PowerfulDevConference.png"
+  - scope:
       path: "" # An empty string here means all files in the project
       type: "examples" # This applies to all pages
     values:
       layout: single
+      og_image: "/powerfuldev-testing/PowerfulDevConference.png"
   - scope:
       path: "" # An empty string here means all files in the project
       type: "discussion" # This applies to all pages
     values:
       layout: single
+      og_image: "/powerfuldev-testing/PowerfulDevConference.png"
   - scope:
       path: ""
       type: posts
@@ -99,3 +106,4 @@ defaults:
       author_profile: true
       read_time: true
       related: true
+      og_image: "/powerfuldev-testing/PowerfulDevConference.png"
