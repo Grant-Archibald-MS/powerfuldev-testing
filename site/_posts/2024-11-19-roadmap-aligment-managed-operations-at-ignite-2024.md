@@ -18,7 +18,7 @@ At Ignite 2024, Nirav Shah introduced Managed Operations for Microsoft Dynamics 
 
 {% include figure popup=true image_path="https://www.microsoft.com/en-us/power-platform/blog/wp-content/uploads/2024/11/IntroManagedOps-2048x1164.jpg" alt="Overview diagram of Power Platform Managed Operations" %}
 
-For a detailed review our [Roadmap Alignment](/powerfuldev-testing/context/roadmap-alignment).
+For a deeper review our have a look at [Roadmap Alignment](/powerfuldev-testing/context/roadmap-alignment) for more information.
 
 ## Managed Operations
 
