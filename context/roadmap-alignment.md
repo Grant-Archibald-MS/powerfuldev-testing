@@ -2,7 +2,7 @@
 
 ## Managed Operations
 
-As outlined at Ignite by Nirav Shah the Corporate Present for Dataverse in [Introducing managed operations for Microsoft Dynamics 365 and Power Platform](https://www.microsoft.com/en-us/power-platform/blog/it-pro/introducing-managed-operations-for-microsoft-dynamics-365-and-power-platform/) we introduced the concept of Managed Operations which aligns the work for this session with wider Managed features in the Power Platform.
+As outlined at Ignite by Nirav Shah the Corporate Vice President (CVP) for Dataverse in [Introducing managed operations for Microsoft Dynamics 365 and Power Platform](https://www.microsoft.com/en-us/power-platform/blog/it-pro/introducing-managed-operations-for-microsoft-dynamics-365-and-power-platform/) we introduced the concept of Managed Operations which aligns the work for this session with wider Managed features in the Power Platform.
 
 {% include figure popup=true image_path="https://www.microsoft.com/en-us/power-platform/blog/wp-content/uploads/2024/11/IntroManagedOps-2048x1164.jpg" alt="Overview diagram of Power Platform Managed Operations" %}
 
