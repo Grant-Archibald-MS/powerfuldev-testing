@@ -1,46 +1,61 @@
-# Getting Started
+---
+title: Getting Started
+layout: single
+author_profile: true
+read_time: true
+permalink: /context/getting-started
+toc: true
+entries_layout: grid
+feature_row:
+  - image_path: /assets/images/getting-started-business.png
+    alt: "Business Get Started"
+    title: '<center style="width=200px">Business Get Started</center>'
+    url: /context/getting-started-business
+  - image_path: /assets/images/getting-started-architects.png
+    alt: "Architect Get Started"
+    title: '<center style="width=200px">Architects Get Started</center>'
+    url: /context/getting-started-architects
+  - image_path: /assets/images/getting-started-technical.png
+    alt: "Build and Run tests"
+    title: '<center style="width=200px">Technical Get Started</center>'
+    url: /context/getting-started-technical
+---
 
 When it comes to Power Platform Automated Testing, where you start will depend on your <a href="/powerfuldev-testing/roles-and-responsibilities">role in the organization</a> and your willingness to work as an early adopter. This guide will help you navigate the key items to consider as you embark on this journey.
 
-![Getting started image](/powerfuldev-testing/assets/images/getting-started.png)
+{% include feature_row type=center %}
 
-By understanding your role and the steps involved, you can determine when and how to effectively contribute to the successful implementation of automated testing within your organization. 
+## Business
 
-We are looking forward to working with you to embrace the journey and be part of the innovation that drives the Power Platform forward.
+Business users play a crucial role in the successful implementation of Power Platform Automated Testing. As early adopters, your involvement and feedback are essential to drive innovation and ensure the solutions meet your needs.
 
-## Business Roles
+By embracing low-code automated testing, you can significantly enhance the efficiency and reliability of your business processes.
 
-### Business Users
+[Read More](./getting-started-business.md)
 
-[Business users](/powerfuldev-testing/roles-and-responsibilities#business-roles) should familiarize themselves with relevant business roles and start planning where automated testing can help with their business processes. Understanding the potential impact and benefits of automated testing will be crucial in identifying areas for improvement and efficiency.
+## Architects
 
-### Architects
+Business users play a crucial role in the successful implementation of Power Platform Automated Testing. 
 
-[Architects](/powerfuldev-testing/roles-and-responsibilities#technical-roles) should begin by looking at the available information and considering how automated testing can be integrated into their Power Platform solutions. This involves evaluating the current architecture and identifying opportunities to enhance it with automated testing practices.
+As early adopters, your involvement and feedback are essential to drive innovation and ensure the solutions meet your needs. 
 
-### Security Architects
+By embracing low-code automated testing, you can significantly enhance the efficiency and reliability of your business processes. 
 
-[Security architects](/powerfuldev-testing/roles-and-responsibilities#risk-and-compliance) need to review the available security information and determine how automated testing can fit into the range of tools and processes they monitor. Ensuring that automated testing aligns with security protocols and standards is essential for maintaining a secure environment.
+[Read More](./getting-started-architects.md)
 
-### Software Engineers and Advanced Makers
+## Technical Users
 
-[Software engineers and advanced makers](/powerfuldev-testing/roles-and-responsibilities#technical-roles) have the option to decide whether they want to be involved as early adopters. They can choose to use the early components and provide feedback or wait for the in-product release. Early adopters play a critical role in shaping the development and refinement of new features.
+Technical users are at the forefront of implementing and optimizing Power Platform Automated Testing. 
 
-#### Early Adopter
+Your technical expertise and willingness to adopt new technologies are crucial for driving innovation and ensuring the success of low-code solutions. 
 
-As an early adopter, consider reaching out to the [Power CAT](../roles-and-responsibilities/powercat.md) by giving us [feedback](https://aka.ms/powerfuldevs/testing/feedback) that you would like collaborate. We can discuss our experiences with the [CoE Starter Kit](../examples/coe-kit-automate-test-sample.md) to see how it could help you with using the current source code version of Power Apps Test Engine and prioritizing your feedback.
+By embracing automated testing, you can enhance the quality and efficiency of your development processes.
 
-#### In Product Usage
+[Read More](./getting-started-technical.md)
 
-Many of the features discussed in this site cover in development features. As features complete product reviews, future builds of the [Power Platform Command Line Interface](https://learn.microsoft.com/power-platform/developer/cli/reference/test) will include these new features. This approach allows for continuous improvement and integration of the latest advancements in automated testing.
+## Technical
 
-Continue to watch [Roadmap](../context/roadmap-alignment.md) for expected time line and watch for updates of new features that can be used with updates to the command line tools.
-
-#### Ring Deployment Model
-
-It's important to note that there will be a ring deployment model for new features. Initially, features will be classified as Experimental and will undergo wider adoption and verification in various test cases and customer scenarios before being promoted to broader usage. This phased approach ensures that features are thoroughly tested and refined before reaching a larger audience.
-
-### Power CAT's Role
+## Power CAT's Role
 
 <a href="/powerfuldev-testing/roles-and-responsibilities/powercat">Power CAT</a> is an early adopter, utilizing a [build-from-source strategy](../examples/coe-kit-build-from-source-run-tests.md) and working closely and contributing towards he success of Engineering teams responsible for Automated Testing in the Power Platform.  
 
