@@ -72,6 +72,16 @@ copy_folders:
   - source: '../discussion'
     destination: 'discussion'
 
+rename_files:
+  - from: "_site/discussion.html"
+    to: "_site/discussion/index.html"
+  - from: "_site/context.html"
+    to: "_site/context/index.html"
+  - from: "_site/examples.html"
+    to: "_site/examples/index.html"
+  - from: "_site/roles-and-responsibilities.html"
+    to: "_site/roles-and-responsibilities/index.html"
+
 navigation:
   - main
   - docs
