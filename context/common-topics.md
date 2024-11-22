@@ -66,4 +66,4 @@ This page contains sets of related topics that enable you to quickly relate topi
 
 | Example | Description |
 |---------|-------------|
-| [Testing Security](../examples/testing-security.md.md) | This article provides an example of how we can test browser-based authentication using multiple personas using Multi-Factor Authentication (MFA) with persistent cookie state and Power Apps security for Power Apps. 
+| [Testing Security](../examples/testing-security.md) | This article provides an example of how we can test browser-based authentication using multiple personas using Multi-Factor Authentication (MFA) with persistent cookie state and Power Apps security for Power Apps. 
