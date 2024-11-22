@@ -26,7 +26,7 @@ Managed Operations is a suite of capabilities designed to empower organizations 
 
 ## CoE Kit Updates
 
-The CoE Kit is being updated to align with these new enhancements, driving the need for more automated testing. This transformation is supported by our Power CAT Engineering team's strategy to enhance [ALM fundamentals](/powerfuldev-testing/examples/coe-kit-test-automation-alm.md) improving deployment processes and incorporating automated tests.
+The CoE Kit is being updated to align with these new enhancements, driving the need for more automated testing. This transformation is supported by our Power CAT Engineering team's strategy to enhance [ALM fundamentals](/powerfuldev-testing/examples/coe-kit-test-automation-alm) improving deployment processes and incorporating automated tests.
 
 ## Conclusion
 
