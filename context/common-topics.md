@@ -58,4 +58,12 @@ This page contains sets of related topics that enable you to quickly relate topi
 | [Understanding the "No Cliffs" Extensibility Model of Power Apps Test Engine](../examples/understanding-no-cliffs-extensibility-model.md) | The "no cliffs" extensibility model of Power Apps Test Engine ensures that users can extend its capabilities without encountering barriers, providing a seamless experience for both makers and developers. By leveraging Power FX and C# test scripts, this model simplifies handling complex scenarios like Power Apps consent dialogs to enhancing the efficiency and reliability of the testing process
 | [Using Power Fx Namespaces in Testing](../examples/using-powerfx-namespaces-in-testing.md) | Power Fx namespaces allow developers to organize and separate different sets of functions within the language, helping to maintain clarity and avoid conflicts. By distinguishing between common features and specific actions, and separating stable features from experimental ones, namespaces ensure the stability and reliability of Power Apps.
 
-## Secuity
+## Security
+
+| Discussion | Description |
+|------------|-------------|
+| [Authentication in Power Apps Test Engine](../discussion/authentication.md) | Authentication is a critical component of the test automation process. The sample script employs browser-based authentication, which offers a range of options to authenticate with Microsoft Entra. This method generates a persistent browser cookie, allowing for non-interactive execution of subsequent tests. The management of these browser cookies is governed by the guidelines provided in the Microsoft Entra documentation on session lifetime and conditional access policies. |[Link](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/8)
+
+| Example | Description |
+|---------|-------------|
+| [Testing Security](../examples/testing-security.md.md) | This article provides an example of how we can test browser-based authentication using multiple personas using Multi-Factor Authentication (MFA) with persistent cookie state and Power Apps security for Power Apps. 
