@@ -31,4 +31,3 @@ By taking these steps, you can leverage the full potential of low-code automated
 ## Get Hands On Now
 
 Want to work with the latest components follow get me hands on to start recording any authoring your tests today. [Read more](./get-started-now.md)
-

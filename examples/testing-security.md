@@ -1,6 +1,6 @@
 # Testing Security
 
-This article provides an example of how we can test browser-based authentication using Multi-Factor Authentication (MFA) with persistent cookie state and Power Apps security for Power Apps. 
+This article provides an example of how we can test browser-based authentication using multiple personas using Multi-Factor Authentication (MFA) with persistent cookie state and Power Apps security for Power Apps. 
 
 The authentication process allows for cookies that are used for authentication to be stored between test runs using `storageState` which allows the browser state to be stored between tests.
 

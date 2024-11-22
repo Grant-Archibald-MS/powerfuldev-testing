@@ -29,4 +29,11 @@ The following [discussions](../discussion/README.md) could be of interest
 
 | Discussion | Description |
 |------------|-------------|
-| [Authentication in Power Apps Test Engine](https://github.com/Grant-Archibald-MS/powerfuldev-testing/blob/main/discussion/authentication.md) | Authentication is a critical component of the test automation process. The sample script employs browser-based authentication, which offers a range of options to authenticate with Microsoft Entra. This method generates a persistent browser cookie, allowing for non-interactive execution of subsequent tests. The management of these browser cookies is governed by the guidelines provided in the Microsoft Entra documentation on session lifetime and conditional access policies. |[Link](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/8)
+| [Authentication in Power Apps Test Engine](../discussion/authentication.md) | Authentication is a critical component of the test automation process. The sample script employs browser-based authentication, which offers a range of options to authenticate with Microsoft Entra. This method generates a persistent browser cookie, allowing for non-interactive execution of subsequent tests. The management of these browser cookies is governed by the guidelines provided in the Microsoft Entra documentation on session lifetime and conditional access policies. |[Link](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/8)
+
+
+## Example Concepts
+
+| Example | Description |
+|---------|-------------|
+| [Testing Security](../examples/testing-security.md.md) | This article provides an example of how we can test browser-based authentication using multiple personas using Multi-Factor Authentication (MFA) with persistent cookie state and Power Apps security for Power Apps. 
