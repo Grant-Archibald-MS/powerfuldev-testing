@@ -53,8 +53,6 @@ By embracing automated testing, you can enhance the quality and efficiency of yo
 
 [Read More](./getting-started-technical.md)
 
-## Technical
-
 ## Power CAT's Role
 
 <a href="/powerfuldev-testing/roles-and-responsibilities/powercat">Power CAT</a> is an early adopter, utilizing a [build-from-source strategy](../examples/coe-kit-build-from-source-run-tests.md) and working closely and contributing towards he success of Engineering teams responsible for Automated Testing in the Power Platform.  
