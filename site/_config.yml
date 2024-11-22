@@ -32,6 +32,11 @@ copyright_url: https://grant-archibald-ms.github.io/powerfuldev-testing
 permalink: /:categories/:title/
 og_image: "/PowerfulDevConference.png"
 permalink: pretty
+search: true
+search_provider: lunr
+
+lunr:
+  search_within_pages: true
 
 author:
   name     : "Grant Archibald"
