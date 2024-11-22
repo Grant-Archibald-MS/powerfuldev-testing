@@ -63,7 +63,7 @@ By embracing automated testing, you can enhance the quality and efficiency of yo
 
 We also welcome you to join community-driven discussions, add comments on discussion topics, share your insights, and collaboratively explore how testing concepts can be effectively applied to the solutions you build and maintain. 
 
-To dive deeper into these topics and join the conversation, visit <a href="/powerfuldev-testing/discussions/">discussions</a>.
+To dive deeper into these topics and join the conversation, visit <a href="/powerfuldev-testing/discussion/">discussions</a>.
 
 ## Give Your Feedback
 
