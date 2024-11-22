@@ -31,6 +31,7 @@ favicon: /powerfuldev-testing/assets/images/favicon.ico
 copyright_url: https://grant-archibald-ms.github.io/powerfuldev-testing
 permalink: /:categories/:title/
 og_image: "/PowerfulDevConference.png"
+permalink: pretty
 
 author:
   name     : "Grant Archibald"
@@ -82,6 +83,10 @@ sidebar:
   nav: "docs"
 
 defaults:
+  - scope:
+      path: "discussion"
+    values:
+      permalink: /discussion/:path/
   - scope:
       path: ""
     values:
