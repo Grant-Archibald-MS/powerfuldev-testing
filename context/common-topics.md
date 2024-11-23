@@ -48,7 +48,9 @@ This page contains sets of related topics that enable you to quickly relate topi
 
 | Context | Notes |
 |---------|-------|
-| [Test Engine Extensibility](./test-engine-extensibility.md) | Discussion on Managed Extensility Framework (MEF) providers for Test Engine |
+| [Test Engine Extensibility](./test-engine-extensibility.md) | Discussion on Managed Extensibility Framework (MEF) providers for Test Engine |
+| [Test Engine Providers](./test-engine-providers.md) | Discussion on providers available for Test Engine to interact with different Power Platform resources |
+
 
 | Article | Notes | Feedback |
 |---------|-------|----------|
