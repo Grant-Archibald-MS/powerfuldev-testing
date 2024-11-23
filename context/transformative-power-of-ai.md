@@ -16,6 +16,86 @@ By combining its observational insights with your knowledge and expectations, Ge
 - **Edge Cases**: AI can identify and test scenarios that occur at the boundaries of expected input ranges, ensuring the application handles these situations gracefully.
 - **Exception Cases**: AI can also generate tests for unexpected or erroneous inputs, verifying that the application can handle errors without crashing or producing incorrect results.
 
+### Generated Tests
+
+Using the generated test results the following can be automatically generated as an example
+
+#### Happy Path Scenarios
+
+##### Initial Setup and Permissions
+
+```yaml
+testCase:
+  name: Verify initial setup and permissions
+  description: Verify that the app requests and sets up necessary permissions correctly.
+  testSteps: |
+    =
+    // Set Expected Simulation values for Dataverse and Connectors
+    // Start the application
+    // Set the initial state
+    // Click on action
+    // Assert the results based on variable and collection changes
+```
+
+##### Navigation and Data Entry
+
+```yaml
+testCase:
+  name: Verify navigation and data entry
+  description: Verify that the user can navigate through the app and enter data correctly.
+  testSteps: |
+    =
+    // Set Expected Simulation values for Dataverse and Connectors
+    // Start the application
+    // Set the initial state
+    // Click on action
+    // Assert the results based on variable and collection changes
+```
+
+#### Edge Cases
+
+##### Boundary Values for Data Entry
+
+```yaml
+testCase:
+  name: Verify boundary values for data entry
+  description: Verify that the app handles boundary values for data entry fields.
+  testSteps: |
+    =
+    // Set Expected Simulation values for Dataverse and Connectors
+    // Start the application
+    // Set the initial state
+    // Click on action
+    // Assert the results based on variable and collection changes
+```
+
+```yaml
+testCase:
+  name: Verify handling of missing permissions
+  description: Verify that the app handles missing permissions correctly.
+  testSteps: |
+    =
+    // Set Expected Simulation values for Dataverse and Connectors
+    // Start the application
+    // Set the initial state
+    // Click on action
+    // Assert the results based on variable and collection changes
+
+```
+
+```yaml
+testCase:
+  name: Verify handling of data save failures
+  description: Verify that the app handles data save failures correctly.
+  testSteps: |
+    =
+    // Set Expected Simulation values for Dataverse and Connectors
+    // Start the application
+    // Set the initial state
+    // Click on action
+    // Assert the results based on variable and collection changes
+```
+
 ## Bridging the Knowledge Gap
 
 For many developers, especially those new to testing practices, understanding how to create effective test cases can be challenging. Generative AI helps bridge this gap by providing intelligent suggestions based on observed interactions and best practices. This support is invaluable for ensuring that all critical aspects of the application are tested thoroughly.
