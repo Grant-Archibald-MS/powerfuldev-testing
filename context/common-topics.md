@@ -46,6 +46,10 @@ This page contains sets of related topics that enable you to quickly relate topi
 
 ## Technical
 
+| Context | Notes |
+|---------|-------|
+| [Test Engine Extensibility](./test-engine-extensibility.md) | Discussion on Managed Extensility Framework (MEF) providers for Test Engine |
+
 | Article | Notes | Feedback |
 |---------|-------|----------|
 [Low Code Power Platform Testing for the Code First Developer](../discussion/low-code-testing-for-code-first-developer.md) | This article is intended as a starter for discussion and contains content that is under development. It is based on experiences from teams like the Power CAT Engineering team as they apply low code testing principles to the low code Power Platform solutions they build and maintain. Ideally, this discussion serves as a great starting point to foster collaboration and gain input to help shape low code automation and engineering excellence in the wider low code Power Platform community. | [Link](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/2)
