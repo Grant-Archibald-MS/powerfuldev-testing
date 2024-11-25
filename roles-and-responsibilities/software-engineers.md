@@ -39,6 +39,7 @@ providers for Test Engine |
 | [Test Engine Extensibility](./test-engine-extensibility.md) | Discussion on Managed Extensibility Framework (MEF) providers for Test Engine | |
 | [Test Engine Providers](./test-engine-providers.md) | Discussion on providers available for Test Engine to interact with different Power Platform resources | |
 | [Debugging Test Engine Tests](./debugging-test-engine-test.md) | Follow this guide on how to effectively debug your tests using a local build from source strategy | |
+| [Keeping to to date](./keeping-up-to-date.md.md) | Follow this guide on how to effectively debug your tests using a local build from source strategy | Staying current with the latest features and updates in the Power Apps Test Engine allows you to leverage new capabilities and ensuring optimal performance. Here's how you can keep up to date based on the version of test engine you are using. | |
 
 ## Discussions
 
