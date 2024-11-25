@@ -38,7 +38,7 @@ By embracing automated testing, you can ensure that the Power Platform solutions
 providers for Test Engine |
 | [Test Engine Extensibility](./test-engine-extensibility.md) | Discussion on Managed Extensibility Framework (MEF) providers for Test Engine | |
 | [Test Engine Providers](./test-engine-providers.md) | Discussion on providers available for Test Engine to interact with different Power Platform resources | |
-
+| [Debugging Test Engine Tests](./debugging-test-engine-test.md) | Follow this guide on how to effectively debug your tests using a local build from source strategy | |
 
 ## Discussions
 
