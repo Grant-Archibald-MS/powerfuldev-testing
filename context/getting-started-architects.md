@@ -1,4 +1,4 @@
-## Architects
+# Getting Started Architects
 
 Architects play a pivotal role in the successful implementation of Power Platform Automated Testing. Your expertise and strategic oversight are essential to ensure that low-code solutions are robust, scalable, and aligned with organizational goals. By embracing automated testing, you can drive innovation and enhance the quality of your solutions.
 

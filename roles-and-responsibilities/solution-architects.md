@@ -35,6 +35,19 @@ As a Solution Architect, your role is to ensure that low-code solutions align wi
 
 Explore further to understand how automated testing can be integrated into your organization's low-code development process and how it can drive the success of your Power Platform investments.
 
+## Context
+
+| Article | Notes | Feedback |
+|---------|-------|----------|
+| [Growing to Enterprise Grade](../context/growing-to-enterprise-grade.md) | As solutions scale, the need for robust testing practices becomes more critical. This article explores how to transition from small-scale projects to enterprise-grade solutions, emphasizing the importance of automated testing in maintaining high standards of reliability, security, and performance. | [Discussion Link](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/14) |
+| [Impacts on People, Process, and Tooling](../context/impacts-on-people-process-and-tooling.md) | Implementing automated testing requires a shift in mindset and practices. This article discusses the cultural and organizational changes needed to adopt automated testing, the impact on development and operations processes, and the tools that can facilitate this transformation. | [Discussion Link](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/15) |
+| [Transformative Power of AI](../context/transformative-power-of-ai.md) | This article explores how AI can observe interactions and inform the agent to suggest happy paths, edge cases, and exception cases. This capability helps deliver a faster path to generate comprehensive test scenarios, enhancing the overall testing process. | [Discussion Link](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/16) |
+| [Low code Testing Principles](../context/low-code-test-design-principles.md) | These principles provide a structured framework for creating robust tests that validate the functionality and performance of low-code applications. | [Discussion Link](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/19) |
+providers for Test Engine |
+| [Test Engine Extensibility](./test-engine-extensibility.md) | Discussion on Managed Extensibility Framework (MEF) providers for Test Engine | |
+| [Test Engine Providers](./test-engine-providers.md) | Discussion on providers available for Test Engine to interact with different Power Platform resources | |
+
+
 ## Discussions
 
 The following [discussions](../discussion/README.md) could be of interest

@@ -35,6 +35,10 @@ By embracing automated testing, you can ensure that the Power Platform solutions
 | [Why Not Just Use Code First Testing Tools](../context/why-not-just-use-code-first-testing-tools.md) | Code-first testing resources are relatively scarce, and the efficiency of building low-code solutions must be matched by the rapid creation of tests. This article explains why relying solely on code-first testing tools may not be sufficient and how low-code testing tools can complement them. | [Discussion Link](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/17)  |
 | [Roadmap Alignment](../context/roadmap-alignment.md) | Set context on how the work we are investing in for the CoE Starter Kit aligns with the wider Power Platform Automated testing roadmap. | [Discussion Link](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/18) |
 | [Low code Testing Principles](../context/low-code-test-design-principles.md) | These principles provide a structured framework for creating robust tests that validate the functionality and performance of low-code applications. | [Discussion Link](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/19) |
+providers for Test Engine |
+| [Test Engine Extensibility](./test-engine-extensibility.md) | Discussion on Managed Extensibility Framework (MEF) providers for Test Engine | |
+| [Test Engine Providers](./test-engine-providers.md) | Discussion on providers available for Test Engine to interact with different Power Platform resources | |
+
 
 ## Discussions
 

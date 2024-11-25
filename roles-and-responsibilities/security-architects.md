@@ -23,6 +23,27 @@ Automated testing is a vital tool for Security Architects. It helps in:
 
 By embracing automated testing, you can ensure that the Power Platform solutions are secure, compliant, and ready for deployment. This not only enhances the quality of the solutions but also contributes to the overall success of the organization.
 
+## Persona-Based Testing
+Persona-based testing involves creating different user personas to test how the application behaves under various conditions and user scenarios. This approach helps in identifying issues that might not be apparent when testing with a single user type. The [Permissions](https://github.com/microsoft/PowerApps-TestEngine/blob/integration/samples/permissions/README.md) sample provides an example of how to create tests for the following test scenarios.
+
+### Expected Test Cases
+
+User with Permissions and License: Ensure that the application opens correctly for a user who has the necessary permissions and a valid license. Verify that all functionalities are accessible and perform as expected
+.
+User with Limited Permissions: Test the application for a user with restricted permissions to ensure that they can only access the features they are authorized to use.
+
+### Edge Cases
+
+Application Not Shared: Test scenarios where the application has not been shared with the user. The user should receive an appropriate error message or be denied access.
+
+No Security Role: Verify that a user without the necessary security role cannot access the application or specific features within it.
+
+### Exception Cases
+
+No License: Ensure that users without a valid license cannot access the application. They should receive a clear message indicating the need for a license.
+
+Expired License: Test the behavior of the application when a user's license has expired. The application should restrict access and prompt the user to renew their license.
+
 ## Discussions
 
 The following [discussions](../discussion/README.md) could be of interest

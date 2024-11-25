@@ -1,4 +1,4 @@
-## Technical Users
+# Getting Started Technical Users
 
 Technical users are at the forefront of implementing and optimizing Power Platform Automated Testing. Your technical expertise and willingness to adopt new technologies are crucial for driving innovation and ensuring the success of low-code solutions. By embracing automated testing, you can enhance the quality and efficiency of your development processes.
 
