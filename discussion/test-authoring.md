@@ -60,7 +60,7 @@ Join the discussion and share your thoughts on how these features or others coul
 
 For this discussion we are assuming that this test recording process discussed below requires an interactive install of Test Engine within a desktop environment to record and author the tests. 
 
-As we proceed we build on these early experiences and will look at ways to wrap this experience and make it also approachable to all makers so that they take advantage of tools like copilot to to assist in the test management process
+As we proceed we build on these early experiences and will look at ways to wrap this experience and make it also approachable to all makers so that they take advantage of tools like copilot to assist in the test management process
 
 ## Example: CoE Kit Test Case Authoring
 
