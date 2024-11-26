@@ -44,6 +44,12 @@ No License: Ensure that users without a valid license cannot access the applicat
 
 Expired License: Test the behavior of the application when a user's license has expired. The application should restrict access and prompt the user to renew their license.
 
+## Context
+
+| Context | Notes |
+|---------|-------|
+| [Secure First Initiative](../context/security-first-initiative.md) | By integrating these principles, we aim to create robust, resilient, and secure applications that can withstand evolving cyber threats. |
+
 ## Discussions
 
 The following [discussions](../discussion/README.md) could be of interest

@@ -69,6 +69,10 @@ This page contains sets of related topics that enable you to quickly relate topi
 
 ## Security
 
+| Context | Notes |
+|---------|-------|
+| [Secure First Initiative](./security-first-initiative.md) | By integrating these principles, we aim to create robust, resilient, and secure applications that can withstand evolving cyber threats. |
+
 | Discussion | Description |
 |------------|-------------|
 | [Authentication in Power Apps Test Engine](../discussion/authentication.md) | Authentication is a critical component of the test automation process. The sample script employs browser-based authentication, which offers a range of options to authenticate with Microsoft Entra. This method generates a persistent browser cookie, allowing for non-interactive execution of subsequent tests. The management of these browser cookies is governed by the guidelines provided in the Microsoft Entra documentation on session lifetime and conditional access policies. |[Link](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/8)
