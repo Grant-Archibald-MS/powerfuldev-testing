@@ -8,34 +8,44 @@ For code-first developers eager to dive deep into the mechanics of the Test Engi
 
 2. Install Required Extensions: Ensure you have the C# extension installed in VS Code. This extension is essential for debugging .NET applications. You can find it in the Extensions view (Ctrl+Shift+X) by searching for "C#".
 
-3. Preparing for Debugging. Modify the samples Run Script: To enable debugging, add -w True to dotenet PowerAppsTestEngine.dll in the RunTests.ps1 script of the sample you want to debug. This modification allows the script to wait for the debugger to attach.
+3. Ensure that in integration branch
 
-4. Start the Test: Run your test using PowerShell and wait for the prompt "Waiting, press enter to continue".
+```pwsh
+git checkout integration
+```
+
+4. Preparing for Debugging. Modify the samples Run Script: To enable debugging, add -w True to dotenet PowerAppsTestEngine.dll in the RunTests.ps1 script of the sample you want to debug. This modification allows the script to wait for the debugger to attach. For example for the button clicker example it will look like
+
+```PowerShell
+dotnet PowerAppsTestEngine.dll -u "storagestate" -p "canvas" -a "none" -i "$currentDirectory\testPlan.fx.yaml" -t $tenantId -e $environmentId -w True
+```
+
+5. Start the Test: Run your test using PowerShell and wait for the prompt "Waiting, press enter to continue".
 
 ```pwsh
 .\RunTests.ps1
 ```
 
-5. Attach the Debugger: In VS Code, navigate to the Debug view (Ctrl+Shift+D).
+6. Attach the Debugger: In VS Code, navigate to the Debug view (Ctrl+Shift+D).
 
-6. Start Debugging: Press F5 to start the debugging process. VS Code will prompt you to select the process to attach to. Choose the process corresponding to your running .NET application, specifically the dotnet process related to PowerAppsTestEngine.
+7. Start Debugging: Press F5 to start the debugging process. VS Code will prompt you to select the process to attach to. Choose the process corresponding to your running .NET application, specifically the dotnet process related to PowerAppsTestEngine.
 
-7. Set Breakpoints: Open the code file from the src folder where you want to set breakpoints. Click in the left margin next to the line of code where you want to set a breakpoint, or press F9 to toggle a breakpoint on the current line.
+8. Set Breakpoints: Open the code file from the src folder where you want to set breakpoints. Click in the left margin next to the line of code where you want to set a breakpoint, or press F9 to toggle a breakpoint on the current line.
 Utilizing Debugging Tools
 
-8. Step Through Code:
+9. Step Through Code:
 
 Step Over (F10): Execute the current line of code and move to the next line.
 Step Into (F11): Step into the method call on the current line.
 Step Out (Shift + F11): Step out of the current method and return to the calling method.
 Continue (F5): Continue running the code until the next breakpoint or the end of the program.
 
-9. Watch Variables: Use the Watch window to monitor the values of variables. You can add variables to the Watch window by right-clicking on them in the code and selecting "Add to Watch".
+10. Watch Variables: Use the Watch window to monitor the values of variables. You can add variables to the Watch window by right-clicking on them in the code and selecting "Add to Watch".
 
-10. Debug Console: Use the Debug Console to execute code or evaluate expressions during debugging. This tool is invaluable for on-the-fly checks and quick evaluations.
+11. Debug Console: Use the Debug Console to execute code or evaluate expressions during debugging. This tool is invaluable for on-the-fly checks and quick evaluations.
 
-11. Inspect Variables: Hover over variables in your code to see their current values, or use the Variables pane in the Debug view to inspect variables.
+12. Inspect Variables: Hover over variables in your code to see their current values, or use the Variables pane in the Debug view to inspect variables.
 
-12. Stop Debugging: When you're done, you can stop the debugging session by pressing Shift + F5 or selecting the stop button in the Debug toolbar.
+13. Stop Debugging: When you're done, you can stop the debugging session by pressing Shift + F5 or selecting the stop button in the Debug toolbar.
 
 By following these steps, you can gain a deeper understanding of how the Test Engine works and effectively debug your authentication modules, providers, or Power Fx modules. Happy debugging!

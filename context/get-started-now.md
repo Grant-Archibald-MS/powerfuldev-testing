@@ -2,6 +2,9 @@
 
 Welcome, early adopters! If you're eager to try the current version of Power Platform Automated Testing, you're in the right place. This guide will help you get started with the necessary components and provide you with two paths to explore automated testing.
 
+There is also a work in progress [Learning module](../learning/) to help you get started.
+{: .notice--success}
+
 ## Prerequisites
 
 To get started, you'll need the following components:
@@ -12,7 +15,7 @@ To get started, you'll need the following components:
 
 This can seem daunting but the following steps will help you with this process assuming you are using Microsoft Windows as your local operating system.
 
-These install steps ise [winget](https://learn.microsoft.com/windows/package-manager/winget/#install-winget) for install. 
+These install steps use [winget](https://learn.microsoft.com/windows/package-manager/winget/#install-winget) for install. 
 
 ## Ability to Clone Repository
 
@@ -131,10 +134,10 @@ To complete this file
 
 ### Git Branch Notes
 
-Samples are currently in the `grant-archibald-md/integration-merge` branch as changes are reviewed and updated they will move to main and the Power Platform `pac test run` command. To use this branch
+Samples are currently in the `integration` branch as changes are reviewed and updated they will move to main and the Power Platform `pac test run` command. To use this branch
 
 ```pwsh
-git checkout grant-archibald-md/integration-merge
+git checkout integration
 ```
 
 ### Simplest Example: Clicking the Button of a Canvas App

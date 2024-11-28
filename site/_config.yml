@@ -76,6 +76,8 @@ copy_folders:
     destination: 'examples'
   - source: '../discussion'
     destination: 'discussion'
+  - source: '../learning'
+    destination: 'learning'
 
 rename_files:
   - from: "_site/discussion.html"
@@ -86,6 +88,8 @@ rename_files:
     to: "_site/examples/index.html"
   - from: "_site/roles-and-responsibilities.html"
     to: "_site/roles-and-responsibilities/index.html"
+  - from: "_site/learning.html"
+    to: "_site/learning/index.html"
 
 navigation:
   - main
