@@ -29,7 +29,7 @@ This module explains the following concepts:
 3. [Running Your First Test](./03-running-your-first-test.md)
 4. [Looking at Results](./04-looking-at-results.md)
 5. [Recording Your First Test](./05-recording-your-first-test.md)
-6. Asserting Results
+6. [Asserting Results](./06-asserting-results.md)
 7. Updating Controls using Set
 7. Simulating Connectors
 8. Simulating Dataverse

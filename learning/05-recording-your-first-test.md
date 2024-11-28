@@ -42,3 +42,5 @@ Follow these steps to record your first test:
     - You should find a `recorded.te.yaml` file in this folder. This file contains the recorded test steps based on your interactions with the application.
 
 By following these steps, you can easily create a test plan by interacting with your Power App, making it simpler to automate your testing process.
+
+<a href="./06-asserting-results" class="btn btn--primary">Asserting results</a>
