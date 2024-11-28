@@ -22,6 +22,9 @@ This module explains the following concepts:
 - Power Platform CLI
 - Git Client
 
+> NOTE: Unless stated othersize to use of the learning module assumed that you are using the `integration` branch. If you are new to feature branched you can read [Understanding Feature Branches](../context/understanding-feature-branches.md).
+
+
 ## Modules
 
 1. [Introduction](./01-introduction.md)
