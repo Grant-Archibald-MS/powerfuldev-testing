@@ -71,3 +71,5 @@ After the test completes, review the results in the TestOutput folder.
 Check the .trx file and individual test case folders to see if the assert statements passed or failed.
 
 By using assert statements in your test plans, you can ensure that your application behaves as expected and quickly identify any issues that need to be addressed.
+
+<a href="./07-updating-control-value-using-setproperty" class="btn btn--primary">Updating Control Value using SetProperty</a>
