@@ -59,3 +59,5 @@ To demonstrate a failing test, modify the assert statement to check for an incor
 ```powerfx
 Assert(Label1.Text = "Incorrect Value", "Label1 should display 'Incorrect Value'")
 ```
+
+<a href="./08-simulated-connector" class="btn btn--primary">Simulated connector</a>
