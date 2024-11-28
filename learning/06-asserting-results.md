@@ -52,17 +52,17 @@ This assert checks that Label1.Text is equal to "1". If the counter is correctly
 
 4. Add or chage an Assert Statement:
 
-```powerfx
-Assert(Label1.Text = "Heading", "Label1 should display 'Heading'")
-```
+    ```powerfx
+    Assert(Label1.Text = "Heading", "Label1 should display 'Heading'")
+    ```
 
 5. Save the changes to the testPlan.fx.yaml file.
 
 6. Run the test script by executing:
 
-```pwsh
-pwsh -File RunTests.ps1
-```
+    ```pwsh
+    pwsh -File RunTests.ps1
+    ```
 
 7. Review the Results:
 

@@ -34,8 +34,8 @@ This module explains the following concepts:
 5. [Recording Your First Test](./05-recording-your-first-test.md)
 6. [Asserting Results](./06-asserting-results.md)
 7. [Updating Control Value using SetProperty](./07-updating-control-value-using-setproperty.md)
-7. [Simulating Connectors](./08-simulated-connector.md)
-8. Simulating Dataverse
+7. [Simulating Connectors](./08-simulating-connector.md)
+8. [Simulating Dataverse](./09-simulating-dataverse.md)
 9. Summary
 
 <a href="./01-introduction" class="btn btn--primary">Get Started</a>

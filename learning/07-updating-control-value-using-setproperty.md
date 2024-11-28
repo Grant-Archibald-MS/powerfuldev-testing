@@ -40,24 +40,24 @@ Add a SetProperty Statement:
 
 3. Add a SetProperty statement to update the value of Label1.Text. For example:
 
-```powerfx
-SetProperty(Label1.Text, "End of the test")
-```
+    ```powerfx
+    SetProperty(Label1.Text, "End of the test")
+    ```
 
 4. Add an Assert Statement:
 
 Add an assert statement to check if the value has been updated correctly. For example:
 
-```powerfx
-Assert(Label1.Text = "End of the test", "Label1 should display 'End of the test'")
-```
+    ```powerfx
+    Assert(Label1.Text = "End of the test", "Label1 should display 'End of the test'")
+    ```
 
 5. Modify the Value to Make the Test Fail:
 
 To demonstrate a failing test, modify the assert statement to check for an incorrect value. For example:
 
-```powerfx
-Assert(Label1.Text = "Incorrect Value", "Label1 should display 'Incorrect Value'")
-```
+    ```powerfx
+    Assert(Label1.Text = "Incorrect Value", "Label1 should display 'Incorrect Value'")
+    ```
 
-<a href="./08-simulated-connector" class="btn btn--primary">Simulated connector</a>
+<a href="./08-simulating-connector" class="btn btn--primary">Simulating connector</a>
