@@ -116,27 +116,27 @@ Each of the samples will need a **config.json** file in the folder using the fol
 
 1. Create conig.json in **`samples\buttonclicker`** folder
 
-```json
-{
-    "tenantId": "a222222-1111-2222-3333-444455556666",
-    "environmentId": "12345678-1111-2222-3333-444455556666",
-    "customPage": "admin_initialsetuppage_d45cf",
-    "user1Email": "test@contoso.onmicrosoft.com",
-    "runInstall": true,
-    "installPlaywright": true
-}
-```
+    ```json
+    {
+        "tenantId": "a222222-1111-2222-3333-444455556666",
+        "environmentId": "12345678-1111-2222-3333-444455556666",
+        "customPage": "admin_initialsetuppage_d45cf",
+        "user1Email": "test@contoso.onmicrosoft.com",
+        "runInstall": true,
+        "installPlaywright": true
+    }
+    ```
 
 2. To complete this file:
 
-- Open Power Apps.
-- Navigate to the Environment you want to test.
-- On the command bar, select Settings (gear).
-- Select Session details.
-- Copy the Environment Id and Tenant Id to the config.json file you have created.
-- Update user1Email to your test user email address.
+    - Open Power Apps.
+    - Navigate to the Environment you want to test.
+    - On the command bar, select Settings (gear).
+    - Select Session details.
+    - Copy the Environment Id and Tenant Id to the config.json file you have created.
+    - Update user1Email to your test user email address.
 
-Note: Some samples will not require the customPage setting.
+    Note: Some samples will not require the customPage setting.
 
 ## Git Branch Notes
 
@@ -152,9 +152,9 @@ git checkout integration
 
 2. Run the test:
 
-```pwsh
-pwsh -File RunTests.ps1
-```
+    ```pwsh
+    pwsh -File RunTests.ps1
+    ```
 
 3. When the browser opens login to the deployed Power App
 

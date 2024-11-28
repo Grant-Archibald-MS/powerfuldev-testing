@@ -11,6 +11,8 @@ read_time: true
 
 While the sample include `testPlan.fx.yaml` as an example, you can also create this file by simply interacting with the application. The Power Apps Test Engine provides a record mode that allows you to generate test plans based on your interactions with the app.
 
+> NOTE: The recording of Canvas Apps is supported in [feature branch](../context/ring-deployment-model) `grant-archibald-ms/extended-record-483`. If you are new to feature branched you can read [Understanding Feature Branches](../context/understanding-feature-branches).
+
 ## Steps to Record Your First Test
 
 Follow these steps to record your first test:
@@ -49,3 +51,5 @@ Follow these steps to record your first test:
     - You should find a `recorded.te.yaml` file in this folder. This file contains the recorded test steps based on your interactions with the application.
 
 By following these steps, you can easily create a test plan by interacting with your Power App, making it simpler to automate your testing process.
+
+<a href="./06-asserting-results" class="btn btn--primary">Asserting results</a>

@@ -3,8 +3,6 @@ title: "Roadmap Alignment: Managed Operations at Ignite 2024"
 categories:
   - Annoucements
 tags:
-tags: [Managed Operations, Power Platform, CoE Kit, ALM, Test Engine]
-tags:
   - ManagedOperations
   - PowerPlatform
   - AutomatedTesting

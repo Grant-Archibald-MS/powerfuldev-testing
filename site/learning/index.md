@@ -31,6 +31,9 @@ This module explains the following concepts:
 - Power Platform CLI
 - Git Client
 
+> NOTE: Unless stated otherwise to use of the learning module assumed that you are using the `integration` branch. If you are new to feature branched you can read [Understanding Feature Branches](../context/understanding-feature-branches).
+
+
 ## Modules
 
 1. [Introduction](./01-introduction)
@@ -38,10 +41,10 @@ This module explains the following concepts:
 3. [Running Your First Test](./03-running-your-first-test)
 4. [Looking at Results](./04-looking-at-results)
 5. [Recording Your First Test](./05-recording-your-first-test)
-6. Asserting Results
-7. Updating Controls using Set
-7. Simulating Connectors
-8. Simulating Dataverse
+6. [Asserting Results](./06-asserting-results)
+7. [Updating Control Value using SetProperty](./07-updating-control-value-using-setproperty)
+7. [Simulating Connectors](./08-simulating-connector)
+8. [Simulating Dataverse](./09-simulating-dataverse)
 9. Summary
 
 <a href="./01-introduction" class="btn btn--primary">Get Started</a>

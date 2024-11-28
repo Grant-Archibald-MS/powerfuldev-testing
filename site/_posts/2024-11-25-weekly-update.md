@@ -3,8 +3,6 @@ title: "Weekly Update: Week of 18th of November, 2024"
 categories:
   - Updates
 tags:
-tags: [Power Platform, CoE Kit, ALM, Test Engine, Docs]
-tags:
   - ManagedOperations
   - PowerPlatform
   - AutomatedTesting
