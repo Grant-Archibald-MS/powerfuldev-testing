@@ -37,7 +37,7 @@ By leveraging automated testing, the CoE Starter Kit can maintain its high stand
 
 ### Examples
 
-The following [examples](../examples/README.md) could be of interest based on how the CoE Starter Kit is applying test Automation.
+The following [examples](../examples) could be of interest based on how the CoE Starter Kit is applying test Automation.
 
 | Example | Description |
 |---------|-------------|

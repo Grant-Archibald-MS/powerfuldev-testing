@@ -49,10 +49,11 @@ Expired License: Test the behavior of the application when a user's license has 
 | Context | Notes |
 |---------|-------|
 | [Secure First Initiative](../context/security-first-initiative.md) | By integrating these principles, we aim to create robust, resilient, and secure applications that can withstand evolving cyber threats. |
+| [Deep Dive: Test Engine Storage State Security](../context/security-testengine-storage-state-deep-dive.md) | One of the key elements of automated discussion using the multiple profiles of automated testing of Power apps is the security model to allow login and the security around these credentials. Understanding this deep dive is critical to comprehend how the login credential process works, how login tokens are encrypted, and how this relates to the Multi-Factor Authentication (MFA) process. |
 
 ## Discussions
 
-The following [discussions](../discussion/README.md) could be of interest
+The following [discussions](../discussion) could be of interest
 
 | Discussion | Description |
 |------------|-------------|
