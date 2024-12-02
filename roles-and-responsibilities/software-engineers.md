@@ -27,7 +27,7 @@ By embracing automated testing, you can ensure that the Power Platform solutions
 
 | Article | Notes | Feedback |
 |---------|-------|----------|
-| [Why Automated Testing](../context/hy-automated-testing.md) | Automated testing is essential for ensuring the reliability, security, and performance of applications. It provides a safety net that catches bugs early, reduces manual testing efforts, and ensures consistent quality. This is particularly important in the context of low-code Power Platform solutions, where rapid development cycles can lead to overlooked issues. | [Discussion Link](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/12) |
+| [Why Automated Testing](../context/why-automated-testing.md) | Automated testing is essential for ensuring the reliability, security, and performance of applications. It provides a safety net that catches bugs early, reduces manual testing efforts, and ensures consistent quality. This is particularly important in the context of low-code Power Platform solutions, where rapid development cycles can lead to overlooked issues. | [Discussion Link](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/12) |
 | [Why Not Just Manual Testing](../context/why-not-just-manual-testing.md) | While manual testing has its place, it is often time-consuming, prone to human error, and not scalable for large or complex applications. Automated testing complements manual testing by handling repetitive tasks, providing faster feedback, and allowing testers to focus on more critical, exploratory testing activities. | [Discussion Link](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/13) |
 | [Growing to Enterprise Grade](../context/growing-to-enterprise-grade.md) | As solutions scale, the need for robust testing practices becomes more critical. This article explores how to transition from small-scale projects to enterprise-grade solutions, emphasizing the importance of automated testing in maintaining high standards of reliability, security, and performance. | [Discussion Link](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/14) |
 | [Impacts on People, Process, and Tooling](../context/impacts-on-people-process-and-tooling.md) | Implementing automated testing requires a shift in mindset and practices. This article discusses the cultural and organizational changes needed to adopt automated testing, the impact on development and operations processes, and the tools that can facilitate this transformation. | [Discussion Link](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/15) |
@@ -36,14 +36,14 @@ By embracing automated testing, you can ensure that the Power Platform solutions
 | [Roadmap Alignment](../context/roadmap-alignment.md) | Set context on how the work we are investing in for the CoE Starter Kit aligns with the wider Power Platform Automated testing roadmap. | [Discussion Link](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/18) |
 | [Low code Testing Principles](../context/low-code-test-design-principles.md) | These principles provide a structured framework for creating robust tests that validate the functionality and performance of low-code applications. | [Discussion Link](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/19) |
 providers for Test Engine |
-| [Test Engine Extensibility](./test-engine-extensibility.md) | Discussion on Managed Extensibility Framework (MEF) providers for Test Engine | |
-| [Test Engine Providers](./test-engine-providers.md) | Discussion on providers available for Test Engine to interact with different Power Platform resources | |
-| [Debugging Test Engine Tests](./debugging-test-engine-test.md) | Follow this guide on how to effectively debug your tests using a local build from source strategy | |
-| [Keeping up to date](./keeping-up-to-date.md) | Follow this guide on how to effectively debug your tests using a local build from source strategy | Staying current with the latest features and updates in the Power Apps Test Engine allows you to leverage new capabilities and ensuring optimal performance. Here's how you can keep up to date based on the version of test engine you are using. | |
+| [Test Engine Extensibility](../context/test-engine-extensibility.md) | Discussion on Managed Extensibility Framework (MEF) providers for Test Engine | |
+| [Test Engine Providers](../context/test-engine-providers.md) | Discussion on providers available for Test Engine to interact with different Power Platform resources | |
+| [Debugging Test Engine Tests](../context/debugging-test-engine-test.md) | Follow this guide on how to effectively debug your tests using a local build from source strategy | |
+| [Keeping up to date](../context/keeping-up-to-date.md) | Follow this guide on how to effectively debug your tests using a local build from source strategy | Staying current with the latest features and updates in the Power Apps Test Engine allows you to leverage new capabilities and ensuring optimal performance. Here's how you can keep up to date based on the version of test engine you are using. | |
 
 ## Discussions
 
-The following [discussions](../discussion/README.md) could be of interest
+The following [discussions](../discussion) could be of interest
 
 | Discussion | Description |
 |------------|-------------|
@@ -56,7 +56,7 @@ The following [discussions](../discussion/README.md) could be of interest
 
 ## Examples
 
-The following [examples](../examples/README.md) could be of interest
+The following [examples](../examples) could be of interest
 
 | Example | Description |
 |---------|-------------|

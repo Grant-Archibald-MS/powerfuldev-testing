@@ -44,13 +44,13 @@ Explore further to understand how automated testing can be integrated into your 
 | [Transformative Power of AI](../context/transformative-power-of-ai.md) | This article explores how AI can observe interactions and inform the agent to suggest happy paths, edge cases, and exception cases. This capability helps deliver a faster path to generate comprehensive test scenarios, enhancing the overall testing process. | [Discussion Link](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/16) |
 | [Low code Testing Principles](../context/low-code-test-design-principles.md) | These principles provide a structured framework for creating robust tests that validate the functionality and performance of low-code applications. | [Discussion Link](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/19) |
 providers for Test Engine |
-| [Test Engine Extensibility](./test-engine-extensibility.md) | Discussion on Managed Extensibility Framework (MEF) providers for Test Engine | |
-| [Test Engine Providers](./test-engine-providers.md) | Discussion on providers available for Test Engine to interact with different Power Platform resources | |
+| [Test Engine Extensibility](../context/test-engine-extensibility.md) | Discussion on Managed Extensibility Framework (MEF) providers for Test Engine | |
+| [Test Engine Providers](../context/test-engine-providers.md) | Discussion on providers available for Test Engine to interact with different Power Platform resources | |
 
 
 ## Discussions
 
-The following [discussions](../discussion/README.md) could be of interest
+The following [discussions](../discussion) could be of interest
 
 | Discussion | Description |
 |------------|-------------|
