@@ -82,17 +82,17 @@ After a successful login process The storage state of the browser context can co
 
 The [Microsoft.AspNetCore.DataProtection](https://learn.microsoft.com/aspnet/core/security/data-protection/introduction?view=aspnetcore-9.0) package offers Windows Data Protection (DAPI) or Certificate public/private encryption. This ensures that sensitive data, such as login tokens, is securely encrypted and stored.
 
-Key information to review for readers that are unfamilar with Data Protection API:
+Key information to review for readers that are unfamiliar with Data Protection API:
 
 - [Authenticated encryption details in ASP.NET Core](https://learn.microsoft.com/aspnet/core/security/data-protection/implementation/authenticated-encryption-details?view=aspnetcore-9.0) with ES-256-CBC + HMACSHA256
 - [Key management in ASP.NET Core](https://learn.microsoft.com/aspnet/core/security/data-protection/implementation/key-management?view=aspnetcore-9.0)
 - [Custom key repository](https://learn.microsoft.com/aspnet/core/security/data-protection/implementation/key-storage-providers?view=aspnetcore-9.0&tabs=visual-studio#custom-key-repository)
-- [Windows DPAPI](https://learn.microsoft.com/aspnet/core/security/data-protection/implementation/key-encryption-at-rest?view=aspnetcore-9.0#windows-dpapi) encryption mechanism for data that's never read outside of the current machine. Only applies to Windows deployments.
-- [X.509 certificate](https://learn.microsoft.com/aspnet/core/security/data-protection/implementation/key-encryption-at-rest?view=aspnetcore-9.0#x509-certificate)
+- [Windows DPAPI key encryption at rest](https://learn.microsoft.com/aspnet/core/security/data-protection/implementation/key-encryption-at-rest?view=aspnetcore-9.0#windows-dpapi) encryption mechanism for data that's never read outside of the current machine. Only applies to Windows deployments.
+- [X.509 certificate key encryption at rest](https://learn.microsoft.com/aspnet/core/security/data-protection/implementation/key-encryption-at-rest?view=aspnetcore-9.0#x509-certificate)
 
 #### Encryption 
 
-BY default data values are encrypted with ES-256-CBC and HMACSHA256. 
+By default data values are encrypted with ES-256-CBC and HMACSHA256. 
 
 ES-256-CBC stands for "AES-256 in Cipher Block Chaining (CBC) mode." AES (Advanced Encryption Standard) is a widely used encryption algorithm that ensures data confidentiality. The "256" refers to the key size, which is 256 bits. CBC mode is a method of encrypting data in blocks, where each block of plaintext is XORed with the previous ciphertext block before being encrypted. This ensures that identical plaintext blocks will produce different ciphertext blocks, enhancing security.
 
