@@ -1,4 +1,21 @@
-# Deep Dive: Test Engine Storage State Security
+---
+title: Deep Dive - Test Engine Storage State Security
+layout: single
+author_profile: true
+read_time: true
+permalink: /context/security-testengine-storage-state-deep-dive
+toc: true
+entries_layout: grid
+feature_row:
+  - image_path: /assets/images/windows.png
+    alt: "Windows Machine icon"
+    title: '<center style="width=300px">Local Windows PC</center>'
+    url: /context/security-testengine-storage-state-deep-dive#local-windows
+  - image_path: /assets/images/dataverse.png
+    alt: "Dataverse icon"
+    title: '<center style="width=300px">Data Protection with Dataverse</center>'
+    url: /context/security-testengine-storage-state-deep-dive#data-protection-dataverse
+---
 
 One of the key elements of automated discussion using the multiple profiles of automated testing of Power apps is the security model to allow login and the security around these credentials. Understanding this deep dive is critical to comprehend how the login credential process works, how login tokens are encrypted, and how this relates to the Multi-Factor Authentication (MFA) process. Additionally, we will explore the controls that the Entra security team can put in in place and the security model across Test Engine, Playwright, Data Protection API, OAuth Login to Dataverse, Dataverse, and Key Value Store.
 
@@ -37,7 +54,23 @@ Continuous security validation and verification are crucial to maintaining a sec
 
 ## End to End Process
 
-With that context in place lets explore the end to end process at a high level
+With that context in place lets explore the possible end to end process at a high level. 
+
+{% include feature_row type=center %}
+
+### Local Windows
+
+The first and simplest option to secure storage state is using Windows Data Protection API. While this option has less components it does have limitations as it requires Microsoft Windows together the user account and machine to secure the files locally. If you are looking to execute on a different operating system or execute your tests in the context of pipelines the [Dataverse Data Protection](#data-protection-dataverse) approach will be a better approach.
+
+{% include figure popup=true image_path="/context/media/test-engine-security-storage-state-local.png" alt="Diagram of end to end process of Browser storage state using local storage and Windows Data Protection API" %}
+
+1. The current storage state user authentication provider is extended to Save and load the Playwright browser context as Encrypted values
+2. Make use of the [Windows Data Projection API](https://learn.microsoft.com/dotnet/standard/security/how-to-use-data-protection) to protect and unprotect the saved state at rest.
+3. Save encrypted json file or retrieve un protected JSON to the file system for use in other test sessions
+
+### Data Protection Dataverse
+
+The next approach makes use of a more comprehensive data protection approach that allows saved user persona state to be shared across multiple machines. This approach adopts a multi level approach to allow for a wider set of operating systems and execution environments.
 
 {% include figure popup=true image_path="/context/media/test-engine-security-storage-state.png" alt="Diagram of end to end process of Browser storage state using Microsoft Data Protection and Dataverse Data store for secure values" %}
 
@@ -47,7 +80,8 @@ With that context in place lets explore the end to end process at a high level
 4. Use a custom xml repository that provides the ability query and create Data Protection state by implementing IXmlRepository
 5. Store XML state of data protection in Dataverse Table. Encryption of XML State managed by Data Protection API and selected protection providers
 6. Make use of Dataverse Security model, sharing and auditing features are enabled to control access and record access to key and key data. Data Protection API is used to decrypt values and apply the state json to other test sessions.
-7. Use the Data Protection API to decrypt the encrypted value using Windows Data Protection API (DAPI) or X509 certificate private key.
+7. Use the Data Protection API to decrypt the encrypted value using Windows Data Protection API (DAPI) or X.509 certificate private key.
+8. A future option could also consider adding integration with [Azure Key Vault](https://learn.microsoft.com/aspnet/core/security/key-vault-configuration?view=aspnetcore-9.0)
 
 ## Tell Me More
 
@@ -77,6 +111,12 @@ The goal of the login process it work with organization defined login process so
 ### Storage State
 
 After a successful login process The storage state of the browser context can contain [cookies](https://learn.microsoft.com/entra/identity/authentication/concept-authentication-web-browser-cookies) that are used to authenticate later sessions. 
+
+The [How to: Use Data Protection](https://learn.microsoft.com/dotnet/standard/security/how-to-use-data-protection) provides more information and details on this approach.
+
+### Windows Data Protection API
+
+.NET provides access to the data protection API (DPAPI), which allows you to encrypt data using information from the current user account or computer. When you use the DPAPI, you alleviate the difficult problem of explicitly generating and storing a cryptographic key.
 
 ### Data Protection API
 
