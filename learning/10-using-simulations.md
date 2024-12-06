@@ -7,7 +7,7 @@ In this section, you will learn how to load a sample Weather application. This a
 - Interacting with Dataverse to look at how data queried from Dataverse is used as a collection of data for controls.
 - Using Assert statements with a known state setup by the Simulation functions to verify that the application works as expected.
 
-This section builds on concepts introduced in [Simulating Connector](./08-simulating-connector.md) and [Simulating Dataverse](./09-simulating-connector.md).
+This section builds on concepts introduced in [Simulating Connector](./08-simulating-connector.md) and [Simulating Dataverse](./09-simulating-dataverse.md).
 
 > The sample application for this section is currently in a feature branch. This will require `git checkouy grant-archibald-ms/enhanced-sample-495`
 {: .notice--success} 
