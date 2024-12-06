@@ -24,7 +24,6 @@ This module explains the following concepts:
 
 > NOTE: Unless stated otherwise to use of the learning module assumed that you are using the `integration` branch. If you are new to feature branched you can read [Understanding Feature Branches](../context/understanding-feature-branches.md).
 
-
 ## Modules
 
 1. [Introduction](./01-introduction.md)
@@ -33,9 +32,10 @@ This module explains the following concepts:
 4. [Looking at Results](./04-looking-at-results.md)
 5. [Recording Your First Test](./05-recording-your-first-test.md)
 6. [Asserting Results](./06-asserting-results.md)
-7. [Updating Control Value using SetProperty](./07-updating-control-value-using-setproperty.md)
-7. [Simulating Connectors](./08-simulating-connector.md)
-8. [Simulating Dataverse](./09-simulating-dataverse.md)
-9. Summary
+7. [Updating Control Value using SetProperty()](./07-updating-control-value-using-setproperty.md)
+8. [Simulating Connectors](./08-simulating-connector.md)
+9. [Simulating Dataverse](./09-simulating-dataverse.md)
+10. [Using Simulations](./10-using-simulations.md)
+11. Summary
 
 <a href="./01-introduction" class="btn btn--primary">Get Started</a>

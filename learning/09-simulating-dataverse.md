@@ -63,3 +63,9 @@ The Experimental.SimulateDataverse function is useful because it allows develope
 - Development Efficiency: Speed up the development process by allowing developers to work with simulated data instead of waiting for actual data to be available.
 
 By using this function, you can ensure that your Power Apps behave as expected in various scenarios, leading to more robust and reliable applications.
+
+## Summary
+
+In this section, you learned how to use the `Experimental.SimulateDataverse` function to simulate responses from the Dataverse. This function allows you to create controlled and predictable responses for various scenarios, making it easier to test and debug your applications. By using mocking techniques, you can isolate components, create specific test scenarios, and ensure consistent results. This leads to more efficient development and more reliable applications.
+
+<a href="./10-using-simulations" class="btn btn--primary">Using simulations</a>

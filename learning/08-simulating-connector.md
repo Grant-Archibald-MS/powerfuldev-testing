@@ -30,7 +30,7 @@ To run the test, follow these steps:
 
 ## Understanding the Test Plan
 
-The test plan for the connector sample includes a section that simulates the MSN Weather connector. This is defined in the `onTestCaseStart` block of the `testPlan.fx.yaml` file.
+The test plan for the connector sample includes a section that simulates the MSN Weather connector. This is defined in the `onTestSuiteStart` block of the `testPlan.fx.yaml` file. By using this value we can ensure that the expected simulation is applied before the test cases is loaded.
 
 ### Test Plan Configuration
 
@@ -43,7 +43,7 @@ testSuite:
   testSuiteDescription: Verifies that you can mock network requests
   persona: User1
   appLogicalName: new_connectorapp_da583
-  onTestCaseStart: |
+  onTestSuiteStart: |
     = Experimental.SimulateConnector({name: "msnweather", then: {responses: { daily: { day: { summary: "You are seeing the mock response" }}}}})
   testCases:
     - testCaseName: Fill in a city name and do the search
@@ -69,12 +69,12 @@ environmentVariables:
 
 ### Explanation
 
-- onTestCaseStart: This block uses the Experimental.SimulateConnector function to mock the MSN Weather connector. It specifies that any request to the msnweather connector should return a predefined response with the summary "You are seeing the mock response".
+- onTestSuiteStart: This block uses the Experimental.SimulateConnector function to mock the MSN Weather connector. It specifies that any request to the msnweather connector should return a predefined response with the summary "You are seeing the mock response".
 - testCases: This section defines the test steps. It includes filling in a city name, performing a search, and asserting that the label displays the mock response.
 Steps in Detail
 Simulate Connector:
 
-The onTestCaseStart block sets up the simulated connector response.
+The onTestSuiteStart block sets up the simulated connector response.
 
 ```powerfx
 = Experimental.SimulateConnector({name: "msnweather", then: {responses: { daily: { day: { summary: "You are seeing the mock response" }}}}})
@@ -92,8 +92,8 @@ The test steps include taking a screenshot, setting the text input to "Atlanta",
   Screenshot("connectorapp_end.png");
 ```
 
-## Conclusion
+## Summary
 
-Using simulated connectors in your Power Apps tests allows you to control the responses from external services, making it easier to test various scenarios. By following the steps outlined in this article, you can set up and run tests that use simulated connectors, ensuring your application behaves as expected under different conditions.
+Using simulated connectors in your Power Apps tests allows you to control the responses from external services, making it easier to test various scenarios. By following the steps outlined in this section, you can set up and run tests that use simulated connectors, ensuring your application behaves as expected under different conditions.
 
 <a href="./09-simulating-dataverse" class="btn btn--primary">Simulating Dataverse</a>

@@ -10,7 +10,7 @@ To get started, you'll need the following components:
 3. **Power Platform Command Line Tools**: Install the Power Platform Command Line tools to interact with your Power Platform environment.
 4. **.NET 8.0 SDK**: Download and install the .NET 8.0 SDK to build the code.
 
-These instructions apply to the [inner ring](../context/ring-deployment-model.md) using a build from source strategy as these changes are included in the pac cli many of these steps are not required.
+These instructions apply to the [inner ring](../context/ring-deployment-model.md) using a build from source strategy. As these changes are included in the [pac test run](https://learn.microsoft.com/power-platform/developer/cli/reference/test) many of these steps are not required.
 {: .notice--success}
 
 This can seem daunting, but the following steps will help you with this process assuming you are using Microsoft Windows as your local operating system.
@@ -148,5 +148,11 @@ git checkout integration
     ```
 
 3. When the browser opens login to the deployed Power App
+
+## Summary
+
+In this section, you learned how to set up the necessary components to run your first automated test using Power Platform. You explored the prerequisites, including cloning the repository, installing PowerShell, .NET 8.0 SDK, and Power Platform Command Line Tools. 
+
+Additionally, you learned how to configure the sample settings and run a simple test by clicking a button in a Canvas App. By following these steps, you are now equipped to explore automated testing in Power Platform.
 
 <a href="./04-looking-at-results" class="btn btn--primary">Looking at results</a>
