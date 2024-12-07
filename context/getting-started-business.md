@@ -32,3 +32,9 @@ You can also review the following to drive deeper depending on your specific rol
 | [Managers](/powerfuldev-testing/roles-and-responsibilities/managers) | Ensure that makers or software developers in their teams have the required knowledge and training to effectively build and test solutions. They also focus on succession planning and sharing successful solutions among the team. | 
 | [Makers](../roles-and-responsibilities/makers.md) | Low-code maker community who build solutions using low-code tools to rapidly achieve business goals. They may be unfamiliar with formal testing skills and need low-code testing processes to create sustainable solutions. |
 | [Trainers](../roles-and-responsibilities/trainers.md) | Responsible for enterprise training and skilling by role to make the most of low code Power Platform |
+
+## Learning Path
+
+![Learning](../learning/media/learning-module.png)
+
+Start on your [Business Learning Path](../learning/business-path)

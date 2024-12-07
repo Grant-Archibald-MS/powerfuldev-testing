@@ -31,7 +31,7 @@ Business users play a crucial role in the successful implementation of Power Pla
 
 By embracing low-code automated testing, you can significantly enhance the efficiency and reliability of your business processes.
 
-[Read More](./getting-started-business.md)
+<a href="./getting-started-business" class="btn btn--primary">Getting started business</a>
 
 ## Architects
 
@@ -41,7 +41,7 @@ As early adopters, your involvement and feedback are essential to drive innovati
 
 By embracing low-code automated testing, you can significantly enhance the efficiency and reliability of your business processes. 
 
-[Read More](./getting-started-architects.md)
+<a href="./getting-started-architects" class="btn btn--primary">Getting started architects</a>
 
 ## Technical Users
 
@@ -51,7 +51,7 @@ Your technical expertise and willingness to adopt new technologies are crucial f
 
 By embracing automated testing, you can enhance the quality and efficiency of your development processes.
 
-[Read More](./getting-started-technical.md)
+<a href="./getting-started-technical" class="btn btn--primary">Getting started technical</a
 
 ## Power CAT's Role
 

@@ -49,7 +49,7 @@ As you go through this module, consider the following questions to guide your un
 
 ## Summary
 
-In this module, we explored the business value of automated testing, focusing on the importance of collaboration and alignment among teams to successfully adopt automated testing practices. We discussed what the relative importance pf automated testing was for your organization and if it is seen as a approach to drive innovation, enhance efficiency, and optimize IT processes. 
+In this module, we explored the business value of automated testing, focusing on the importance of collaboration and alignment among teams to successfully adopt automated testing practices. We discussed what the relative importance of automated testing was for your organization and if it is seen as a approach to drive innovation, enhance efficiency, and optimize IT processes. 
 
 Additionally, we examined the touched on high-level approvals process, the establishment of a sustainability model, and the growth of solutions to enterprise grade.
 

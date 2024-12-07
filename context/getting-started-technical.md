@@ -28,6 +28,12 @@ By taking these steps, you can leverage the full potential of low-code automated
 | [Software Engineers](../roles-and-responsibilities/software-engineers.md) | Use Power Platform to augment their existing code-first skills as a productivity tool or contribute extensions or add-ons to help makers achieve more. |
 | [Support Engineers](../roles-and-responsibilities/support-engineers.md) | Take ownership of low-code solutions to help them scale across the organization. They focus on the quality of low-code solutions and the ability to support and fix them. | 
 
+## Learning Path
+
+![Learning](../learning/media/learning-module.png)
+
+Start on your [Technical Learning Path](../learning)
+
 ## Get Hands On Now
 
 Want to work with the latest components follow get me hands on to start recording any authoring your tests today. [Read more](./get-started-now.md)
