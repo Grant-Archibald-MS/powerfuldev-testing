@@ -9,7 +9,7 @@ In this section, you will learn how to load a sample Weather application. This a
 
 This section builds on concepts introduced in [Simulating Connector](./08-simulating-connector.md) and [Simulating Dataverse](./09-simulating-dataverse.md).
 
-> The sample application for this section is currently in a feature branch. This will require `git checkouy grant-archibald-ms/enhanced-sample-495`
+> The sample application for this section is currently in a feature branch. This will require `git checkout grant-archibald-ms/enhanced-sample-495`
 {: .notice--success} 
 
 ## Let's Get Started
@@ -86,3 +86,5 @@ Lets have a closer look at the weather [testPlan.fx.yaml](https://github.com/mic
 ## Summary
 
 In this section, you learned how to load and test a sample Weather application. You explored how to call the MSN Weather connector, interact with Dataverse, and use assert statements to verify the application's functionality. By following the key steps and exploring the sample, you gained insights into simulating connectors and Dataverse interactions to ensure your application works as expected.
+
+<a href="./11-localization" class="btn btn--primary">Localization</a>

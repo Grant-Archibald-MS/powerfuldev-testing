@@ -29,6 +29,10 @@ Automated testing is essential for Trainers to achieve their goals and support t
 - **Quality Assurance**: Automated testing provides a robust framework for validating the functionality and performance of solutions, ensuring that they meet the defined requirements.
 - **Compliance and Auditability**: Automated tests provide a clear audit trail of testing activities, ensuring compliance with regulatory requirements and internal policies.
 
+## Learning Path
+
+Consider using [Learning Module](../learning) to help apply automated testing topics to low code solutions.
+
 ## Conclusion
 
 As a Trainer, your role is to equip your organization with the skills and knowledge needed to effectively utilize low-code tools on the Power Platform. By incorporating automated testing practices into your training programs, you can ensure that participants are well-prepared to create reliable, performant, and high-quality solutions. This not only supports business continuity but also empowers participants to innovate confidently and effectively.

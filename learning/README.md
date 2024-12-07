@@ -36,6 +36,7 @@ This module explains the following concepts:
 8. [Simulating Connectors](./08-simulating-connector.md)
 9. [Simulating Dataverse](./09-simulating-dataverse.md)
 10. [Using Simulations](./10-using-simulations.md)
-11. Summary
+11. [Localization](./11-localization.md)
+12. Summary
 
 <a href="./01-introduction" class="btn btn--primary">Get Started</a>

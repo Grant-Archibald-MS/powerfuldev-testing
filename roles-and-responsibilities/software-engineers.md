@@ -23,6 +23,10 @@ Automated testing is a vital tool for Software Engineers. It helps in:
 
 By embracing automated testing, you can ensure that the Power Platform solutions are robust, reliable, and ready for deployment. This not only enhances the quality of the solutions but also contributes to the overall success of the organization.
 
+## Learning Path
+
+Consider using [Learning Module](../learning) to help apply automated testing topics to low code solutions.
+
 ## Context
 
 | Article | Notes | Feedback |
