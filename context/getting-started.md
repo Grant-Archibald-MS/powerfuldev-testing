@@ -51,7 +51,7 @@ Your technical expertise and willingness to adopt new technologies are crucial f
 
 By embracing automated testing, you can enhance the quality and efficiency of your development processes.
 
-<a href="./getting-started-technical" class="btn btn--primary">Getting started technical</a
+<a href="./getting-started-technical" class="btn btn--primary">Getting started technical</a>
 
 ## Power CAT's Role
 
