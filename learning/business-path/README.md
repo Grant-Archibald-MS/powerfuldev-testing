@@ -17,7 +17,7 @@ This module explains the following concepts:
 
 Topics for this module:
 
-1. [Introduction to the Business Value of Automated Testing](./01-introduction-to-the-business-value-of-automated-testing.md)
+1. [Introduction to the Business Value of Automated Testing](/powerfuldev-testing/learning/business-path/01-introduction-to-the-business-value-of-automated-testing.md)
 2. Setting Up People and Processes for Success
 3. Driving Innovation with Low-Code Automated Testing
 4. Enhancing Efficiency with Automated Low-Code Solutions
