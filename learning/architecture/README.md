@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Power Well Architected (PoWA) framework is designed to help organizations build and maintain robust, secure, and efficient Power Platform solutions. Automated testing plays a crucial role in this framework by ensuring that solutions are resilient, secure, operationally excellent, and performant. By integrating automated tests into the development lifecycle, organizations can continuously validate their solutions against best practices and quickly identify and address issues.
+The Power Well Architected (PoWA) framework is designed to help organizations build and maintain robust, secure, and efficient Power Platform solutions. Automated testing plays an important role in this framework by ensuring that solutions are resilient, secure, operationally excellent, and performant. By integrating automated tests into the development lifecycle, organizations can continuously validate their solutions against best practices and quickly identify and address issues.
 
 ## Learning Objectives
 By the end of this module, you will be able to:
