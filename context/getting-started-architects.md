@@ -29,3 +29,9 @@ By taking these steps, you can leverage the full potential of low-code automated
 | [Solution Architects](../roles-and-responsibilities/solution-architects.md) | Implement enterprise standards and make recommendations on how enterprise plans could be executed. They ensure a robust ALM process that includes building, implementing, reviewing, and deploying low-code solutions. |
 | [DevOps Engineers / Architects](../roles-and-responsibilities/devops-engineers-architects.md) | Responsible for the overall Continuous Integration / Deployment process and integrating Power Platform into this process. They manage source control integration, test assets, and quality processes for deployment and updates. | 
 | [Security Architects](../roles-and-responsibilities/security-architects.md) | Manage cybersecurity and data privacy, ensuring that solutions do not expose the organization to risk. They ensure compliance with security standards and manage secure deployment 
+
+## Learning Path
+
+![Learning](../learning/media/learning-module.png)
+
+Start on your [Architecture Learning Path](../learning/architecture/)
