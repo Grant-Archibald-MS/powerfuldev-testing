@@ -34,4 +34,4 @@ By taking these steps, you can leverage the full potential of low-code automated
 
 ![Learning](../learning/media/learning-module.png)
 
-Start on your [Architecture Learning Path](../learning/architecture/)
+Start on your [Architecture Learning Path](../learning/architecture)
