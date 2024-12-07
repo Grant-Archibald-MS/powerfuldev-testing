@@ -34,7 +34,7 @@ As you look at the role of automated testing the following could be of use
 - [Does Every Solution Need Automated Testing?](../../discussion/does-every-solution-need-automated-testing.md)
 - [Growing to Enterprise Grade](../../context/growing-to-enterprise-grade.md)
 - [Why Automated testing?](../../context/why-automated-testing.md)
-- [Why Not Just Manual testing?](../../context/why-not-just-manual-testing.md.md)
+- [Why Not Just Manual testing?](../../context/why-not-just-manual-testing.dmd)
 
 ## Key Questions for Discussion
 
