@@ -22,7 +22,7 @@ The Power Platform provides robust support for localization in both Canvas and M
 1. [Translate text for model-driven apps](https://learn.microsoft.com/power-apps/maker/model-driven-apps/translate-localizable-text)
 2. [Build a multi-language app](https://learn.microsoft.com/power-apps/maker/canvas-apps/multi-language-apps)
 3. [Add Localized Titles for Navigation Groups](https://learn.microsoft.com/power-apps/maker/model-driven-apps/app-navigation#create-a-group)
-4. [Regional and language options for your environment](https://learn.microsoft.com/power-platform/admin/enable-languages#enable-the-language). This section assumes that Franch language (LCID 1039) has been enabled.
+4. [Regional and language options for your environment](https://learn.microsoft.com/power-platform/admin/enable-languages). This section assumes that Franch language (LCID 1039) has been enabled.
 
 ## Example: Localizing the Weather Sample
 
