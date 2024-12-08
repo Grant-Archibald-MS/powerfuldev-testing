@@ -56,3 +56,5 @@ As you go through this module, consider the following questions to guide your un
 In this module, we explored the business value of automated testing, focusing on the importance of collaboration and alignment among teams to successfully adopt automated testing practices. We discussed what the relative importance of automated testing was for your organization and if it is seen as a approach to drive innovation, enhance efficiency, and optimize IT processes. 
 
 By understanding these key concepts and addressing the relevant questions, business decision makers can effectively prioritize and implement automated testing to achieve your business goals.
+
+<a href="/powerfuldev-testing/learning/business-path/02-setting-up-people-and-processes-for-success" class="btn btn--primary">Setting Up People and Processes for Success</a>
