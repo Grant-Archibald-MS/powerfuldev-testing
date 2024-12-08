@@ -19,10 +19,9 @@ Topics for this module:
 
 1. [Introduction to the Business Value of Automated Testing](/powerfuldev-testing/learning/business-path/01-introduction-to-the-business-value-of-automated-testing.md)
 2. [Setting Up People and Processes for Success](/powerfuldev-testing/learning/business-path/02-setting-up-people-and-processes-for-success.md)
-3. Driving Innovation with Low-Code Automated Testing
-4. Enhancing Efficiency with Automated Low-Code Solutions
-5. Optimizing IT Processes with Low-Code Automated Testing
-6. Understanding the High-Level Approvals Process
-7. Establishing a Sustainability Model
-8. Growing Solutions to Enterprise Grade
-9. Summary and Next Step
+3. [Driving Innovation with Low-Code Automated Testing](/powerfuldev-testing/learning/business-path/03-driving-innovation-with-low-code-automated-testing.md)
+4. [Optimizing IT Processes with Low-Code Automated Testing](/powerfuldev-testing/learning/business-path/04-optimizing-it-processes.md)
+5. Understanding the High-Level Approvals Process
+6. Establishing a Sustainability Model
+7. Growing Solutions to Enterprise Grade
+8. Summary and Next Step
