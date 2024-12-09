@@ -1,5 +1,8 @@
 {
-    "pages": [
+  "showProgressBar": "belowHeader",
+  "progressBarType": "pages",
+  "progressBarShowPageNumbers": true,  
+  "pages": [
       {
         "name": "Introduction",
         "elements": [
