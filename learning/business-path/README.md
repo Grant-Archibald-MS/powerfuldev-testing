@@ -21,7 +21,7 @@ Topics for this module:
 2. [Setting Up People and Processes for Success](/powerfuldev-testing/learning/business-path/02-setting-up-people-and-processes-for-success.md)
 3. [Driving Innovation with Low-Code Automated Testing](/powerfuldev-testing/learning/business-path/03-driving-innovation-with-low-code-automated-testing.md)
 4. [Optimizing IT Processes with Low-Code Automated Testing](/powerfuldev-testing/learning/business-path/04-optimizing-it-processes.md)
-5. Understanding the High-Level Approvals Process
-6. Establishing a Sustainability Model
-7. Growing Solutions to Enterprise Grade
+5. [Understanding the High-Level Approvals Process](/powerfuldev-testing/learning/business-path/05-understanding-the-high-level-approvals-process.md)
+6. [Establishing a Sustainability Model](/powerfuldev-testing/learning/business-path/06-establishing-a-sustainability-model.md)
+7. [Growing Solutions to Enterprise Grade](/powerfuldev-testing/learning/business-path/07-growing-to-enterprise-grade.md)
 8. Summary and Next Step
