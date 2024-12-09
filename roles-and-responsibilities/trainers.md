@@ -31,6 +31,12 @@ Automated testing is essential for Trainers to achieve their goals and support t
 
 ## Learning Path
 
+### Business Audience
+
+Consider using [Business Path Learning Module](../learning/business-path) to help apply automated testing topics to low code solutions from a business point of view.
+
+### Technical Audience
+
 Consider using [Learning Module](../learning) to help apply automated testing topics to low code solutions.
 
 ## Conclusion
