@@ -10,6 +10,7 @@ tags:
 ---
 
 ## Key Points
+
 - **Business Learning Path**: New learning path for [business point of view](/powerfuldev-testing/learning/business-path).
 - **Technical Learning Path**: New learning path for [technical point of view](/powerfuldev-testing/learning).
 - **Whats New**: Post of whats new with Power Apps Test Engine in post [What’s New with the Power Apps Test Engine: From Experimental to Enterprise-Grade](/powerfuldev-testing/updates/2024/12/06/whats-new/)
