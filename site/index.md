@@ -21,7 +21,7 @@ feature_row:
 
 Join us at the Powerful Devs Conference 2025 for an in-depth session on automated testing within the Power Platform. 
 
-<a href="(https://developer.microsoft.com/en-us/reactor/events/24442/" class="btn btn--primary">Register Now</a>
+<a href="https://developer.microsoft.com/en-us/reactor/events/24442/" class="btn btn--primary">Register Now</a>
 
 Join us for Powerful Devs Conference 2025, which will highlight how developers can leverage the Power Platform to build applications faster and with far less effort! Connect with industry recognized ProDev influencers, Microsoft Cloud Advocates, trusted and diverse community leaders, and members of the Power Platform Team. Hosted by Scott Durow and Kendra Springer!
 
