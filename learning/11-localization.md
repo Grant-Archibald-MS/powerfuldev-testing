@@ -4,7 +4,14 @@
 
 In this section, we will investigate the testing of a localized Weather sample. Localization is the process of adapting an application to meet the language, cultural, and other requirements of a specific target market. The ability to support multiple languages in your application can make it more accessible and user-friendly for a global audience.
 
-## The Need for Localization
+## Pre-requisites
+
+To complete this module you will need to follow instructions for setting up in [Regional and language options for your environment](https://learn.microsoft.com/power-platform/admin/enable-languages). 
+
+This section assumes that French (LCID 1039) and German language (LCID 1031) have  been enabled.
+{: .notice--success}
+
+## The Need for Localization 
 
 Localization is essential for several reasons:
 - **User Experience**: Providing content in the user's native language enhances their experience and makes the application more intuitive.
@@ -22,7 +29,7 @@ The Power Platform provides robust support for localization in both Canvas and M
 1. [Translate text for model-driven apps](https://learn.microsoft.com/power-apps/maker/model-driven-apps/translate-localizable-text)
 2. [Build a multi-language app](https://learn.microsoft.com/power-apps/maker/canvas-apps/multi-language-apps)
 3. [Add Localized Titles for Navigation Groups](https://learn.microsoft.com/power-apps/maker/model-driven-apps/app-navigation#create-a-group)
-4. [Regional and language options for your environment](https://learn.microsoft.com/power-platform/admin/enable-languages). This section assumes that Franch language (LCID 1039) has been enabled.
+4. [Microsoft Dataverse language collations](https://learn.microsoft.com/power-platform/admin/language-collations)
 
 ## Example: Localizing the Weather Sample
 
@@ -40,9 +47,9 @@ To include German version of the same application
 
 ### Step 1: Start the Application
 
-Start the Weather Application imported in [Using Simulations](./10-using-simulations.md).
+Start the Weather Application imported in [Using Simulations](./10-using-simulations.md) using the Power Apps Portal.
 
-### Step 2: Change Personal Settings
+### Step 2: Manually change Personal Settings
 
 To change the user interface language, follow these steps:
 1. Open the Power Apps portal.
@@ -56,7 +63,24 @@ The controls of the custom page should change using the `Language()` Power Fx fu
 
 ### Step 4: Automate Language Change with Repost.ps1
 
-The `Repost.ps1` file makes use of the Dataverse API to update the [usersettingscollection](https://learn.microsoft.com/power-apps/developer/data-platform/reference/entities/usersettings) and automate the process of changing the [UI language](https://learn.microsoft.com/power-apps/developer/data-platform/reference/entities/usersettings#BKMK_UILanguageId). This script can be used to switch between languages programmatically.
+The `Record.ps1` file makes use of the Dataverse API to update the [usersettingscollection](https://learn.microsoft.com/power-apps/developer/data-platform/reference/entities/usersettings) and automate the process of changing the [UI language](https://learn.microsoft.com/power-apps/developer/data-platform/reference/entities/usersettings#BKMK_UILanguageId). This script can be used to switch between languages programmatically.
+
+To record tests in English and French
+
+1. Open PowerShell session
+
+2. Change to weather sample
+
+```pwsh
+cd examples\weather
+```
+
+3. Execute record sample
+
+```pwsh
+.\Record.ps1
+```
+
 
 ### Step 5: Expand to Another Language
 
