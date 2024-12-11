@@ -13,4 +13,31 @@ In this workshop, you’ll learn how to:
 
 By the end of this workshop, you'll be equipped with the knowledge and tools to implement automated testing in your Power Platform solutions, helping you deliver high-quality applications quickly and efficiently.
 
+## Pre-requisites
+
+BEfore yuo get started depending on being an early adopter, beta tester or general availability user from [Ring Deployment Model](../context/ring-deployment-model.md) you will require different components installed to enable you to use this learning module.
+
+### Inner Ring (Canary Users)
+
+Follow the instructions on [Get Started Now](../context/get-started-now.md) ensure that you have the tools installs, verification checks and the source code cloned and compiled on your local machine.
+
+Once the pac test run command is updated `pac test run` wil lbe able to use instead of local compiled version of the Power Apps Test Engine. 
+{: .notice--success}
+
+### Second Ring (Beta Testers)
+
+Currently the features of Test Engine are not available for second ring (beta testers). The features required will soon be available using the Power Platform Command Line and enabling the Experimental namespace. 
+
+Once the pac test run command is updated we will update setup notes here
+{: .notice--success}
+
+### Outer Ring (General Availability)
+
+Currently the features of Test Engine are not available for outer ring. 
+
+Check back here for announcements on when features used by this learning module are generally available as part of the Power Platform Command Line Interface. 
+{: .notice--success}
+
+### Power Platform 
+
 <a href="./02-getting-setup" class="btn btn--primary">Get setup</a>

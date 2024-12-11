@@ -1,5 +1,11 @@
 # Getting setup
 
+## Pre-requisites Check
+
+Validate that you have completed the pre-requisites check of the [Introduction](01-introduction.md) have been completed.
+
+## Solution Setup
+
 If you don't have an environment with the Button Clicker solution, follow these steps to import the solution.
 
 > **Note**  
@@ -36,7 +42,7 @@ In this task, you will import the completed second module solution from the App 
 2. Make sure that you’re in Contoso test environment that you created.
 3. Select **Solutions** > **Import**.
 4. Select **Browse**.
-5. Select the Button Clickere solution zip file (`ButtonClicker_1_0_0_4`), and then select **Open**.
+5. Select the Button Clicker solution zip file (`ButtonClicker_1_0_0_4`), and then select **Open**.
 
 ## Open the application
 

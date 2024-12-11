@@ -139,7 +139,7 @@ git checkout integration
 
 ### Simplest Example: Clicking the Button of a Canvas App
 
-1. Copy your completed config.json file into the folder.
+1. Copy your completed config.json file into the folder in samples\buttonclicker using [README](https://github.com/microsoft/PowerApps-TestEngine/blob/integration/samples/buttonclicker/README.md)
 
 2. Run the test:
 
@@ -151,8 +151,6 @@ git checkout integration
 
 ## Summary
 
-In this section, you learned how to set up the necessary components to run your first automated test using Power Platform. You explored the prerequisites, including cloning the repository, installing PowerShell, .NET 8.0 SDK, and Power Platform Command Line Tools. 
-
-Additionally, you learned how to configure the sample settings and run a simple test by clicking a button in a Canvas App. By following these steps, you are now equipped to explore automated testing in Power Platform.
+In this section, you learned how to set up the necessary components to run your first automated test using configuration for the sample settings and running a simple test by clicking a button in a Canvas App. By following these steps, you are now equipped to explore automated testing in Power Platform.
 
 <a href="./04-looking-at-results" class="btn btn--primary">Looking at results</a>
