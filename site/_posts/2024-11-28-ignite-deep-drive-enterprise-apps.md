@@ -21,6 +21,8 @@ In the recent Microsoft Ignite session, Austin Laugesen and Marc Schweigert took
 
 {% include figure popup=true image_path="/assets/images/ignite-deep-dive-create-monitor-enterprise-apps.png" alt="Deep Dive: Create, monitor and optimize enterprise apps with Power Apps" %}
 
+<a href="https://ignite.microsoft.com/en-US/sessions/BRK174" class="btn btn--primary">Watch Now</a>
+
 ## Paper airlines vs commercial airplanes
 
 {% include figure popup=true image_path="/assets/images/ignite-deep-dive-paper-planes-vs-airlines.png" alt="Deep Dive: Paper airplanes vs Airlines" %}

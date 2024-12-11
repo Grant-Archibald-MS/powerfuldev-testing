@@ -58,4 +58,12 @@ Depending on your role in the organization where you start could be different. Y
 
 <a href="/powerfuldev-testing/context/getting-started" class="btn btn--primary">Get Started Now</a>
 
+## Plan, Build, Deploy, Test and Monitor
 
+Want to see the end to end process including Power Pipelines, Test Engine tests and gated approval build process? If so you can have a look at the following ignite session that we will be extending for the Powerful Devs sessions. 
+
+<a href="https://ignite.microsoft.com/en-US/sessions/BRK174" class="btn btn--primary">Watch Now</a>
+
+{% include figure popup=true image_path="/assets/images/ignite-deep-dive-create-monitor-enterprise-apps.png" alt="Deep Dive: Create, monitor and optimize enterprise apps with Power Apps" %}
+
+<a href="/powerfuldev-testing/annoucements/2024/11/28/ignite-deep-drive-enterprise-apps/">Ignite: Deep Dive: Create, monitor and optimize enterprise apps with Power Apps</a>

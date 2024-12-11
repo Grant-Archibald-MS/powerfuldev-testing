@@ -14,6 +14,10 @@ This module explains the following concepts:
 - Understanding key Power Fx commands
 - Known issues and limitations
 
+## Model Pre-check Assessment
+
+{% interactive_assessment technical-learning.json %}
+
 ## Prerequisites
 
 - Installed version of .NET SDK 8.0
