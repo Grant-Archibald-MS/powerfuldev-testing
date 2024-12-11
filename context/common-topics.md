@@ -46,12 +46,17 @@ This page contains sets of related topics that enable you to quickly relate topi
 
 ## Technical
 
+### Context
+
 | Context | Notes |
 |---------|-------|
 | [Test Engine Extensibility](./test-engine-extensibility.md) | Discussion on Managed Extensibility Framework (MEF) providers for Test Engine |
 | [Test Engine Providers](./test-engine-providers.md) | Discussion on providers available for Test Engine to interact with different Power Platform resources |
 | [Debugging Test Engine Tests](./debugging-test-engine-test.md) | Follow this guide on how to effectively debug your tests using a local build from source strategy |
-| [Keeping up to date](./keeping-up-to-date.md) | Follow this guide on how to effectively debug your tests using a local build from source strategy | Staying current with the latest features and updates in the Power Apps Test Engine allows you to leverage new capabilities and ensuring optimal performance. Here's how you can keep up to date based on the version of test engine you are using. |
+| [Keeping up to date](./keeping-up-to-date.md) | Staying current with the latest features and updates in the Power Apps Test Engine allows you to leverage new capabilities and ensuring optimal performance. Here's how you can keep up to date based on the version of test engine you are using. |
+| [Deep Dive: Test Engine Layers](./deep-dive-testengine-layers.md) | This article is designed to walk through the different layers of how test engine tests are implemented and understand the key interactions between the layers |
+
+### Discussion Ariticles
 
 
 | Article | Notes | Feedback |
@@ -60,6 +65,8 @@ This page contains sets of related topics that enable you to quickly relate topi
 [Playwright vs Power Apps Test Engine](../discussion/playwright-vs-test-engine.md) | When it comes to testing low-code Power Platform applications, a common question arises: why not just use Playwright to directly test a Power App rather than using the Power Apps Test Engine? This discussion aims to explore the strengths and limitations of both tools and provide insights into their best use cases. | [Link](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/1)
 | [Authentication in Power Apps Test Engine](../discussion/authentication.md) | Authentication is a critical component of the test automation process. The sample script employs browser-based authentication, which offers a range of options to authenticate with Microsoft Entra. This method generates a persistent browser cookie, allowing for non-interactive execution of subsequent tests. The management of these browser cookies is governed by the guidelines provided in the Microsoft Entra documentation on session lifetime and conditional access policies. |[Link](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/8)
 
+
+### Examples
 
 | Example | Description |
 |---------|-------------|
