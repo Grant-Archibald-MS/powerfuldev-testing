@@ -1,6 +1,7 @@
 # Power Apps Test Engine Architecture Learn Module Overview
 
-## Overview
+![Learning Module](../media/learning-module.png)
+
 The [Power Well Architected (PoWA)](https://aka.ms/powa) framework is designed to help organizations build and maintain robust, secure, and efficient Power Platform solutions. Automated testing plays a crucial role in this framework by ensuring that solutions are resilient, secure, operationally excellent, and performant. By integrating automated tests into the development lifecycle, organizations can continuously validate their solutions against best practices and quickly identify and address issues.
 
 ## Learning Objectives

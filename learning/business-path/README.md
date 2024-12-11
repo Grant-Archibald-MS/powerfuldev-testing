@@ -1,5 +1,7 @@
 # Power Apps Test Engine Business Learn Module Overview
 
+![Learning Module](../media/learning-module.png)
+
 This module is designed to provide business stakeholders, business unit leads, managers, makers, and trainers with a comprehensive understanding of the Power Apps Test Engine from a business perspective. The focus is on the people and processes involved in automated testing and solution development, ensuring that each role is clearly defined and understood.
 
 ## Learning Objectives
