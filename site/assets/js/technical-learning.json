@@ -83,6 +83,7 @@
             "isRequired": true,
             "choices": [
               "Downloading and installing the .NET SDK",
+              "Installing Azure Command Line Tools",
               "Installing Power Platform Command Line Tools",
               "Using Visual Studio Code to author and edit tests"
             ]

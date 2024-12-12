@@ -12,6 +12,7 @@ To get started, you'll need the following components:
 2. **PowerShell**: Ensure you have PowerShell installed on your machine.
 3. **Power Platform Command Line Tools**: Install the Power Platform Command Line tools to interact with your Power Platform environment.
 4. **.NET 8.0 SDK**: Download and install the .NET 8.0 SDK to build the code.
+5. **Azure CLI**: Install the Azure CLI
 
 This can seem daunting but the following steps will help you with this process assuming you are using Microsoft Windows as your local operating system.
 
@@ -96,6 +97,26 @@ pac -v
 ```
 
 3. Close and reopen your terminal to ensure the new components are in the system path.
+
+## Azure Command Line Interface
+
+1. You can install the Azure Command Line Interface (CLI) using winget
+
+```pwsh
+winget install -e --id Microsoft.AzureCLI
+```
+
+2. **Verification**: Verify the installation by running:
+
+```pswh
+az -version
+```
+
+3. Login to the Azure cli with user account account access to the dataverse
+
+```pwsh
+az login --allow-no-subscriptions
+```
 
 ## Getting Started
 

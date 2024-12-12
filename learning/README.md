@@ -20,11 +20,14 @@ This module explains the following concepts:
 
 ## Prerequisites
 
+Using guide [Get Started Now](../context/get-started-now.md) ensure teh following pre-requisites are installed and verified
+
 - Installed version of .NET SDK 8.0
 - Visual Studio Code
 - PowerShell Core
 - Power Platform CLI
 - Git Client
+- Azure CLI
 
 > NOTE: Unless stated otherwise to use of the learning module assumed that you are using the `integration` branch. If you are new to feature branched you can read [Understanding Feature Branches](../context/understanding-feature-branches.md).
 
