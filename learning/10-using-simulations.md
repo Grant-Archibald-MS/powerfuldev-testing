@@ -14,16 +14,52 @@ This section builds on concepts introduced in [Simulating Connector](./08-simula
 
 ## Let's Get Started
 
-### Key Steps
+### Getting Setup
+
+To follow the steps in this module carry out the following actions.
 
 1. Import the `WeatherSample_*.zip` solution file from the cloned repository using [Import solutions](https://learn.microsoft.com/power-apps/maker/data-platform/import-update-export-solutions).
 2. Publish app customizations of the imported solution
 3. Start the **Weather Snapshots** model driven application
 4. Select **Allow** to consent to MSN Weather connection
-5. Create config using instructions in [README](https://github.com/microsoft/PowerApps-TestEngine/blob/grant-archibald-ms/enhanced-sample-495/samples/weather/README.md) and steps in [Getting Started](../context/get-started-now#getting-started).
-6. Run the test:
+
+## Run Tests
+
+1. Verify that the config file in the samples\weather has been configured for your environment, tennant and user1Email
+
+    ```json
+    {
+        "tenantId": "a222222-1111-2222-3333-444455556666",
+        "environmentId": "12345678-1111-2222-3333-444455556666",
+        "customPage": "te_snapshots_24d69",
+        "appDescription": "Weather Sample",
+        "user1Email": "test@contoso.onmicrosoft.com",
+        "runInstall": true,
+        "installPlaywright": true,
+        "languages": [
+            {"id":1031, "name": "de-de", "file":"testPlan.eu.fx.yaml"},
+            {"id":1033, "name": "en-us", "file":"testPlan.fx.yaml"},
+            {"id":1036, "name": "fr-fr", "file":"testPlan.eu.fx.yaml"}
+        ]
+    }
+    ```
+
+2. You have authenticated with the Power Platform CLI
 
     ```pwsh
+    pac auth create -name Dev --environment 12345678-1111-2222-3333-444455556666
+    ```
+
+3. You have logged into the Azure CLI with account that has access to the environment that you have deployed
+
+    ```pwsh
+    az login --allow-no-subscriptions
+    ```
+
+4. Run the test
+
+    ```pwsh
+    cd samples\weather
     pwsh -File RunTests.ps1
     ```
 
