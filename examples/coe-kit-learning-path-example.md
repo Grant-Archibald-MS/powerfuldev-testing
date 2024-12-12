@@ -28,7 +28,7 @@ Based on user feedback, we created three tracks of learning:
 
 ### Business and Architecture Tracks
 
-For the [business path](../learning/business-path/) and [architecture learning](../learning/architecture) tracks, we have developed assessment questions. These assessments will help us grow and evolve our learning guidance and architecture guidance.
+For the [business path](/powerfuldev-testing/learning/business-path) and [architecture learning](/powerfuldev-testing/learning/architecture) tracks, we have developed assessment questions. These assessments will help us grow and evolve our learning guidance and architecture guidance.
 
 #### Business Users
 
