@@ -55,8 +55,9 @@ This page contains sets of related topics that enable you to quickly relate topi
 | [Debugging Test Engine Tests](./debugging-test-engine-test.md) | Follow this guide on how to effectively debug your tests using a local build from source strategy |
 | [Keeping up to date](./keeping-up-to-date.md) | Staying current with the latest features and updates in the Power Apps Test Engine allows you to leverage new capabilities and ensuring optimal performance. Here's how you can keep up to date based on the version of test engine you are using. |
 | [Deep Dive: Test Engine Layers](./deep-dive-testengine-layers.md) | This article is designed to walk through the different layers of how test engine tests are implemented and understand the key interactions between the layers |
+| [Testing Localized Power Apps](./testing-localized-power-app.md) | This article discusses the testing of localized Power Apps |
 
-### Discussion Ariticles
+### Discussion Articles
 
 
 | Article | Notes | Feedback |
