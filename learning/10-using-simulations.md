@@ -17,8 +17,11 @@ This section builds on concepts introduced in [Simulating Connector](./08-simula
 ### Key Steps
 
 1. Import the `WeatherSample_*.zip` solution file from the cloned repository using [Import solutions](https://learn.microsoft.com/power-apps/maker/data-platform/import-update-export-solutions).
-2. Create config using instructions in [README](https://github.com/microsoft/PowerApps-TestEngine/blob/grant-archibald-ms/enhanced-sample-495/samples/weather/README.md) and steps in [Getting Started](../context/get-started-now#getting-started).
-3. Run the test:
+2. Publish app customizations of the imported solution
+3. Start the **Weather Snapshots** model driven application
+4. Select **Allow** to consent to MSN Weather connection
+5. Create config using instructions in [README](https://github.com/microsoft/PowerApps-TestEngine/blob/grant-archibald-ms/enhanced-sample-495/samples/weather/README.md) and steps in [Getting Started](../context/get-started-now#getting-started).
+6. Run the test:
 
     ```pwsh
     pwsh -File RunTests.ps1
