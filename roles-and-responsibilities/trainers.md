@@ -39,6 +39,12 @@ Consider using [Business Path Learning Module](../learning/business-path) to hel
 
 Consider using [Learning Module](../learning) to help apply automated testing topics to low code solutions.
 
+## Examples
+
+| Example | Description |
+|---------|-------------|
+| [CoE Kit Learning Path](../examples/coe-kit-learning-path-example.md) | Example of how learning path for automated testing applied across CoE Kit |
+
 ## Conclusion
 
 As a Trainer, your role is to equip your organization with the skills and knowledge needed to effectively utilize low-code tools on the Power Platform. By incorporating automated testing practices into your training programs, you can ensure that participants are well-prepared to create reliable, performant, and high-quality solutions. This not only supports business continuity but also empowers participants to innovate confidently and effectively.
