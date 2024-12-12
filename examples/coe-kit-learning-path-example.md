@@ -66,7 +66,7 @@ To effectively address the learning curve, we have leveraged several resources a
 
 - **Architecture Guidance**: We provide guidance on the architecture of automated tests within the Power Well Architected (PoWA) framework. This includes best practices for designing reliable, secure, and efficient tests that integrate seamlessly into CI/CD pipelines. Additional guidance for [Enterprise Architects](../roles-and-responsibilities/enterprise-architects.md), [Solution Architects](../roles-and-responsibilities/solution-architects.md) and [Security Architected](../roles-and-responsibilities/security-architects.md) also helped
 
-- **Business Path**: For business stakeholders, we offer a dedicated learning path that emphasizes the importance of collaboration, innovation, and efficiency in automated testing. This path helps business users understand the value of automated testing and how it can drive enterprise-grade solutions. Learn about the [business path](../learning/business-path/) learning module.
+- **Business Path**: For business stakeholders, we offer a dedicated learning path that emphasizes the importance of collaboration, innovation, and efficiency in automated testing. This path helps business users understand the value of automated testing and how it can drive enterprise-grade solutions. Learn about the [business path](../learning/business-path) learning module.
 
 ## Transferring Knowledge
 
