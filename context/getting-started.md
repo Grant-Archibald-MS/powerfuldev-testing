@@ -21,6 +21,13 @@ feature_row:
     url: /context/getting-started-technical
 ---
 
+
+## Get Started Assessment
+
+{% interactive_assessment getting-started.json %}
+
+## Welcome
+
 When it comes to Power Platform Automated Testing, where you start will depend on your <a href="/powerfuldev-testing/roles-and-responsibilities">role in the organization</a> and your willingness to work as an early adopter. This guide will help you navigate the key items to consider as you embark on this journey.
 
 {% include feature_row type=center %}

@@ -15,7 +15,7 @@ By the end of this workshop, you'll be equipped with the knowledge and tools to 
 
 ## Pre-requisites
 
-BEfore yuo get started depending on being an early adopter, beta tester or general availability user from [Ring Deployment Model](../context/ring-deployment-model.md) you will require different components installed to enable you to use this learning module.
+Before you get started depending on being an early adopter, beta tester or general availability user from [Ring Deployment Model](../context/ring-deployment-model.md) you will require different components installed to enable you to use this learning module.
 
 ### Inner Ring (Canary Users)
 
