@@ -1,116 +1,24 @@
 main:
   - title: "Getting Started"
     url: /context/getting-started
-  - title: "Roles and Responsibilities"
-    url: /roles-and-responsibilities
-  - title: "Context"
-    url: /context
-  - title: "Discussions"
-    url: /discussion
-  - title: "Examples"
-    url: /examples
+ 
 
 docs:
   - title: "Roles and Responsibilities"
     children:
-      - title: "Business Stakeholders"
-        url: /roles-and-responsibilities/business-stakeholders
-      - title: "Business Unit Leads"
-        url: /roles-and-responsibilities/business-unit-leads
-      - title: "Managers"
-        url: /roles-and-responsibilities/managers
-      - title: "Makers"
-        url: /roles-and-responsibilities/makers
-      - title: "Trainers"
-        url: /roles-and-responsibilities/trainers
-      - title: "Enterprise Architects"
-        url: /roles-and-responsibilities/enterprise-architects
-      - title: "Solution Architects"
-        url: /roles-and-responsibilities/solution-architects 
-      - title: "DevOps Engineers and Architects"
-        url: /roles-and-responsibilities/devops-engineers-architects
-      - title: "Software Engineers"
-        url: /roles-and-responsibilities/software-engineers
-      - title: "Support Engineers"
-        url: /roles-and-responsibilities/support-engineers
-      - title: "Audit"
-        url: /roles-and-responsibilities/audit
-      - title: "Security Architects"
-        url: /roles-and-responsibilities/security-architects
-      - title: "Microsoft Engineering"
-        url: /roles-and-responsibilities/microsoft-engineering
-      - title: "Microsoft Support"
-        url: /roles-and-responsibilities/microsoft-support
-      - title: "Power CAT"
-        url: /roles-and-responsibilities/powercat
-        
-  - title: Context
+      - title: Get Started Business
+        url: /context/getting-started-business
+      - title: Get Started Architects
+        url: /context/getting-started-architects
+      - title: Get Started Technical
+        url: /context/getting-started-technical
+      - title: Explore Roles
+        url: /roles-and-responsibilities
+  - title: "Context"
     children:
-      - title: "Common Topics"
-        url: /context/common-topics
-      - title: "Why Automated Testing?"
-        url: /context/why-automated-testing
-      - title: "Why Not Just Manual Testing?"
-        url: /context/why-not-just-manual-testing
-      - title: "Growing to Enterprise Grade"
-        url: /context/growing-to-enterprise-grade
-      - title: "Impacts on People, Process, and Tooling"
-        url: /context/impacts-on-people-process-and-tooling
-      - title: "Transformative Power of AI"
-        url: /context/transformative-power-of-ai
-      - title: "Why Not Just Use Code First Testing Tools"
-        url: /context/why-not-just-use-code-first-testing-tools
-      - title: "Roadmap Alignment"
-        url: /context/roadmap-alignment
-      - title: "Low code Testing Principles"
-        url: /context/low-code-test-design-principles
-
-  - title: Discussion
-    children:
-      - title: "Building a sustainability model"
-        url: /discussion/building-a-sustainability-model
-      - title: "Embracing Testing Strategies for Low-Code Solutions: A Discussion for Enterprise Architects"
-        url: /discussion/enterprise-architecture-discussion
-      - title: "Testing stratgies"
-        url: /discussion/implementing-effective-automated-testing-strategies-in-power-platform-solutions
-      - title: "Generative AI"
-        url: /discussion/generative-ai
-      - title: "Testing Approaches"
-        url: /discussion/introduction-to-testing-approaches
-      - title: "Low Code Power Platform Testing for the Code First Developer"
-        url: /discussion/low-code-testing-for-code-first-developer
-      - title: "Playwright vs Power Apps Test Engine"
-        url: /discussion/playwright-vs-test-engine
-      - title: "Authentication"
-        url: /discussion/authentication
-      - title: "Data simulation"
-        url: /discussion/data-simulation
-      - title: "Test Authoring"
-        url: /discussion/test-authoring
-
-  - title: Examples
-    children:
-      - title: CoE Kit - Executing CoE Starter Kit Test Automation
-        url: /examples/coe-kit-automate-test-sample
-      - title: CoE Kit - Setup and Install Wizard
-        url: /examples/coe-kit-setup-and-install-wizard
-      - title: CoE Kit - Build from Source Example
-        url: /examples/coe-kit-build-from-source-run-tests
-      - title: Extending the Test Engine
-        url: /examples/coe-kit-extending-test-engine
-      - title: Test Automation ALM
-        url: /examples/coe-kit-test-automation-alm
-      - title: Infrastructure As Code
-        url: /examples/coe-kit-infrastructure-as-code
-      - title: Variables and collections
-        url: /examples/custom-page-variables-and-collections
-      - title: Power Automate Testing
-        url: /examples/coe-kit-powerautomate-testing
-      - title: Extending Test Engine
-        url: /examples/extending-testengine-powerfx-with-with-csharp-test-scripts
-      - title: No Cliffs Extensibility Model
-        url: /examples/understanding-no-cliffs-extensibility-model 
-      - title: Power Fx Namespaces
-        url: /examples/using-powerfx-namespaces-in-testing
-      - title: Testing Security
-        url: /examples/testing-security
+      - title: Common Topics
+        url: /contet/common-topics
+  - title: "Discussions"
+    url: /discussion
+  - title: "Examples"
+    url: /examples
