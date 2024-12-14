@@ -17,7 +17,7 @@ docs:
   - title: "Context"
     children:
       - title: Common Topics
-        url: /contet/common-topics
+        url: /context/common-topics
   - title: "Discussions"
     url: /discussion
   - title: "Examples"
