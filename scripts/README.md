@@ -1,0 +1,1 @@
+npm install glob spellchecker front-matter markdown-it

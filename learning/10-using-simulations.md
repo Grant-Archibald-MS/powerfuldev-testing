@@ -22,7 +22,7 @@ To follow the steps in this module carry out the following actions.
 
 ## Run Tests
 
-1. Verify that the config file in the samples\weather has been configured for your environment, tennant and user1Email
+1. Verify that the config file in the samples\weather has been configured for your environment, tenant and user1Email
 
     ```json
     {

@@ -152,7 +152,7 @@ The current logged-in Azure CLI session is used to obtain an access token to the
 Further reading for readers unfamiliar with Azure CLI Login, Access Token and Dataverse security model:
 1. [az login](https://learn.microsoft.com/cli/azure/reference-index?view=azure-cli-latest#az-login)
 2. [az account get-access-token](https://learn.microsoft.com/cli/azure/account?view=azure-cli-latest#az-account-get-access-token) using Azure CLI to obtain access token. In this case it is used to obtain access token to integrate with Dataverse custom XML repository
-3. [Microsoft.PowerPlatform.Dataverse.Client](https://www.nuget.org/packages/Microsoft.PowerPlatform.Dataverse.Client/) used to acess Custom XML Repository using the obtained access token
+3. [Microsoft.PowerPlatform.Dataverse.Client](https://www.nuget.org/packages/Microsoft.PowerPlatform.Dataverse.Client/) used to access Custom XML Repository using the obtained access token
 4. [Security concepts in Microsoft Dataverse](https://learn.microsoft.com/power-platform/admin/wp-security-cds) where using User or Team owned records.
 5. [Granting permission to tables in Dataverse for Microsoft Teams](https://learn.microsoft.com/power-apps/teams/dataverse-for-teams-table-permissions)
 6. [Record sharing](https://learn.microsoft.com/power-platform/admin/wp-security-cds#record-sharing) Individual records can be shared on a one-by-one basis with another user (interactive or application user).
@@ -171,7 +171,7 @@ The Data Protection API is used to decrypt the encrypted value using Windows Dat
 
 ## Sample
 
-The following sample is a conceptual overview of how values are Protected and Unprotected using Datavarse as the IXmlRepository
+The following sample is a conceptual overview of how values are Protected and Unprotected using Dataverse as the IXmlRepository
 
 ```csharp
 using Microsoft.AspNetCore.DataProtection;

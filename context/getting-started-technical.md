@@ -25,7 +25,7 @@ By taking these steps, you can leverage the full potential of low-code automated
 
 | Role | Description |
 |------|-------------|
-| [Software Engineers](../roles-and-responsibilities/software-engineers.md) | Use Power Platform to augment their existing code-first skills as a productivity tool or contribute extensions or add-ons to help makers achieve more. |
+| [Software Engineers](../roles-and-responsibilities/software-engineers.md) | Use Power Platform to augment their existing code-first skills as a productivity tool or contribute extensions or addons to help makers achieve more. |
 | [Support Engineers](../roles-and-responsibilities/support-engineers.md) | Take ownership of low-code solutions to help them scale across the organization. They focus on the quality of low-code solutions and the ability to support and fix them. | 
 
 ## Learning Path

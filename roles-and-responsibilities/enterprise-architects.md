@@ -1,6 +1,6 @@
 # Enterprise Architects
 
-As an Enterprise Architect, your role is pivotal in ensuring that the technological landscape of your organization is robust, scalable, and aligned with strategic objectives. You are responsible for reviewing and sinder implemention plans for content like the pillars of the [Power Well-Architected Framework](https://aka.ms/powa), integrating low-code solutions with existing IT investments, and ensuring holistic integration across both low-code and code-first environments. Your oversight ensures that the organization's technology infrastructure supports business goals and drives innovation.
+As an Enterprise Architect, your role is pivotal in ensuring that the technological landscape of your organization is robust, scalable, and aligned with strategic objectives. You are responsible for reviewing and setting implementation plans for content like the pillars of the [Power Well-Architected Framework](https://aka.ms/powa), integrating low-code solutions with existing IT investments, and ensuring holistic integration across both low-code and code-first environments. Your oversight ensures that the organization's technology infrastructure supports business goals and drives innovation.
 
 ## Interests and Oversight
 

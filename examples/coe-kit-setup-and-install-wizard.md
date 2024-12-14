@@ -8,10 +8,10 @@ Once example we have been working on recently is Automated testing of the [Setup
 2. How do we setup and install the solution?
 3. Could we automate the creation of the environment, install of dependencies, setup of connections?
 4. How we extend testing a Model Driven Application with custom pages?
-5. How do we handle the user consent diaglog?
+5. How do we handle the user consent dialog?
 6. How build tests to interact with a complicated multi stage setup process?
 7. How can we create integration tests calling Power Automate Cloud Flows?
-8. How can we validating the successful setup and state with dataverse?
+8. How can we validating the successful setup and state with Dataverse?
 9. How can we scale what we are learning to improve guidance?
 
 ## Early Adopter and Build from Source

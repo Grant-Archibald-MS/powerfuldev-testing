@@ -76,7 +76,7 @@ Microsoft Power Platform Guidance provides valuable information to help you crea
 
 ### Power Platform Adoption
 
-Fos customers working with Power CAT we help them jumpstart your Microsoft Power Platform adoption journey with our workbook, maturity model, and best practices. These resources can help you shape technology, business, and people strategies to drive desired business outcomes for your adoption effort.
+For customers working with Power CAT we help them jumpstart your Microsoft Power Platform adoption journey with our workbook, maturity model, and best practices. These resources can help you shape technology, business, and people strategies to drive desired business outcomes for your adoption effort.
 
 ### Power Platform Blogs
 

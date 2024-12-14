@@ -1,7 +1,7 @@
 ---
 title: "Roadmap Alignment: Managed Operations at Ignite 2024"
 categories:
-  - Annoucements
+  - Announcements
 tags:
   - ManagedOperations
   - PowerPlatform

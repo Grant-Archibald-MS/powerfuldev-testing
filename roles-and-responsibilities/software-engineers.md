@@ -7,7 +7,7 @@ Welcome to the section dedicated to Software Engineers! Here, we'll explore the 
 As a Software Engineer, your primary focus is on leveraging your code-first skills to enhance and extend the capabilities of the Power Platform. You play a crucial role in integrating traditional development practices with low-code solutions, ensuring that both approaches work seamlessly together. Your responsibilities include:
 
 - **Augmenting Productivity**: Using the Power Platform to boost your productivity by creating custom solutions, automating tasks, and streamlining workflows.
-- **Contributing Extensions**: Developing extensions or add-ons that help makers achieve more with the Power Platform, providing them with additional functionality and capabilities.
+- **Contributing Extensions**: Developing extensions or addons that help makers achieve more with the Power Platform, providing them with additional functionality and capabilities.
 - **Ensuring Quality**: Implementing best practices for development, testing, and deployment to ensure that low-code solutions are robust, reliable, and meet the required standards.
 
 Your oversight extends to ensuring that the Power Platform solutions are integrated with existing IT systems and processes, providing a cohesive approach to both low-code and code-first development.

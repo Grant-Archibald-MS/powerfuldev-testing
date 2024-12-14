@@ -17,7 +17,7 @@ The new provider model has broadened the scope of the Test Engine. It now suppor
    - **Entity Lists**: Lists of records from a specific entity in Dataverse.
    - **Entity Records**: Individual records within an entity.
    - **Custom Pages**: Custom-designed pages within model-driven apps.
-3. **Power Apps Portal**: Allow automation of **https://make.powerapps.com** to perform and verify common operations. 
+3. **Power Apps Portal**: Allow automation of `https://make.powerapps.com` to perform and verify common operations. 
 
 ## Future Providers
 

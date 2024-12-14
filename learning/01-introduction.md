@@ -21,7 +21,7 @@ Before you get started depending on being an early adopter, beta tester or gener
 
 Follow the instructions on [Get Started Now](../context/get-started-now.md) ensure that you have the tools installs, verification checks and the source code cloned and compiled on your local machine.
 
-Once the pac test run command is updated `pac test run` wil lbe able to use instead of local compiled version of the Power Apps Test Engine. 
+Once the pac test run command is updated `pac test run` will be able to use instead of local compiled version of the Power Apps Test Engine. 
 {: .notice--success}
 
 ### Second Ring (Beta Testers)

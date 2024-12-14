@@ -1,7 +1,7 @@
 ---
 title: "PowerfulDevs 2025 Confirmation"
 categories:
-  - Annoucements
+  - Announcements
 tags:
   - PowerfulDevs2025
   - PowerPlatform
@@ -15,7 +15,7 @@ tags:
 I'm excited to announce that our proposed session, "Mastering Automated Testing in Power Platform: From Unit Tests to CI/CD Integration," has been accepted for the Powerful Devs conference in February 2025! 🎉
 
 
-Feel free to repost or comment on [LinkedIn Annoucement](https://www.linkedin.com/feed/update/urn:li:activity:7263669490834374657/)
+Feel free to repost or comment on [LinkedIn Announcement](https://www.linkedin.com/feed/update/urn:li:activity:7263669490834374657/)
 {: .notice--success}
 
 To support and shape this session, I've created this dedicated site offering greater context, discussion topics, and examples using the CoE Starter Kit as we apply Automated Testing to the solution.

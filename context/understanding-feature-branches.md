@@ -38,7 +38,7 @@ Switching branches means moving from one line of development to another. You can
     git checkout branch-name
     ```
 
-    Replace `branch-name` with the name of the branch you want to switch to. For example, if you want to switch to a branch named `integration`, you would use:
+    Replace `branch-name` with the name of the branch you want to switch to. For example, if you want to switch to a branch named integration, you would use:
 
     ```bash
     git checkout integration

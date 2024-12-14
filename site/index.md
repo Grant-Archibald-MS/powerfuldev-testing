@@ -3,10 +3,10 @@ layout: home
 author_profile: true
 toc: true
 feature_row:
-  - image_path: ./learning/media/learning-module.png
-    alt: "learning"
-    title: '<center>Learning</center>'
-    url: "./learning/get-started"
+  - image_path: ./assets/images/getting-started.png
+    alt: "Getting started"
+    title: '<center>Get Started</center>'
+    url: "/context/getting-started"
   - image_path: /assets/images/give-feedback.png
     alt: "Give feedback"
     title: '<center>Give Feedback</center>'

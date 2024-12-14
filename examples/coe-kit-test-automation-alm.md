@@ -10,7 +10,7 @@ When it comes to automating the release and continuous deployment process for th
 
 You can use a physical machine, such as a laptop or PC, to run your automation scripts. Alternatively, you can trigger these scripts from cloud flows or pipelines, providing more flexibility and scalability.
 
-{% include figure popup=true image_path="/examples/media/coe-kit-alm-release-continuos-deployment-process.png" alt="Overview diagram that shows overview of local editing and hosted options to execute tests as part of ALM process" %}
+{% include figure popup=true image_path="/examples/media/coe-kit-alm-release-continuous-deployment-process.png" alt="Overview diagram that shows overview of local editing and hosted options to execute tests as part of ALM process" %}
 
 #### Code First Approach
 
@@ -18,7 +18,7 @@ For those who prefer a code-first approach, an Azure DevOps license and a Window
 
 #### Low Code Approach
 
-One alternative for execution of tests is combining Power Platform PIpelines and Power Automate. Using this approach to run the automated tests Power Automate Desktop could be used using a hosted configuration using only Power Platform resources this examples needs a Power Automate license. 
+One alternative for execution of tests is combining Power Platform Pipelines and Power Automate. Using this approach to run the automated tests Power Automate Desktop could be used using a hosted configuration using only Power Platform resources this examples needs a Power Automate license. 
 
 For organizations with Conditional access policies for authentication, you can use a Microsoft Intune Joined Windows 11 Cloud hosted PC to execute Desktop flows. This setup requires a Power Automate Hosted Process license and an Intune license, such as Intune Plan 1 or Microsoft 365 Business Premium.
 
@@ -26,7 +26,7 @@ For organizations with Conditional access policies for authentication, you can u
 
 Let's dive into the target Application lifecycle for the CoE Kit that has been selected for the CoE Kit
 
-{% include figure popup=true image_path="/examples/media/coe-kit-target-alm.png" alt="Target ALM lifecycle for CoE Kit from Environments, Azure DevOps Repository, Power Platform PIpelines, Approvals and GitHub Release" %}
+{% include figure popup=true image_path="/examples/media/coe-kit-target-alm.png" alt="Target ALM lifecycle for CoE Kit from Environments, Azure DevOps Repository, Power Platform Pipelines, Approvals and GitHub Release" %}
 
 By following this structured approach, we ensure that our development, testing, and deployment processes are efficient, reliable, and scalable.
 

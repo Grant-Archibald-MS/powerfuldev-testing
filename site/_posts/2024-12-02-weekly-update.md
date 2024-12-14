@@ -13,11 +13,11 @@ tags:
 
 ## Key Points
 - **Getting Started**: New [learning module](/powerfuldev-testing/learning) added to help early adopters to get hands on running and building tests.
-- **Post Ignite Updates**: Posts to sumamrize some related sessions from Ignite 2024.
+- **Post Ignite Updates**: Posts to summarize some related sessions from Ignite 2024.
 
 ## Getting Started
 
-The Power Apps Test Engine learning module on the [PowerfulDevs Testing](https://grant-archibald-ms.github.io/powerfuldev-testing/learning/) site provides a starting guide to automated testing within the Microsoft Power Platform using Test Engein. This module is designed to help early adopter developers understand and implement automated testing for their Power Apps solutions, leveraging the Power Apps Test Engine.
+The Power Apps Test Engine learning module on the [PowerfulDevs Testing](https://grant-archibald-ms.github.io/powerfuldev-testing/learning/) site provides a starting guide to automated testing within the Microsoft Power Platform using Test Engine. This module is designed to help early adopter developers understand and implement automated testing for their Power Apps solutions, leveraging the Power Apps Test Engine.
 
 ### Learning Objectives
 
@@ -58,4 +58,4 @@ For more details, visit the [Ignite: Introducing Managed Operations](https://gra
 
 ### Ignite: Deep Dive: Create, Monitor, and Optimize Enterprise Apps
 
-In the recent Microsoft Ignite session, Austin Laugesen and Marc Schweigert took a deep dive into the importance of automated testing in creating, monitoring, and optimizing enterprise-grade applications with Power Apps. This session highlighted the critical role that automated testing plays in ensuring the reliability and performance of applications that businesses depend on. The session used a compelling analogy comparing Power Apps to paper airplanes and commercial airplanes to explain the difference between simple apps and enterprise-grade applications. The overall lifecycle of an enterprise-grade application presented included demonstrations of planning, building, and testing phases, with automated testing being a ket step for ensuring reliability and performance.
+In the recent Microsoft Ignite session, Austin Laugesen and Marc Schweigert took a deep dive into the importance of automated testing in creating, monitoring, and optimizing enterprise-grade applications with Power Apps. This session highlighted the critical role that automated testing plays in ensuring the reliability and performance of applications that businesses depend on. The session used a compelling analogy comparing Power Apps to paper airplanes and commercial airplanes to explain the difference between simple apps and enterprise-grade applications. The overall lifecycle of an enterprise-grade application presented included demonstrations of planning, building, and testing phases, with automated testing being a key step for ensuring reliability and performance.

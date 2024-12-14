@@ -1,7 +1,7 @@
 ---
 title: "Ignite: Introducing Managed Operations"
 categories:
-  - Annoucements
+  - Announcements
 tags:
   - ManagedOperations
   - PowerPlatform

@@ -20,7 +20,7 @@ This module explains the following concepts:
 
 ## Prerequisites
 
-Using guide [Get Started Now](../context/get-started-now.md) ensure teh following pre-requisites are installed and verified
+Using guide [Get Started Now](../context/get-started-now.md) ensure the following pre-requisites are installed and verified
 
 - Installed version of .NET SDK 8.0
 - Visual Studio Code

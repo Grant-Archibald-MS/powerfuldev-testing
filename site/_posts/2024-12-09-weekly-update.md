@@ -29,7 +29,7 @@ We are excited to announce a new learning path tailored for business professiona
 In addition to the business learning path, we have introduced a new [technical learning path](/powerfuldev-testing/learning). This path is aimed at developers and IT professionals who want to deepen their technical knowledge of Power Platform automated testing.
 
 ### What's New
-Our latest post, W[What’s New with the Power Apps Test Engine: From Experimental to Enterprise-Grade](/powerfuldev-testing/updates/2024/12/06/whats-new/), highlights the recent advancements in the Power Apps Test Engine. This update covers the transition from experimental features to enterprise-grade capabilities, ensuring robust and reliable automated testing for your applications.
+Our latest post, [What’s New with the Power Apps Test Engine: From Experimental to Enterprise-Grade](/powerfuldev-testing/updates/2024/12/06/whats-new/), highlights the recent advancements in the Power Apps Test Engine. This update covers the transition from experimental features to enterprise-grade capabilities, ensuring robust and reliable automated testing for your applications.
 
 ### Security
 

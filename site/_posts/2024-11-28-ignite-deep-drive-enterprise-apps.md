@@ -1,7 +1,7 @@
 ---
 title: "Ignite: Deep Dive: Create, monitor and optimize enterprise apps with Power Apps"
 categories:
-  - Annoucements
+  - Announcements
 tags:
   - ManagedOperations
   - PowerPlatform

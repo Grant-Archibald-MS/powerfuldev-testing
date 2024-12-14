@@ -6,7 +6,7 @@ In this example, we explore the extensibility of TestEngine Power FX using C# te
 
 We will discuss extending the code-first extensibility of web-based Playwright commands. This approach enables developers to write custom test scripts that leverage the powerful capabilities of Playwright for browser automation.
 
-Providers in TestEngine understand the underlying model of the component being tested. They create Power FX abstractions that hide complexity, allowing testers to focus on the high-level logic of their tests. To allaow code first extension the ```Experimental.PlaywrightScript()``` Power FX function allows scripts to be recorded or authored in C# to extend the test.
+Providers in TestEngine understand the underlying model of the component being tested. They create Power FX abstractions that hide complexity, allowing testers to focus on the high-level logic of their tests. To allow code first extension the ```Experimental.PlaywrightScript()``` Power FX function allows scripts to be recorded or authored in C# to extend the test.
 
 ![Diagram that shows mapping of PlaywrightScript function to C# class](./media/powerfx+csharp.png)
 
