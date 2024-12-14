@@ -15,7 +15,7 @@ tags:
 ## Key Points
 - **Getting Started**: New sections added to make it easier for business, architect, and technical roles to [get started](/powerfuldev-testing/context/getting-started).
 - **Roles and Responsibilities**: Explore the [different roles](/powerfuldev-testing/roles-and-responsibilities/) and discover how Automated Testing overlaps with them.
-- **Managed Operations**: Highlighted Test Engine as on of key elements of the [Managed Operations story](/powerfuldev-testing/annoucements/2024/11/19/roadmap-aligment-managed-operations-at-ignite-2024/).
+- **Managed Operations**: Highlighted Test Engine as on of key elements of the [Managed Operations story](/powerfuldev-testing/announcements/2024/11/19/roadmap-aligment-managed-operations-at-ignite-2024/).
 
 ## New Content This Week
 
@@ -32,9 +32,9 @@ tags:
 - [Test Engine Providers](/powerfuldev-testing/context/test-engine-providers)
 
 ### Posts during the week
-- [Roadmap Alignment: Managed Operations at Ignite 2024](/powerfuldev-testing/annoucements/2024/11/19/roadmap-aligment-managed-operations-at-ignite-2024/)
+- [Roadmap Alignment: Managed Operations at Ignite 2024](/powerfuldev-testing/announcements/2024/11/19/roadmap-aligment-managed-operations-at-ignite-2024/)
 - [Role Collaboration](/powerfuldev-testing/thoughts/2024/11/18/role-collaboration/)
-- [PowerfulDevs Confirmation](/powerfuldev-testing/annoucements/2024/11/16/powerfuldevs-confirmation/)
+- [PowerfulDevs Confirmation](/powerfuldev-testing/announcements/2024/11/16/powerfuldevs-confirmation/)
 
 ### Roles and Responsibilities
 - [Audit](/powerfuldev-testing/roles-and-responsibilities/audit)

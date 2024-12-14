@@ -66,4 +66,4 @@ Want to see the end to end process including Power Pipelines, Test Engine tests 
 
 {% include figure popup=true image_path="/assets/images/ignite-deep-dive-create-monitor-enterprise-apps.png" alt="Deep Dive: Create, monitor and optimize enterprise apps with Power Apps" %}
 
-<a href="/powerfuldev-testing/annoucements/2024/11/28/ignite-deep-drive-enterprise-apps/">Ignite: Deep Dive: Create, monitor and optimize enterprise apps with Power Apps</a>
+<a href="/powerfuldev-testing/announcements/2024/11/28/ignite-deep-drive-enterprise-apps/">Ignite: Deep Dive: Create, monitor and optimize enterprise apps with Power Apps</a>

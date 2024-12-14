@@ -54,7 +54,7 @@ For more details, visit the [Roadmap Alignment: Managed Operations at Ignite 202
 
 Managed Operations is a new pillar introduced to help control, approve, oversee, and audit changes to applications running in production. It includes capabilities for testing, validating, integrating with source control, application lifecycle management, rich monitoring, and extended backup retention. The goal is to ensure business continuity and support changes in load while maintaining high-quality standards. The Test Engine is part of the application lifecycle management capabilities, integrating with pipelines and Native Source Control, as well as Solution Checker, to ensure high-quality capabilities.
 
-For more details, visit the [Ignite: Introducing Managed Operations](https://grant-archibald-ms.github.io/powerfuldev-testing/annoucements/2024/11/27/ignite-introducing-managed-operations/).
+For more details, visit the [Ignite: Introducing Managed Operations](https://grant-archibald-ms.github.io/powerfuldev-testing/announcements/2024/11/27/ignite-introducing-managed-operations/).
 
 ### Ignite: Deep Dive: Create, Monitor, and Optimize Enterprise Apps
 
