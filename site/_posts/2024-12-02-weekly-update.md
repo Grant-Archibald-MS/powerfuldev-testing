@@ -48,7 +48,7 @@ The module is divided into several sections, each focusing on different aspects 
 
 At Ignite 2024, Nirav Shah introduced Managed Operations for Microsoft Dynamics 365 and Power Platform. This new suite of capabilities empowers organizations to build, deploy, and operate critical workloads with stability and minimal disruption. Key highlights include the Power Apps Test Engine, updates to the CoE Kit, and significant investments in Application Lifecycle Management (ALM) fundamentals. Managed Operations is designed to help control, approve, oversee, and audit changes to applications running in production, ensuring business continuity and support for changes in load while maintaining high-quality standards.
 
-For more details, visit the [Roadmap Alignment: Managed Operations at Ignite 2024](https://grant-archibald-ms.github.io/powerfuldev-testing/annoucements/2024/11/19/roadmap-aligment-managed-operations-at-ignite-2024/).
+For more details, visit the [Roadmap Alignment: Managed Operations at Ignite 2024](/powerfuldev-testing/announcements/2024/11/19/roadmap-aligment-managed-operations-at-ignite-2024/).
 
 ### Ignite: Introducing Managed Operations
 
