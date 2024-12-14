@@ -2,8 +2,11 @@ main:
   - title: "Getting Started"
     url: /context/getting-started
  
-
 docs:
+  - title: "Latest"
+    children:
+      - title: Posts
+        url: /latest
   - title: "Roles and Responsibilities"
     children:
       - title: Get Started Business
