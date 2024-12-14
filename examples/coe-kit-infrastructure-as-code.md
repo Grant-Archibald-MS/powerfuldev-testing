@@ -38,7 +38,7 @@ https://github.com/Grant-Archibald-MS/power-platform-terraform-quickstarts
 
 ```pwsh
 cd power-platform-terraform-quickstarts
-git checkout grant-archibald-ms/coe-kit-connections
+git checkout integration
 ```
 
 3. Change to bootstrap folder

@@ -9,9 +9,6 @@ In this section, you will learn how to load a sample Weather application. This a
 
 This section builds on concepts introduced in [Simulating Connector](./08-simulating-connector.md) and [Simulating Dataverse](./09-simulating-dataverse.md).
 
-> The sample application for this section is currently in a feature branch. This will require `git checkout grant-archibald-ms/enhanced-sample-495`
-{: .notice--success} 
-
 ## Let's Get Started
 
 ### Getting Setup

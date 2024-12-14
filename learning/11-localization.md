@@ -11,9 +11,6 @@ To complete this module you will need to follow instructions for setting up in [
 This section assumes that French (LCID 1039) and German language (LCID 1031) have  been enabled.
 {: .notice--success}
 
-> The sample application for this section is currently in a feature branch. This will require `git checkout grant-archibald-ms/enhanced-sample-495`
-{: .notice--success} 
-
 ## The Need for Localization 
 
 Localization is essential for several reasons:
