@@ -18,38 +18,39 @@
         "name": "roleSelection",
         "elements": [
             {
-            "type": "radiogroup",
-            "name": "bestMatchingRole",
-            "title": "What is your best matching role?",
-            "choices": [
-                "Business Aligned User",
-                "Architect",
-                "Technical"
-            ]
+              "type": "radiogroup",
+              "name": "bestMatchingRole",
+              "title": "What is your best matching role?",
+              "choices": [
+                  "Business Aligned User",
+                  "Architect",
+                  "Technical"
+              ],
+              "defaultValue": ""
             },
             {
-            "type": "html",
-            "name": "roleDescription",
-            "visibleIf": "{bestMatchingRole} notempty",
-            "html": "<p>You selected: {bestMatchingRole}. Here is a brief description of this role:</p>"
+              "type": "html",
+              "name": "roleDescription",
+              "visibleIf": "{bestMatchingRole} notempty",
+              "html": "<p>You selected: {bestMatchingRole}. Here is a brief description of this role:</p>"
             },
             {
-            "type": "html",
-            "name": "businessAlignedUserDescription",
-            "visibleIf": "{bestMatchingRole} = 'Business Aligned User'",
-            "html": "<h3>Business Aligned User</h3><p>Represents business stakeholders who have invested in the Power Platform and want to ensure automated testing is applied at the correct level. They are concerned with business continuity, solution performance, and mitigating security risks.</p>"
+              "type": "html",
+              "name": "businessAlignedUserDescription",
+              "visibleIf": "{bestMatchingRole} = 'Business Aligned User'",
+              "html": "<h3>Business Aligned User</h3><p>Represents business stakeholders who have invested in the Power Platform and want to ensure automated testing is applied at the correct level. They are concerned with business continuity, solution performance, and mitigating security risks.</p>"
             },
             {
-            "type": "html",
-            "name": "architectDescription",
-            "visibleIf": "{bestMatchingRole} = 'Architect'",
-            "html": "<h3>Architect</h3><p>Responsible for reviewing the pillars of the Power Well-Architected Framework and implementing quality control and integration with other information technology investments. They ensure holistic integration across low-code and code-first investments.</p>"
+              "type": "html",
+              "name": "architectDescription",
+              "visibleIf": "{bestMatchingRole} = 'Architect'",
+              "html": "<h3>Architect</h3><p>Responsible for reviewing the pillars of the Power Well-Architected Framework and implementing quality control and integration with other information technology investments. They ensure holistic integration across low-code and code-first investments.</p>"
             },
             {
-            "type": "html",
-            "name": "technicalDescription",
-            "visibleIf": "{bestMatchingRole} = 'Technical'",
-            "html": "<h3>Technical</h3><p>Includes roles such as DevOps Engineers, Software Engineers, and Support Engineers who are responsible for the overall Continuous Integration / Deployment process and integrating Power Platform into this process. They can manage source control integration, test assets, and quality processes for deployment and updates.</p>"
+              "type": "html",
+              "name": "technicalDescription",
+              "visibleIf": "{bestMatchingRole} = 'Technical'",
+              "html": "<h3>Technical</h3><p>Includes roles such as DevOps Engineers, Software Engineers, and Support Engineers who are responsible for the overall Continuous Integration / Deployment process and integrating Power Platform into this process. They can manage source control integration, test assets, and quality processes for deployment and updates.</p>"
             }
         ]
       },
@@ -66,13 +67,15 @@
             "type": "radiogroup",
             "name": "businessPersona",
             "title": "Select your persona:",
+            "resetValueIf": "{pageNo} < {currentPageNo}",
             "choices": [
               "Business Stakeholders",
               "Business Unit Leads",
               "Managers",
               "Makers",
               "Trainers"
-            ]
+            ],
+            "defaultValue": ""
           }
         ]
       },
@@ -84,13 +87,15 @@
             "type": "checkbox",
             "name": "stakeholderConcerns",
             "title": "Select the concerns you have that automated testing could address:",
+            "resetValueIf": "{pageNo} < {currentPageNo}",
             "choices": [
               "Business Continuity",
               "Solution Performance",
               "Security Risks",
               "Empowering Business Users",
               "Not sure"
-            ]
+            ],
+            "defaultValue": []
           },
           {
             "type": "html",
@@ -132,13 +137,15 @@
             "type": "checkbox",
             "name": "unitLeadConcerns",
             "title": "Select the concerns you have that automated testing could address:",
+            "resetValueIf": "{pageNo} < {currentPageNo}",
             "choices": [
               "Achieving Business Goals",
               "Demonstrating Impact and Quality",
               "Balancing Competing Priorities",
               "Ensuring Business Continuity",
               "Not sure"
-            ]
+            ],
+            "defaultValue": []
           },
           {
             "type": "html",
@@ -180,13 +187,15 @@
             "type": "checkbox",
             "name": "managerConcerns",
             "title": "Select the concerns you have that automated testing could address:",
+            "resetValueIf": "{pageNo} < {currentPageNo}",
             "choices": [
               "Knowledge and Training",
               "Succession Planning",
               "Ensuring Quality and Reliability",
               "Supporting Innovation",
               "Not sure"
-            ]
+            ],
+            "defaultValue": []
           },
           {
             "type": "html",
@@ -228,13 +237,15 @@
             "type": "checkbox",
             "name": "makerConcerns",
             "title": "Select the concerns you have that automated testing could address:",
+            "resetValueIf": "{pageNo} < {currentPageNo}",
             "choices": [
               "Rapid Development",
               "Ensuring Quality and Reliability",
               "Meeting Organizational Requirements",
               "Collaboration with IT Teams",
               "Not sure"
-            ]
+            ],
+            "defaultValue": []
           },
           {
             "type": "html",
@@ -276,13 +287,15 @@
             "type": "checkbox",
             "name": "trainerConcerns",
             "title": "Select the concerns you have that automated testing could address:",
+            "resetValueIf": "{pageNo} < {currentPageNo}",
             "choices": [
               "Developing Training Programs",
               "Delivering Hands-On Training",
               "Ensuring Continuous Learning",
               "Supporting Organizational Goals",
               "Not sure"
-            ]
+            ],
+            "defaultValue": []
           },
           {
             "type": "html",
@@ -329,12 +342,14 @@
             "type": "radiogroup",
             "name": "architectPersona",
             "title": "Select your persona:",
+            "resetValueIf": "{pageNo} < {currentPageNo}",
             "choices": [
               "Enterprise Architects",
               "Solution Architects",
               "DevOps Architects",
               "Security Architects"
-            ]
+            ],
+            "defaultValue": ""
           }
         ]
       },
@@ -346,13 +361,15 @@
             "type": "checkbox",
             "name": "architectConcerns",
             "title": "Select the concerns you have that automated testing could address:",
+            "resetValueIf": "{pageNo} < {currentPageNo}",
             "choices": [
               "Implementing Quality Control",
               "Integrating with Existing IT Investments",
               "Ensuring Holistic Integration",
               "Leveraging Existing Investments",
               "Not sure"
-            ]
+            ],
+            "defaultValue": []
           },
           {
             "type": "html",
@@ -394,13 +411,15 @@
             "type": "checkbox",
             "name": "architectConcerns",
             "title": "Select the concerns you have that automated testing could address:",
+            "resetValueIf": "{pageNo} < {currentPageNo}",
             "choices": [
               "Implementing Enterprise Standards",
               "Ensuring a Robust ALM Process",
               "Making Strategic Recommendations",
               "Facilitating Collaboration",
               "Not sure"
-            ]
+            ],
+            "defaultValue": []
           },
           {
             "type": "html",
@@ -442,12 +461,14 @@
             "type": "checkbox",
             "name": "devOpsConcerns",
             "title": "Select the concerns you have that automated testing could address:",
+            "resetValueIf": "{pageNo} < {currentPageNo}",
             "choices": [
               "Source Control Integration",
               "Test Assets Management",
               "Quality Processes",
               "Not sure"
-            ]
+            ],
+            "defaultValue": []
           },
           {
             "type": "html",
@@ -483,12 +504,14 @@
             "type": "checkbox",
             "name": "securityConcerns",
             "title": "Select the concerns you have that automated testing could address:",
+            "resetValueIf": "{pageNo} < {currentPageNo}",
             "choices": [
               "Cybersecurity Management",
               "Data Privacy",
               "Compliance Assurance",
               "Not sure"
-            ]
+            ],
+            "defaultValue": []
           },
           {
             "type": "html",
@@ -529,11 +552,13 @@
             "type": "radiogroup",
             "name": "technicalPersona",
             "title": "Select your persona:",
+            "resetValueIf": "{pageNo} < {currentPageNo}",
             "choices": [
               "Software Engineers",
               "DevOps Engineers",
               "Support Engineers"
-            ]
+            ],
+            "defaultValue": ""
           }
         ]
       },
@@ -545,12 +570,14 @@
             "type": "checkbox",
             "name": "softwareConcerns",
             "title": "Select the concerns you have that automated testing could address:",
+            "resetValueIf": "{pageNo} < {currentPageNo}",
             "choices": [
               "Augmenting Productivity",
               "Contributing Extensions",
               "Ensuring Quality",
               "Not sure"
-            ]
+            ],
+            "defaultValue": []
           },
           {
             "type": "html",
@@ -586,12 +613,14 @@
             "type": "checkbox",
             "name": "devOpsConcerns",
             "title": "Select the concerns you have that automated testing could address:",
+            "resetValueIf": "{pageNo} < {currentPageNo}",
             "choices": [
               "Source Control Integration",
               "Test Assets Management",
               "Quality Processes",
               "Not sure"
-            ]
+            ],
+            "defaultValue": []
           },
           {
             "type": "html",
@@ -627,12 +656,14 @@
             "type": "checkbox",
             "name": "supportConcerns",
             "title": "Select the concerns you have that automated testing could address:",
+            "resetValueIf": "{pageNo} < {currentPageNo}",
             "choices": [
               "Ownership of Low-Code Solutions",
               "Quality Assurance",
               "Issue Resolution",
               "Not sure"
-            ]
+            ],
+            "defaultValue": []
           },
           {
             "type": "html",
@@ -667,6 +698,7 @@
             "type": "checkbox",
             "name": "informationLevel",
             "title": "What level of information are you looking for?",
+            "resetValueIf": "{pageNo} < {currentPageNo}",
             "choices": [
               {
                 "text": "High level roadmap so I can factor into planning",
@@ -688,7 +720,8 @@
                 "text": "Provide me examples",
                 "value": "Examples"
               }
-            ]
+            ],
+            "defaultValue": []
           }
         ]
       },
@@ -700,6 +733,7 @@
             "type": "radiogroup",
             "name": "businessReleaseStage",
             "title": "Which release stage do you prefer to participate in?",
+            "resetValueIf": "{pageNo} < {currentPageNo}",
             "choices": [
               {
                 "text": "Early Adopter (Understand the clear need for testing and want to be involved early to apply it now and steer product direction)",
@@ -713,7 +747,8 @@
                 "text": "General Availability (Want to use features as they are ready for wider usage)",
                 "value": "General Availability"
               }
-            ]
+            ],
+            "defaultValue": ""
           },
           {
             "type": "html",
@@ -743,6 +778,7 @@
             "type": "radiogroup",
             "name": "architectReleaseStage",
             "title": "Which release stage do you prefer to participate in?",
+            "resetValueIf": "{pageNo} < {currentPageNo}",
             "choices": [
               {
                 "text": "Early Adopter (Looking to advise and set direction to assist the business)",
@@ -756,7 +792,8 @@
                 "text": "General Availability (Want to use features as they are ready for wider usage)",
                 "value": "General Availability"
               }
-            ]
+            ],
+            "defaultValue": ""
           },
           {
             "type": "html",
@@ -786,6 +823,7 @@
             "type": "radiogroup",
             "name": "technicalReleaseStage",
             "title": "Which release stage do you prefer to participate in?",
+            "resetValueIf": "{pageNo} < {currentPageNo}",
             "choices": [
               {
                 "text": "Canary User (Build with the latest code version)",
@@ -799,7 +837,8 @@
                 "text": "General Availability (Want to use features as they are ready for wider usage)",
                 "value": "General Availability"
               }
-            ]
+            ],
+            "defaultValue": ""
           },
           {
             "type": "html",

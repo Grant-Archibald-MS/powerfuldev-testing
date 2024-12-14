@@ -33,11 +33,41 @@ elements.forEach(function(element) {
 fetch('/powerfuldev-testing/assets/js/#{@json_file}')
 .then(response => response.json())
 .then(surveyJSON => {
-    console.log(surveyJSON);
     const survey = new Survey.Model(surveyJSON);
     survey.showTitle = false;
     survey.showCompleteButton = false;
     survey.render(document.getElementById("surveyContainer"));
+    survey.onCurrentPageChanging.add(function (survey, options) {
+        var oldPage = options.oldCurrentPage;
+        var newPage = options.newCurrentPage;
+
+        if (newPage.visibleIndex === 0) { // Check if the new page is the first page
+            survey.pages.forEach(function (page) {
+            page.questions.forEach(function (question) {
+                question.clearValue();
+            });
+            });
+        }
+        else {
+            if (newPage.visibleIndex < oldPage.visibleIndex) {
+                oldPage.questions.forEach(function (q) {
+                    q.clearValue();
+                });
+            }    
+        }
+    });
+    
+    survey.onValueChanged.add(function (survey, options) {
+        var currentPageIndex = survey.currentPageNo;
+        var visiblePages = survey.visiblePageCount;
+        survey.pages.forEach(function (page, index) {
+            if (index > currentPageIndex && index < visiblePages - 1) {
+            page.questions.forEach(function (question) {
+                question.clearValue();
+            });
+            }
+        });
+    });
 })
 .catch(error => console.error('Error loading survey questions:', error));
 });
