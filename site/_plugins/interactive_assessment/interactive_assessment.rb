@@ -37,6 +37,21 @@ fetch('/powerfuldev-testing/assets/js/#{@json_file}')
     survey.showTitle = false;
     survey.showCompleteButton = false;
     survey.render(document.getElementById("surveyContainer"));
+    survey.onTextMarkdown.add((_, options) => {
+        options.html = options.text;
+    });
+    survey.onAfterRenderQuestion.add(function (survey, options) {
+    if (options.question.name === "matrixQuestion") {
+        // Add event listener to all checkboxes within the matrix
+        document.querySelectorAll('input[type="checkbox"][data-id]').forEach(function (checkbox) {
+            checkbox.addEventListener('click', function () {
+                let dataId = checkbox.getAttribute('data-id');
+                survey.setValue(dataId, checkbox.checked);
+                console.log('Checkbox clicked:', dataId, 'Value set to:', checkbox.checked);
+            });
+        });
+    }
+    });
     survey.onCurrentPageChanging.add(function (survey, options) {
         var oldPage = options.oldCurrentPage;
         var newPage = options.newCurrentPage;

@@ -21,6 +21,8 @@ docs:
     children:
       - title: Common Topics
         url: /context/common-topics
+      - title: Journey Map
+        url: /context/journey-map
   - title: "Discussions"
     url: /discussion
   - title: "Examples"
