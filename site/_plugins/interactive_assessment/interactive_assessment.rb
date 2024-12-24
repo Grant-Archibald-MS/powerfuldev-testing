@@ -74,12 +74,13 @@ fetch('/powerfuldev-testing/assets/js/#{@json_file}')
     
     survey.onValueChanged.add(function (survey, options) {
         var currentPageIndex = survey.currentPageNo;
+        var currentVisible = survey.currentPage.visibleIndex
         var visiblePages = survey.visiblePageCount;
         survey.pages.forEach(function (page, index) {
-            if (index > currentPageIndex && index < visiblePages - 1) {
-            page.questions.forEach(function (question) {
-                question.clearValue();
-            });
+            if (page.visibleIndex > currentVisible) {
+                page.questions.forEach(function (question) {
+                    question.clearValue();
+                });
             }
         });
     });

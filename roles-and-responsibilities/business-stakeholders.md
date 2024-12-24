@@ -42,3 +42,9 @@ The following [discussions](../discussion) could be of interest
 | Discussion | Description |
 |------------|-------------|
 [Building a Sustainability Model](../discussion/building-a-sustainability-model.md) | In the fast-paced world of software development, the initial rush of quickly building and deploying a solution can be exhilarating. However, the true challenge lies in keeping your great idea alive and ensuring its sustainability over time. This discussion explores how to build a sustainability model that not only keeps your solution relevant but also engages the community and stakeholders in the process. | [Link](https://github.com/Grant-Archibald-MS/powerfuldev-testing/issues/5)
+
+The following context setting articles
+
+| Topic      | Description |
+|------------|-------------|
+| [The Strategic Importance of Automated Testing from a CXO Perspective](/context/strategic-importance-of-automated-testing-from-a-cxo-perspective.md) | Automated testing is not just a technical necessity but a strategic imperative for modern enterprises. From a CXO perspective, the implementation of automated testing frameworks can significantly enhance business outcomes, safeguard investments, and drive sustainable growth. Here’s a detailed look at why automated testing is crucial from a business standpoint, with a specific focus on the Power Apps Test Engine and how it addresses common challenges.
