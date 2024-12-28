@@ -150,7 +150,7 @@ This template provide optional steps to do the following:
 4. Create a developer environment for each test user
 
 > [NOTES]:
-> 1. For developer environments [Power Aps Developer Plan](https://www.microsoft.com/en-us/power-platform/products/power-apps/free) could be applied
+> 1. For developer environments [Power Apps Developer Plan](https://www.microsoft.com/en-us/power-platform/products/power-apps/free) could be applied
 > 2. Microsoft 365 Business Premium licenses has been purchased from Microsoft 365 Admin portal market place https://admin.microsoft.com/Adminportal/Home#/catalog. The [Try or buy a Microsoft 365 for business subscription](https://learn.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365) can help you with choices.
 > 3. Power Automate Premium licenses has been purchased from Microsoft 365 Admin portal market place. The [Types of Power Automate licenses](https://learn.microsoft.com/power-platform/admin/power-automate-licensing/types) can help you select license choices.
 
