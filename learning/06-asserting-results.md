@@ -1,5 +1,7 @@
 # Asserting Results
 
+<a href="../learning/" class="btn">Back to Learning Module</a>
+
 ## Introduction to Asserts
 
 In automated testing, an **assert** is a statement that checks if a condition is true. If the condition evaluates to true, the test passes; if it evaluates to false, the test fails. Asserts are crucial for verifying that your application behaves as expected.
@@ -22,28 +24,20 @@ Assert(boolean_expression, "message")
 
 Let's consider an example where we want to assert that the value of Label1.Text is equal to "Heading":
 
-```powerfx
-Assert(Label1.Text = "Heading", "Label1 should display 'Heading'")
-```
+{% powerfx %}
+// Setup simulated Label Control with Text Value to check below
+Set(Label1, { Text: "Heading"});
 
-In this example, if Label1.Text is "Heading", the test step will pass. If it is not, the test step will fail, and the message "Label1 should display 'Heading'" will be shown.
+Assert(Label1.Text = "Heading", "Unexpected header value")
+{% endpowerfx %}
+
+#### Tell Me More
+
+In this example using the **Assert()** function, if Label1.Text is "Heading", the test step will pass. If it is not, the test step will fail, and the message "Label1 should display 'Heading'" will be shown.
 
 ## Using Assert in a Test Plan
 
 In the [testPlan.fx.yaml](https://github.com/microsoft/PowerApps-TestEngine/blob/main/samples/buttonclicker/testPlan.fx.yaml) file, you can include assert statements to validate your application's behavior. Let's look at an example from the Button Clicker sample.
-
-### Example from Button Clicker Sample
-
-The testPlan.fx.yaml file in the Button Clicker sample includes the following assert statement:
-
-{% powerfx %}
-// Setup simulated Label Control with Text Value of 1
-Set(Label1, { Text: "1"});
-
-Assert(Label1.Text = "1", "Counter should be incremented to 1")
-{% endpowerfx %}
-
-This assert checks that Label1.Text is equal to "1". If the counter is correctly incremented to 1, the test step passes. If not, the test step fails, and the message "Counter should be incremented to 1" is displayed.
 
 ### Steps to Use Assert in Your Test Plan
 
