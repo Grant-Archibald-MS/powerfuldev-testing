@@ -66,6 +66,7 @@ include:
   - discussion
   - examples
   - assets
+  - powerfx
 
 copy_folders:
   - source: '../roles-and-responsibilities'
@@ -78,6 +79,8 @@ copy_folders:
     destination: 'discussion'
   - source: '../learning'
     destination: 'learning'
+  - source: '../powerfx/bin/Release/net9.0/wwwroot/_framework'
+    destination: 'powerfx'
 
 rename_files:
   - from: "_site/discussion.html"

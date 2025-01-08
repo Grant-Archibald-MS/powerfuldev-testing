@@ -36,9 +36,12 @@ In the [testPlan.fx.yaml](https://github.com/microsoft/PowerApps-TestEngine/blob
 
 The testPlan.fx.yaml file in the Button Clicker sample includes the following assert statement:
 
-```powerfx
+{% powerfx %}
+// Setup simulated Label Control with Text Value of 1
+Set(Label1, { Text: "1"});
+
 Assert(Label1.Text = "1", "Counter should be incremented to 1")
-```
+{% endpowerfx %}
 
 This assert checks that Label1.Text is equal to "1". If the counter is correctly incremented to 1, the test step passes. If not, the test step fails, and the message "Counter should be incremented to 1" is displayed.
 
