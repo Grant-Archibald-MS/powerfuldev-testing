@@ -19,6 +19,11 @@ module Jekyll
 <div id="#{@id}-output"></div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.52.2/min/vs/editor/editor.main.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.52.2/min/vs/loader.js"></script>
+<script>
+    const base = document.createElement('base');
+    base.href = '/powerfuldev-testing/';
+    document.head.appendChild(base);
+</script>
 <script src="/powerfuldev-testing/_framework/blazor.webassembly.js" autostart="false"></script>
 <script>
 document.addEventListener('DOMContentLoaded', async function() {
