@@ -19,36 +19,31 @@ module Jekyll
 <div id="#{@id}-output"></div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.52.2/min/vs/editor/editor.main.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.52.2/min/vs/loader.js"></script>
-<script type="module">
-import { dotnet } from '/powerfuldev-testing/powerfx/dotnet.js';
-
+<script src="/powerfuldev-testing/_framework/blazor.webassembly.js" autostart="false"></script>
+<script>
 document.addEventListener('DOMContentLoaded', async function() {
-  const { getAssemblyExports, getConfig } = await dotnet
-    .withDiagnosticTracing(false)
-    .create();
-
-  const config = getConfig();
-  const exports = await getAssemblyExports(config.mainAssemblyName);
-
-  document.getElementById('#{@id}-runButton').disabled = false;
-
-  async function executePowerFx(expression) {
-    const result = exports.PowerFx.Execute(expression);
-    document.getElementById("#{@id}-output").innerHTML = `Result: ${result}`;
-  }
+  Blazor.start({
+    loadBootResource: function (type, name, defaultUri, integrity) {
+      console.log(defaultUri)
+    }
+  }).then(async () => {
+      var r = Blazor.runtime
+      const exports = await r.getAssemblyExports(r.config.mainAssemblyName);
+      document.getElementById('#{@id}-runButton').addEventListener('click', function() {
+        const expression = window.editor.getValue();
+        const result = exports.PowerFx.Execute(expression);
+        document.getElementById("#{@id}-output").innerHTML = `Result: ${result}`;
+      });
+      document.getElementById('#{@id}-runButton').disabled = false;
+    })
 
   require.config({ paths: { 'vs': 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.52.2/min/vs' }});
   require(['vs/editor/editor.main'], function() {
-    const editor = monaco.editor.create(document.getElementById('#{@id}-editor'), {
+    window.editor = monaco.editor.create(document.getElementById('#{@id}-editor'), {
       value: `#{code}`,
       language: 'javascript',
       automaticLayout: true,
       minimap: { enabled: false } // Disable the minimap
-    });
-
-    document.getElementById('#{@id}-runButton').addEventListener('click', function() {
-      const expression = editor.getValue();
-      executePowerFx(expression);
     });
   });
 });
