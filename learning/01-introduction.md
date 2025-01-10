@@ -1,5 +1,7 @@
 # Introduction
 
+<a href="/powerfuldev-testing/learning/" class="btn">Back to Learning Module</a>
+
 As a business leader or low-code maker who supports the business, you need to ensure the reliability, performance, and security of your Power Platform solutions. This means you can't rely solely on manual testing processes, which can be time-consuming and prone to errors. You want to build a solution that quickly meets your business needs while ensuring high quality. The Power Apps Test Engine can help you achieve this without writing extensive code.
 
 In this workshop, you’ll learn how to:
@@ -12,6 +14,18 @@ In this workshop, you’ll learn how to:
 - Address known issues and limitations, ensuring your testing processes are robust and effective.
 
 By the end of this workshop, you'll be equipped with the knowledge and tools to implement automated testing in your Power Platform solutions, helping you deliver high-quality applications quickly and efficiently.
+
+## Interactive Examples
+
+Where new concepts are introduced a interactive Power Fx window will be available to try the experience in your browser without installing any components or requiring access to a Power Platform Environment. Ideally this makes the process of learning and applying new concepts quick and interactive.
+
+> NOTES:
+> 1. If the value does not match the test will return "One or more errors occurred. (Exception has been thrown by the target of an invocation.)"
+> 2. Reload the page to reset the sample to the default state
+
+{% powerfx %}
+Assert(1 = 1, "Unexpected value");
+{% endpowerfx %}
 
 ## Pre-requisites
 
@@ -40,4 +54,4 @@ Check back here for announcements on when features used by this learning module 
 
 ### Power Platform 
 
-<a href="./02-getting-setup" class="btn btn--primary">Get setup</a>
+<a href="/powerfuldev-testing/learning/02-getting-setup" class="btn btn--primary">Get setup</a>

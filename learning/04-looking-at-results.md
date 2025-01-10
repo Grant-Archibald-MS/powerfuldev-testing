@@ -1,5 +1,7 @@
 # Looking at Results
 
+<a href="/powerfuldev-testing/learning/" class="btn">Back to Learning Module</a>
+
 After running your tests, it's important to understand how to interpret the results. The Power Apps Test Engine generates a detailed output that helps you analyze the performance and correctness of your tests.
 
 ## Test Output
@@ -25,4 +27,4 @@ For each test case, the Power Apps Test Engine creates a separate folder within 
 
 By thoroughly examining the contents of the `TestOutput` folder, you can gain valuable insights into the performance and reliability of your Power Platform solutions. This detailed analysis helps you identify and fix issues, ensuring your applications are robust and reliable.
 
-<a href="./05-recording-your-first-test" class="btn btn--primary">Recording your first test</a>
+<a href="/powerfuldev-testing/learning/05-recording-your-first-test" class="btn btn--primary">Recording your first test</a>

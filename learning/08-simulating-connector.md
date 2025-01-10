@@ -1,5 +1,7 @@
 # Simulated Connector
 
+<a href="/powerfuldev-testing/learning/" class="btn">Back to Learning Module</a>
+
 ## Introduction
 
 In this module, we will explore how to use simulated connectors in your Power Apps tests. Simulated connectors allow you to mock network requests, providing predefined responses for testing purposes. This is particularly useful for testing scenarios where you want to control the data returned by external services.
@@ -13,6 +15,24 @@ Mocking is a technique used in software testing to simulate the behavior of real
 - **Test Isolation**: Mocking allows you to isolate the component you are testing from the rest of the system. This means you can focus on testing the functionality of that component without worrying about the behavior of other parts of the system.
 - **Control Over Test Scenarios**: By using mocks, you can create specific scenarios, including both expected and edge cases. This helps you verify that your application behaves correctly under various conditions.
 - **Consistency**: Mocking ensures that your tests produce consistent results, as the mocked responses are predefined and do not change.
+
+## Example: Simulating Connection
+
+Lets look at an example of simulating a connection. The first set fo checks validate the expected Weather from the WeatherService. After using the SimulateConnector function The alternative Location and Condition values are used.
+
+> NOTES:
+> 1. If the value does not match the test will return "One or more errors occurred. (Exception has been thrown by the target of an invocation.)"
+> 2. Reload the page to reset the sample to the default state
+
+{% powerfx %}
+Assert(WeatherService.GetCurrentWeather("Seattle, WA").Location="Seattle, WA");
+Assert(WeatherService.GetCurrentWeather("Seattle, WA").Condition="Sunny");
+
+Experimental.SimulateConnector({Name:"WeatherService", Then: {Location: "Other", Condition: "Cold"}});
+
+Assert(WeatherService.GetCurrentWeather("Seattle, WA").Location="Other");
+Assert(WeatherService.GetCurrentWeather("Seattle, WA").Condition="Cold");
+{% endpowerfx %}
 
 ## Running the Test
 
@@ -96,4 +116,4 @@ The test steps include taking a screenshot, setting the text input to "Atlanta",
 
 Using simulated connectors in your Power Apps tests allows you to control the responses from external services, making it easier to test various scenarios. By following the steps outlined in this section, you can set up and run tests that use simulated connectors, ensuring your application behaves as expected under different conditions.
 
-<a href="./09-simulating-dataverse" class="btn btn--primary">Simulating Dataverse</a>
+<a href="/powerfuldev-testing/learning/09-simulating-dataverse" class="btn btn--primary">Simulating Dataverse</a>

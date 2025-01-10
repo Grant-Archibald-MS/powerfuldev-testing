@@ -1,5 +1,7 @@
 # Running Your First Test
 
+<a href="/powerfuldev-testing/learning/" class="btn">Back to Learning Module</a>
+
 Welcome, early adopters! If you're eager to try the current version of Power Platform Automated Testing, you're in the right place. This module will help you get started with the necessary components to explore automated testing.
 
 ### Prerequisites
@@ -153,4 +155,4 @@ git checkout integration
 
 In this section, you learned how to set up the necessary components to run your first automated test using configuration for the sample settings and running a simple test by clicking a button in a Canvas App. By following these steps, you are now equipped to explore automated testing in Power Platform.
 
-<a href="./04-looking-at-results" class="btn btn--primary">Looking at results</a>
+<a href="/powerfuldev-testing/learning/04-looking-at-results" class="btn btn--primary">Looking at results</a>

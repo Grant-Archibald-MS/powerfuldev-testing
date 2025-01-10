@@ -1,6 +1,6 @@
 # Asserting Results
 
-<a href="../learning/" class="btn">Back to Learning Module</a>
+<a href="/powerfuldev-testing/learning/" class="btn">Back to Learning Module</a>
 
 ## Introduction to Asserts
 
@@ -26,7 +26,7 @@ Let's consider an example where we want to assert that the value of Label1.Text 
 
 {% powerfx %}
 // Setup simulated Label Control with Text Value to check below
-Set(Label1, { Text: "Heading"});
+SetProperty(Label1.Text, "Heading");
 
 Assert(Label1.Text = "Heading", "Unexpected header value")
 {% endpowerfx %}
@@ -73,4 +73,4 @@ By using assert statements in your test plans, you can ensure that your applicat
 
 In this section, you learned how to use assert statements in automated testing to verify that your application behaves as expected. By including assert statements in your test plans, you can quickly identify any issues and ensure that your application meets the desired criteria. This process involves adding assert statements to your test plan, running the test script, and reviewing the results to confirm that the assertions pass or fail.
 
-<a href="./07-updating-control-value-using-setproperty" class="btn btn--primary">Updating Control Value using SetProperty</a>
+<a href="/powerfuldev-testing/learning/07-updating-control-value-using-setproperty" class="btn btn--primary">Updating Control Value using SetProperty</a>

@@ -2,6 +2,8 @@
 
 ## Introduction
 
+<a href="/powerfuldev-testing/learning/" class="btn">Back to Learning Module</a>
+
 In this section, we will investigate the testing of a localized Weather sample. Localization is the process of adapting an application to meet the language, cultural, and other requirements of a specific target market. The ability to support multiple languages in your application can make it more accessible and user-friendly for a global audience.
 
 ## Pre-requisites

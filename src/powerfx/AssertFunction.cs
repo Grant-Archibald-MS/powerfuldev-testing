@@ -21,7 +21,7 @@ namespace Microsoft.PowerApps.TestEngine.PowerFx.Functions
         {
             if (!result.Value)
             {
-                return BooleanValue.New(false);
+                throw new AssertionFailureException(message.Value);
             }
 
             return BooleanValue.New(true);

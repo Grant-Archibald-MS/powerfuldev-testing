@@ -11,20 +11,46 @@ using Microsoft.PowerFx.Types;
 
 [SupportedOSPlatform("browser")]
 public partial class PowerFx {
-    [JSExport]
-    internal static string Execute(String code) {
+
+    public static RecalcEngine Init(out ParserOptions options) {
+        var powerFxConfig = new PowerFxConfig(Features.PowerFxV1);
+        var vals = new SymbolValues();
+        var symbols = (SymbolTable)vals.SymbolTable;
+        symbols.EnableMutationFunctions();
+        powerFxConfig.SymbolTable = symbols;
+        powerFxConfig.EnableSetFunction();
+        powerFxConfig.AddFunction(new AssertFunction());
+        powerFxConfig.AddFunction(new AssertWithoutMessageFunction());
+        powerFxConfig.AddFunction(new SetPropertyFunction());
+        powerFxConfig.AddFunction(new SimulateConnectorFunction());
+        var simulateDataverseFunction = new SimulateDataverseFunction();
+        powerFxConfig.AddFunction(simulateDataverseFunction);
+
+        powerFxConfig.AddFunction(new GetCurrentWeatherFunction());
+
+        RecalcEngine engine = new RecalcEngine(powerFxConfig);
+        simulateDataverseFunction.Engine = engine;
+
+        var accountType = RecordType.Empty()
+            .Add("AccountId", GuidType.Guid)
+            .Add("Name", FormulaType.String);
+
+        engine.UpdateVariable("accounts", TableValue.NewTable(accountType, 
+            RecordValue.NewRecordFromFields(accountType, 
+                new NamedValue("Name", StringValue.New("Test")),
+                                                                      
+                new NamedValue("AccountId", GuidValue.New(Guid.Parse("a1234567-1111-2222-3333-444455556666")))
+            )
+        ));
+
+        options = new ParserOptions() { AllowsSideEffects = true, Culture = new CultureInfo("en-us"), NumberIsFloat = true };
+
+        return engine;
+    }
+
+    
+    public static string Execute(String code, RecalcEngine engine, ParserOptions options) {
         try {
-            var powerFxConfig = new PowerFxConfig(Features.PowerFxV1);
-            var vals = new SymbolValues();
-            var symbols = (SymbolTable)vals.SymbolTable;
-            symbols.EnableMutationFunctions();
-            powerFxConfig.SymbolTable = symbols;
-            powerFxConfig.EnableSetFunction();
-            powerFxConfig.AddFunction(new AssertFunction());
-            var engine = new RecalcEngine(powerFxConfig);
-
-            var options = new ParserOptions() { AllowsSideEffects = true, Culture = new CultureInfo("en-us"), NumberIsFloat = true };
-
             var parsed = engine.Parse(code, options);
 
             StringBuilder result = new StringBuilder();
@@ -52,54 +78,127 @@ public partial class PowerFx {
         catch ( Exception ex ) {
             return ex.Message;
         }
+    }
+
+    [JSExport]
+    public static string Execute(String code) {
+        ParserOptions options = null;
+        var engine = Init(out options);
+        
+        return Execute(code, engine, options);
     } 
 
     internal static void AddVariables(TexlNode node, RecalcEngine engine) {
         if (node is VariadicOpNode opNode) {
-            foreach ( var child in opNode.ChildNodes ) {
+            foreach (var child in opNode.ChildNodes) {
                 AddVariables(child, engine);
             }
         }
         if (node is CallNode callNode) {
             if (callNode.Head.Name == "Collect") {
-                var first = callNode.Args.ChildNodes[0];
-                var second = callNode.Args.ChildNodes[1];
-                if (first is FirstNameNode identifier) {
-                    if (second is TableNode tableValue) {
-                        engine.UpdateVariable(identifier.Ident.Name, GenerateTable(tableValue));
-                    }
-                    if(second is RecordNode recordValue) {
-                        var record = GenerateRecord(recordValue);
-                        // Query the fields of the RecordValue
-                        var fields = record.Fields.Select(field => new NamedValue(field.Name, field.Value)).ToList();
-                        // Create a new RecordType based on the queried fields
-                        var newRecordType = RecordType.Empty();
-                        foreach (var field in fields)
-                        {
-                            newRecordType = newRecordType.Add(field.Name, field.Value.Type);
-                        }
-                        engine.UpdateVariable(identifier.Ident.Name,TableValue.NewTable(newRecordType, record));
-                    }
-                }
+                HandleCollect(callNode, engine);
             }
             if (callNode.Head.Name == "Set") {
-                var first = callNode.Args.ChildNodes[0];
-                var second = callNode.Args.ChildNodes[1];
-                if (first is FirstNameNode identifier) {
-                    if (second is TableNode tableValue) {
-                        engine.UpdateVariable(identifier.Ident.Name, GenerateTable(tableValue));
-                    }
-                    if(second is RecordNode recordValue) {
-                        engine.UpdateVariable(identifier.Ident.Name, GenerateRecord(recordValue));
-                    }
-                    if (second is NumLitNode) {
-                        engine.UpdateVariable(identifier.Ident.Name, NumberValue.New(0));
-                    }
-                    if (second is StrLitNode) {
-                        engine.UpdateVariable(identifier.Ident.Name, StringValue.New(""));
-                    }
-                }
+                HandleSet(callNode, engine);
             }
+            if (callNode.Head.Name == "SetProperty") {
+                HandleSetProperty(callNode, engine);
+            }
+        }
+    }
+
+    private static void HandleCollect(CallNode callNode, RecalcEngine engine) {
+        var first = callNode.Args.ChildNodes[0];
+        var second = callNode.Args.ChildNodes[1];
+        if (first is FirstNameNode identifier) {
+            if (second is TableNode tableValue) {
+                EnsureVariableDefined(engine, identifier.Ident.Name, GenerateTable(tableValue));
+            }
+            if (second is RecordNode recordValue) {
+                var record = GenerateRecord(recordValue);
+                var fields = record.Fields.Select(field => new NamedValue(field.Name, field.Value)).ToList();
+                var newRecordType = RecordType.Empty();
+                foreach (var field in fields) {
+                    newRecordType = newRecordType.Add(field.Name, field.Value.Type);
+                }
+                EnsureVariableDefined(engine, identifier.Ident.Name, TableValue.NewTable(newRecordType));
+            }
+        }
+    }
+
+    
+
+    private static void HandleSet(CallNode callNode, RecalcEngine engine) {
+        var first = callNode.Args.ChildNodes[0];
+        var second = callNode.Args.ChildNodes[1];
+        if (first is FirstNameNode identifier) {
+            if (second is TableNode tableValue) {
+                EnsureVariableDefined(engine, identifier.Ident.Name, GenerateTable(tableValue));
+                return;
+            }
+            if (second is RecordNode recordValue) {
+                EnsureVariableDefined(engine, identifier.Ident.Name, GenerateRecord(recordValue));
+                return;
+            }
+            if (second is NumLitNode) {
+                EnsureVariableDefined(engine, identifier.Ident.Name, NumberValue.New(0));
+                return;
+            }
+            if (second is StrLitNode) {
+                EnsureVariableDefined(engine, identifier.Ident.Name, StringValue.New(""));
+                return;
+            }
+            var evalValue = engine.Eval(second.ToString());
+            if (evalValue is RecordValue evaluatedRecord)
+            {
+                EnsureVariableDefined(engine, identifier.Ident.Name, CloneWithBlankValues(evaluatedRecord));
+            }
+        }
+    }
+
+    public static RecordValue CloneWithBlankValues(RecordValue originalRecord)
+    {
+        var recordType = originalRecord.Type;
+        var fields = new List<NamedValue>();
+
+        foreach (var field in recordType.GetFieldTypes())
+        {
+            fields.Add(new NamedValue(field.Name, FormulaValue.NewBlank(field.Type)));
+        }
+
+        return FormulaValue.NewRecordFromFields(recordType, fields);
+    }
+
+    private static void HandleSetProperty(CallNode callNode, RecalcEngine engine) {
+        var first = callNode.Args.ChildNodes[0];
+        var second = callNode.Args.ChildNodes[1];
+        if (first is DottedNameNode dottedNameNode && dottedNameNode.Left is FirstNameNode firstName) {
+            var recordName = firstName.Ident.Name;
+            var propertyName = dottedNameNode.Right.Name;
+            FormulaValue value = null;
+
+            if (second is StrLitNode strValue) {
+                value = StringValue.New(strValue.Value);
+            } else if (second is NumLitNode numValue) {
+                value = NumberValue.New(numValue.ActualNumValue);
+            } else if (second is TableNode tableValue) {
+                value = GenerateTable(tableValue);
+            } else if (second is RecordNode recordValue) {
+                value = GenerateRecord(recordValue);
+            }
+
+            var propertyRecordValue = RecordValue.NewRecordFromFields(new NamedValue(propertyName, value));
+
+            if (value != null) {
+                EnsureVariableDefined(engine, recordName, propertyRecordValue);
+            }
+        }
+    }
+
+    private static void EnsureVariableDefined(RecalcEngine engine, string name, FormulaValue defaultValue) {
+        FormulaValue existing;
+        if (!engine.TryGetValue(name, out existing)) {
+            engine.UpdateVariable(name, defaultValue);
         }
     }
 
@@ -144,7 +243,7 @@ public partial class PowerFx {
         return value;
     }
 
-    internal static async Task<string> ConvertToJson(FormulaValue thenResult)
+    public static async Task<string> ConvertToJson(FormulaValue thenResult)
     {
         if (thenResult is TableValue thenValue)
         {

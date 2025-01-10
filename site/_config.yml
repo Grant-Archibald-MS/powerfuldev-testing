@@ -80,7 +80,7 @@ copy_folders:
     destination: 'discussion'
   - source: '../learning'
     destination: 'learning'
-  - source: '../powerfx/bin/Release/net9.0/wwwroot/_framework'
+  - source: '../src/powerfx/bin/Release/net9.0/wwwroot/_framework'
     destination: '_framework'
 
 rename_files:

@@ -1,5 +1,7 @@
 # Simulations Example
 
+<a href="/powerfuldev-testing/learning/" class="btn">Back to Learning Module</a>
+
 ## Learning Objectives
 
 In this section, you will learn how to load a sample Weather application. This application is designed to call the MSN Weather and then have the user save the current weather at the location and categorize how this weather relates to them. This example highlights a number of items:
@@ -123,4 +125,4 @@ Lets have a closer look at the weather [testPlan.fx.yaml](https://github.com/mic
 
 In this section, you learned how to load and test a sample Weather application. You explored how to call the MSN Weather connector, interact with Dataverse, and use assert statements to verify the application's functionality. By following the key steps and exploring the sample, you gained insights into simulating connectors and Dataverse interactions to ensure your application works as expected.
 
-<a href="./11-localization" class="btn btn--primary">Localization</a>
+<a href="/powerfuldev-testing/learning/11-localization" class="btn btn--primary">Localization</a>

@@ -3,6 +3,7 @@ module Jekyll
     def initialize(tag_name, text, tokens)
       super
       @id = "powerfx-#{rand(1000..9999)}"
+      @button_text = text.strip.empty? ? "Try It!" : text.strip
     end
 
     def render(context)
@@ -15,7 +16,7 @@ module Jekyll
   }
 </style>
 <div id="#{@id}-editor" style="width: 100%; height: 200px;"></div>
-<button id="#{@id}-runButton" disabled>Try It!</button>
+<button id="#{@id}-runButton" disabled>#{@button_text}</button>
 <div id="#{@id}-output"></div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.52.2/min/vs/editor/editor.main.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.52.2/min/vs/loader.js"></script>

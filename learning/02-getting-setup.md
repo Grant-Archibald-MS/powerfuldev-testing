@@ -1,5 +1,7 @@
 # Getting setup
 
+<a href="/powerfuldev-testing/learning/" class="btn">Back to Learning Module</a>
+
 ## Pre-requisites Check
 
 Validate that you have completed the pre-requisites check of the [Introduction](01-introduction.md) have been completed.
@@ -56,4 +58,4 @@ In this task, you will import the completed second module solution from the App 
 
 In this section, you learned how to set up an environment and import the Button Clicker solution. You explored the steps to create a new environment, download the ButtonClicker application, and import the solution into the Power Apps maker portal. By following these steps, you ensured that the Button Clicker application is ready for use in your assigned environment.
 
-<a href="./03-running-your-first-test" class="btn btn--primary">Running your first test</a>
+<a href="/powerfuldev-testing/learning/03-running-your-first-test" class="btn btn--primary">Running your first test</a>

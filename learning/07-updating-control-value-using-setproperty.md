@@ -1,5 +1,7 @@
 # Updating Control Value using SetProperty
 
+<a href="/powerfuldev-testing/learning/" class="btn">Back to Learning Module</a>
+
 ## Introduction to SetProperty
 
 The `SetProperty` function in Power Fx is used to update the value of a control in your Power Apps application. This function allows you to change the properties of controls, such as text, color, visibility, and more.
@@ -15,13 +17,16 @@ SetProperty(control.property, value)
 
 ## Example: Updating Label Text
 
-Let's consider a basic example where we want to update the text of a label control (Label1) to "End of the test":
+Let's consider a basic example that combines [Asserting Results](./06-asserting-results.md) where we want to update the text of a label control (Label1) to "End of the test" and make sure changes are applied:
 
-```powerfx
-SetProperty(Label1.Text, "End of the test")
-```
+{% powerfx %}
+// Setup simulated Label Control with Text Value to check below
+SetProperty(Label1.Text, "Start of test");
+Assert(Label1.Text = "Start of test", "Unexpected start value");
 
-In this example, the SetProperty function changes the text displayed in Label1 to "End of the test".
+SetProperty(Label1.Text, "End of the test");
+Assert(Label1.Text = "End of the test", "Unexpected end value");
+{% endpowerfx %}
 
 ## Using SetProperty in a Test Plan
 
@@ -71,4 +76,4 @@ To demonstrate a failing test, modify the assert statement to check for an incor
 
 In this section, you learned how to use the `SetProperty` function in Power Fx to update control values in your Power Apps application. By including SetProperty statements in your test plans, you can modify control properties and verify the behavior of your application. This process involves adding SetProperty and assert statements to your test plan, running the test script, and reviewing the results to confirm that the control values are updated as expected.
 
-<a href="./08-simulating-connector" class="btn btn--primary">Simulating connector</a>
+<a href="/powerfuldev-testing/learning/08-simulating-connector" class="btn btn--primary">Simulating connector</a>
