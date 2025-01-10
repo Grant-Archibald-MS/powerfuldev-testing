@@ -21,17 +21,13 @@ feature_row:
     url: /context/getting-started-technical
 ---
 
-## Get Started Assessment
-
-Welcome to site focused on low code testing of Power Platform using Test Engine. Use the assessment below to help you find the best place to start.
-
-{% interactive_assessment getting-started.json %}
-
 ## Welcome
 
 When it comes to Power Platform Automated Testing, where you start will depend on your <a href="/powerfuldev-testing/roles-and-responsibilities">role in the organization</a> and your willingness to work as an early adopter. This guide will help you navigate the key items to consider as you embark on this journey.
 
 {% include feature_row type=center %}
+
+Not sure where to start? Try our <a href="./getting-started-assessment" class="btn btn--primary">Getting started assessment</a>
 
 ## Business
 
