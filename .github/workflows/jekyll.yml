@@ -45,7 +45,7 @@ jobs:
           dotnet-version: '9.0.x'
       - name: Publish .NET project
         run: |
-          cd src\powerfx
+          cd src/powerfx
           dotnet workload install wasm-tools
           dotnet publish -c Release --self-contained
       - name: Setup Pages
