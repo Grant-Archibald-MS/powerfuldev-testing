@@ -34,6 +34,8 @@ Assert(WeatherService.GetCurrentWeather("Seattle, WA").Location="Other");
 Assert(WeatherService.GetCurrentWeather("Seattle, WA").Condition="Cold");
 {% endpowerfx %}
 
+Want to explore more concepts examples checkout the <a href="/powerfuldev-testing/learning/playground?title=assert-simulated-connector" class="btn btn--primary">Learning Playground</a> to explore related testing concepts.
+
 ## Running the Test
 
 To run the test, follow these steps:

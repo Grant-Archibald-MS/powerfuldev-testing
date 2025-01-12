@@ -28,6 +28,8 @@ SetProperty(Label1.Text, "End of the test");
 Assert(Label1.Text = "End of the test", "Unexpected end value");
 {% endpowerfx %}
 
+Want to explore more concepts examples checkout the <a href="/powerfuldev-testing/learning/playground?title=assert-multiple-values" class="btn btn--primary">Learning Playground</a> to explore related testing concepts
+
 ## Using SetProperty in a Test Plan
 
 You can use the SetProperty function in your test plans to modify control values and verify the behavior of your application. Let's look at an example where we modify the value so that the test fails.

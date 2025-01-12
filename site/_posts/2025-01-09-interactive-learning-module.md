@@ -31,6 +31,10 @@ If(
 
 This formula checks the current hour and displays an appropriate greeting message.
 
+## Learning Playground
+
+Want to explore more related learning tasks directly inside your browser? You can checkout the <a href="/powerfuldev-testing/learning/playground?title=boolean-expressions" class="btn btn--primary">Learning Playground</a> to explore related testing concepts.
+
 ## Expanding the Approach
 
 Based on your feedback, we plan to expand these modules to cover more advanced concepts in Power Fx. This will include creating complex formulas, integrating with other Power Platform tools, and optimizing performance. Our goal is to make it easier for you to adjust and enhance your test cases.

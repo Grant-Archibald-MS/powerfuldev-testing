@@ -32,6 +32,9 @@ Experimental.SimulateDataverse({Entity:"accounts", Then: Table()});
 Assert(CountRows(accounts)=0);
 {% endpowerfx %}
 
+Want to explore more concepts examples checkout the <a href="/powerfuldev-testing/learning/playground?title=assert-simulated-dataverse" class="btn btn--primary">Learning Playground</a> to explore related testing concepts.
+
+
 ## Using Experimental.SimulateDataverse
 
 The `Experimental.SimulateDataverse` function allows you to define simulated responses for Dataverse actions such as query, create, update, and delete. Here is the syntax:
