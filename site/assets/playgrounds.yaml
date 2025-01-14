@@ -16,6 +16,11 @@ playgrounds:
     relatedTasks:
       - "collections"
       - "intro-assert"
+      - "set-property"
+      - "assert-multiple-values"
+      - "assert-simulated-connector"
+      - "assert-simulated-dataverse"
+      - "localization"
   - shortId: "collections"
     title: "Collections"
     description: "Explore common collection expresions in Power Fx that could be used in your tests"
@@ -38,6 +43,11 @@ playgrounds:
     relatedTasks:
       - "boolean-expressions"
       - "intro-assert"
+      - "set-property"
+      - "assert-multiple-values"
+      - "assert-simulated-connector"
+      - "assert-simulated-dataverse"
+      - "localization"
   - shortId: "intro-assert"
     title: "Introduction to Assert() Function"
     description: "Learn how to use the Assert() function in Power Apps Test Engine to validate conditions in your test."
@@ -49,11 +59,30 @@ playgrounds:
     steps: |
       - Press "Try It!" to verify that the test run and returns a value of **true**
       - Change the value of Label1.Text from Heading to **Heading2** in the SetProperty
+      - Change the text to th following
+
+        <pre>
+        // File: text.pa.yaml
+        Controls:
+          Input1:
+            Value: "World"
+          Label1:
+            Text: ="Hello " & text
+        // Code:
+        Assert(Label1.Text="Hello World");
+        SetProperty(Input1.Value, "Today");
+        Assert(Label1.Text="Hello Today");
+        </pre>
+
       - Press "Try It!" and see the error result
     relatedTasks:
       - "boolean-expressions"
+      - "collections"
+      - "set-property"
       - "assert-multiple-values"
       - "assert-simulated-connector"
+      - "assert-simulated-dataverse"
+      - "localization"
   - shortId: "assert-multiple-values"
     title: "Assert() Function with Multiple Values"
     description: "Learn how to use the Assert() function to validate multiple values in your test."
@@ -67,10 +96,39 @@ playgrounds:
     steps: |
       - Press "Try It!" to verify that the test run and returns a value of **true** that the final value of Labal1.Text is **End of the test**
       - Change either the start or end value text to get an error **One or more errors occurred**
+      - Try [Learn Module: Asserting Results](/powerfuldev-testing/learning/06-asserting-results)
     relatedTasks:
       - "boolean-expressions"
+      - "collections"
       - "intro-assert"
+      - "set-property"
       - "assert-simulated-connector"
+      - "assert-simulated-dataverse"
+      - "localization"
+  - shortId: "set-property"
+    title: "SetProperty to change the page"
+    description: "Learn how to use the SetProperty() function to update the page"
+    code: |
+      // File: test.pa.yml
+      Controls:
+         Label1:
+           Text: ="Hello"
+      // Code:
+      Assert(Label1.Text="Hello");
+      SetProperty(Label1.Text, "Updated");
+      Assert(Label1.Text="Updated");
+    steps: |
+      - Press "Try It!" to verify that the test run and returns a value of **true** that the final value of Labal1.Text is **Updated**
+      - Change either the start or end value text to get an error **One or more errors occurred**
+      - Try [Learn Module: Updating Control Value using SetProperty](/powerfuldev-testing/learning/06-updating-control-value-using-setproperty)
+    relatedTasks:
+      - "boolean-expressions"
+      - "collections"
+      - "intro-assert"
+      - "assert-multiple-values"
+      - "assert-simulated-connector"
+      - "assert-simulated-dataverse"
+      - "localization"
   - shortId: "assert-simulated-connector"
     title: "Assert() Function with Simulated Connector"
     description: "Learn how to use the Assert() function with a simulated connector in your test."
@@ -90,12 +148,18 @@ playgrounds:
         
         Experimental.SimulateConnector({Name:"WeatherService", Then: {Location: "Other", Condition: "Cold"}});
         WeatherService.GetCurrentWeather("Seattle, WA")
+
+      - Try [Learn Module: Simulated Connector](/powerfuldev-testing/learning/08-simulating-connector)
     relatedTasks:
       - "boolean-expressions"
+      - "collections"
       - "intro-assert"
+      - "set-property"
       - "assert-multiple-values"
+      - "assert-simulated-dataverse"
+      - "localization"
   - shortId: "assert-simulated-dataverse"
-    title: "Assert() Function with Simulated Datavers"
+    title: "Assert() Function with Simulated Dataverse"
     description: "Learn how to use the Assert() function with a simulated dataverse in your test."
     code: |
       Assert(CountRows(accounts)=1);
@@ -108,8 +172,34 @@ playgrounds:
       - Select Reset then add only **accounts** to see the orginal value of account
       - Select Reset then change the last link to **Assert(CountRows(accounts)=1);** to see the test return error
       - Select Reset then change the text to be onlt **Assert(First(accounts).Name="Test")** to see that the first value in the collection is Test
+      - Try [Learn Module: Simulated Dataverse](/powerfuldev-testing/learning/09-simulating-dataverse)
     relatedTasks:
       - "boolean-expressions"
       - "collections"
       - "intro-assert"
+      - "set-property"
       - "assert-multiple-values"
+      - "assert-simulated-connector"
+      - "localization"
+  - shortId: "localization"
+    title: "Localize your application"
+    description: "Set the culture and Language() function to localize your application"
+    code: |
+      // Settings:
+      locale: en-us
+      // Code:
+      Language()
+    steps: |
+      - Press "Try It!"  to verify that locale of **en-US** is returned
+      - Change the culture to **fr-fr** and verify that locale of **fr-FR** is returned
+      - Change change the locale to **fr-fr** and change Code to the following **If(Lower(Language())="fr-fr"; If(Hour(Now())<12; "Bonjour"; "Bonsoir"); "Hello")**   
+      - Notice that that Power Fx changes with the locale in en-us the function uses , in French the ";" should be used between arguments. 
+      - Try [Learn Module: Localization](/powerfuldev-testing/learning/11-localization)
+    relatedTasks:
+      - "boolean-expressions"
+      - "collections"
+      - "intro-assert"
+      - "set-property"
+      - "assert-multiple-values"
+      - "assert-simulated-connector"
+      - "assert-simulated-dataverse"

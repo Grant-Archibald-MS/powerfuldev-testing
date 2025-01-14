@@ -47,7 +47,7 @@ jobs:
         run: |
           cd src/powerfx
           dotnet workload install wasm-tools
-          dotnet publish -c Release --self-contained
+          dotnet publish -c Release
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5

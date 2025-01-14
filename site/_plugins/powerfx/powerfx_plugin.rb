@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', async function() {
       const exports = await r.getAssemblyExports(r.config.mainAssemblyName);
       document.getElementById('#{@id}-runButton').addEventListener('click', function() {
         const expression = window.editor.getValue();
-        const result = exports.PowerFx.Execute(expression);
+        const result = exports.PowerFxEngine.Execute(expression);
         document.getElementById("#{@id}-output").innerHTML = `Result: ${result}`;
       });
       document.getElementById('#{@id}-runButton').disabled = false;

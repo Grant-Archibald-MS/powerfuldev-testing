@@ -38,10 +38,10 @@ module Jekyll
   <div id="#{@id}-editor" style="width: 100%; height: 200px"></div>
   <button id="#{@id}-runButton" disabled>#{@button_text}</button>
   <button id="#{@id}-resetButton">Reset</button>
-  <button id="#{@id}-openRelatedButton" disabled>Open Related Task</button>
   <select id="#{@id}-relatedTasksDropdown">
     <option value="">Select a related task</option>
   </select>
+  <button id="#{@id}-openRelatedButton" disabled>Open Related Task</button>
   <div id="#{@id}-output"></div>
   <div id="#{@id}-steps"></div>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.52.2/min/vs/editor/editor.main.css">
@@ -74,7 +74,7 @@ module Jekyll
           const exports = await r.getAssemblyExports(r.config.mainAssemblyName);
           document.getElementById('#{@id}-runButton').addEventListener('click', function() {
             const expression = window.editor.getValue();
-            const result = exports.PowerFx.Execute(expression);
+            const result = exports.PowerFxEngine.Execute(expression);
             document.getElementById("#{@id}-output").innerHTML = `Result: ${result}`;
           });
           document.getElementById('#{@id}-runButton').disabled = false;

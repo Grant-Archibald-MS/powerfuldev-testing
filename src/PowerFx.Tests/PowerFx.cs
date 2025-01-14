@@ -1,7 +1,6 @@
 ﻿using Microsoft.PowerApps.TestEngine.PowerFx.Functions;
 using Microsoft.PowerFx;
 using Microsoft.PowerFx.Types;
-using System.Diagnostics.Contracts;
 using Xunit;
 
 public class PowerFxTests
@@ -18,8 +17,8 @@ public class PowerFxTests
         // Arrange
         var function = new GetCurrentWeatherFunction();
         var defaultWeather = GetCurrentWeatherFunction.ConvertToRecordValue(function.DefaultWeather("Test"));
-        var engine = PowerFx.Init(out ParserOptions options);
-        var clone = PowerFx.CloneWithBlankValues(defaultWeather);
+        var engine = PowerFxEngine.Init(out ParserOptions options, "en-us");
+        var clone = PowerFxEngine.CloneWithBlankValues(defaultWeather);
 
 
 
@@ -45,7 +44,8 @@ public class PowerFxTests
     [InlineData("Set(a,1)", "a", "1")]
     [InlineData("Set(a,\"Test\")", "a", "\"Test\"")]
     [InlineData("SetProperty(Label1.Text,\"Test\")", "Label1", "{\"Text\":\"Test\"}")]
-    [InlineData("Collect(data,{Name:\"Test\"})", "data", "{\"value\":[{\"Name\":\"Test\"}]}")]
+    [InlineData("Set(data, Table({Name:\"Test\"}))", "data", "{\"value\":[{\"Name\":\"Test\"}]}")]
+    [InlineData("Collect(data, {Name:\"Test\"})", "data", "{\"value\":[{\"Name\":\"Test\"}]}")]
     [InlineData("WeatherService.GetCurrentWeather(\"Test\")", "", @"{""Condition"":""Sunny"",""Humidity"":50,""Location"":""Test"",""Temperature"":25,""WindSpeed"":10}")]
     [InlineData("Experimental.SimulateConnector({Name:\"WeatherService\",Then:{Humidity:1}});WeatherService.GetCurrentWeather(\"Test\")", "", "{\"Humidity\":1}")]
     [InlineData("WeatherService.GetCurrentWeather(\"Test\").Condition", "", "\"Sunny\"")]
@@ -56,8 +56,8 @@ public class PowerFxTests
         // Arange
 
         // Act
-        var varaibleName = !string.IsNullOrEmpty(variable) ? ";" + variable : String.Empty;
-        var result = PowerFx.Execute(code + varaibleName);
+        var variableName = !string.IsNullOrEmpty(variable) ? ";" + variable : String.Empty;
+        var result = PowerFxEngine.Execute(code + variableName);
 
         // Assert
         Assert.Equal(expectedResult, result);
@@ -70,7 +70,7 @@ public class PowerFxTests
         // Arange
 
         // Act
-        var result = PowerFx.Execute(code);
+        var result = PowerFxEngine.Execute(code);
 
         // Assert
         Assert.Equal("true", result);
@@ -87,7 +87,7 @@ public class PowerFxTests
         // Act & Assert
         try
         {
-            PowerFx.Execute(code);
+            PowerFxEngine.Execute(code);
         } 
         catch (Exception ex)
         {

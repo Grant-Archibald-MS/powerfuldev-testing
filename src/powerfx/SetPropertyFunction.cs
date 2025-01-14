@@ -11,6 +11,7 @@ namespace Microsoft.PowerApps.TestEngine.PowerFx.Functions
     /// </summary>
     public class SetPropertyFunction : ReflectionFunction
     {
+        public Func<TestState> TestState { get; set; }
 
         public SetPropertyFunction() : base("SetProperty", FormulaType.Blank, RecordType.Empty(), FormulaType.String, FormulaType.Boolean)
         {
@@ -19,7 +20,7 @@ namespace Microsoft.PowerApps.TestEngine.PowerFx.Functions
         public BooleanValue Execute(RecordValue obj, StringValue propName, FormulaValue value)
         {
             obj.UpdateField(propName.Value, value);
-
+           
             return BooleanValue.New(true);
         }
     }

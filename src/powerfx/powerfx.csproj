@@ -4,6 +4,7 @@
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <SelfContained>true</SelfContained>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -15,5 +16,6 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="9.0.0" PrivateAssets="all" />
     <PackageReference Include="Microsoft.PowerFx.Core" Version="1.2.0" />
     <PackageReference Include="Microsoft.PowerFx.Interpreter" Version="1.2.0" />
+    <PackageReference Include="YamlDotNet" Version="16.3.0" />
   </ItemGroup>
 </Project>

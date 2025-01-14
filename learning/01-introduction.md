@@ -27,7 +27,7 @@ Where new concepts are introduced a interactive Power Fx window will be availabl
 Assert(1 = 1, "Unexpected value");
 {% endpowerfx %}
 
-You can also try the <a href="/powerfuldev-testing/learning/playground?=boolean-expressions" class="btn btn--primary">Learning Playground</a> to explore related testing concepts
+You can also try the <a href="/powerfuldev-testing/learning/playground?title=boolean-expressions" class="btn btn--primary">Learning Playground</a> to explore related testing concepts
 
 ## Pre-requisites
 

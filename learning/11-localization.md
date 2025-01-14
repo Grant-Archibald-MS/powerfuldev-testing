@@ -6,6 +6,23 @@
 
 In this section, we will investigate the testing of a localized Weather sample. Localization is the process of adapting an application to meet the language, cultural, and other requirements of a specific target market. The ability to support multiple languages in your application can make it more accessible and user-friendly for a global audience.
 
+## Example: Localization
+
+Lets look at an example of localization of a Power App
+
+> NOTES:
+> 1. If the value does not match the test will return "One or more errors occurred. (Exception has been thrown by the target of an invocation.)"
+> 2. Reload the page to reset the sample to the default state
+
+{% powerfx %}
+// Settings:
+locale: en-us
+// Code:
+Language()
+{% endpowerfx %}
+
+Want to explore more concepts examples checkout the <a href="/powerfuldev-testing/learning/playground?title=localization" class="btn btn--primary">Learning Playground</a> to explore related testing concepts
+
 ## Pre-requisites
 
 To complete this module you will need to follow instructions for setting up in [Regional and language options for your environment](https://learn.microsoft.com/power-platform/admin/enable-languages). 
