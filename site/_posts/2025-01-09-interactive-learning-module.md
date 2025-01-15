@@ -8,11 +8,13 @@ tags:
   - PowerFx
 ---
 
-Welcome to our latest update on PowerfuleDev Testing! We're excited to introduce a set of interactive updates to our [technical learning path modules](/powerfuldev-testing/learning) designed to help you master Power Fx. These modules will guide you through key concepts on getting started creating low code tests and provide practical examples that you can apply directly to your projects.
+Welcome to our latest update on PowerfuleDev Testing! We're excited to introduce a set of interactive updates to our [technical learning path modules](/powerfuldev-testing/learning) designed to help you master Power Fx and level up the skills to enable you to build tests that can validate the behavior of your solutions.
+
+These modules will guide you through key concepts on getting started creating low code tests and provide practical examples that you can apply directly to your projects. At each stage if you want to explore the concepts you can use the link to the learning playground to explore the concepts and build on your understanding.
 
 ## Example: Creating a Dynamic Greeting
 
-In this example, we'll create a dynamic greeting message that changes based on the time of day.
+One of the key elements of the approach is to allow you to run Power Fx commands in thr browser to rapidly try an idea. For example, the editor below allows you to create a dynamic greeting message that changes based on the time of day.
 
 {% powerfx %}
 If(
