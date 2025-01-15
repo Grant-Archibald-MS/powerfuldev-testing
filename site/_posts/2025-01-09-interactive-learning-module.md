@@ -14,9 +14,6 @@ Welcome to our latest update on PowerfuleDev Testing! We're excited to introduce
 
 In this example, we'll create a dynamic greeting message that changes based on the time of day.
 
-Create a Label Control: Add a label control to your canvas app.
-Set the Text Property: Use the following Power Fx formula to set the text property of the label:
-
 {% powerfx %}
 If(
     Hour(Now()) < 12, 
